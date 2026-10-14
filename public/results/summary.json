@@ -14,7 +14,7 @@
       "source": "place-photo",
       "bareness": 0.8,
       "placement": "Flanking the edges of the shopfront on the pavement, leaving the central seating area clear.",
-      "qaScore": 0.92,
+      "qaScore": 0.85,
       "regenerated": false,
       "frontage": "results/venue-1/frontage.jpg",
       "after": "results/venue-1/after.png",

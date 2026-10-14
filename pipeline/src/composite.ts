@@ -25,6 +25,9 @@ IMAGE 1 = the real venue frontage. Treat the building, windows, door, signage, p
 
 IMAGE 2 = the client's ACTUAL product that must appear: "${p.name}" – ${p.form}, ${p.material}. Planting: ${p.planting}. Reproduce THIS exact planter and planting faithfully (same shape, material, colour, proportions and plants). Do NOT substitute a generic planter.
 
+QUANTITY & ARRANGEMENT:
+- Style it like a real venue would – not a single lonely planter on a wide frontage. If IMAGE 2 shows a SET or a PAIR of planters, place the whole set/pair as shown. If it shows a SINGLE planter, place a MATCHED PAIR flanking the entrance (one on each side) or an even short row lining the frontage, as the pavement width allows. Every unit must be IDENTICAL to IMAGE 2 and at matching scale. Only on a genuinely narrow pavement is a single unit acceptable.
+
 PLACEMENT (critical – this is how a real venue would style it):
 - Suggested spot: ${placement}.
 - Place the planter(s) to the SIDE(S) of the entrance, flanking the door or lining the frontage against the building wall / beneath the windows.
