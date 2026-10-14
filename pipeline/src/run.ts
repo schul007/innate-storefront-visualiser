@@ -158,8 +158,8 @@ function emptyResult(venue: Venue, cap: PipelineResult['capture'], status: Pipel
   return {
     venue, capture: cap,
     frontageJudgement: cap.attempts.find((a) => a.judge)?.judge ?? {
-      showsEntrance: false, entranceConfidence: 0, framingUsable: false, frontageBareness: 0,
-      obstructions: [], surfaceAtEntrance: 'unknown', reject: true, reasons: ['no judgement'],
+      showsEntrance: false, entranceConfidence: 0, framingUsable: false, isVenueShopfront: false,
+      frontageBareness: 0, obstructions: [], surfaceAtEntrance: 'unknown', reject: true, reasons: ['no judgement'],
     },
     chosenProduct: '', composite: { imagePath: '', qa: { productFaithful: false, scalePlausible: false, perspectiveConsistent: false, shadowGrounded: false, buildingUnaltered: false, artifacts: [], score: 0, reject: true, reasons: [] }, regenerated: false },
     status, generatedAt: new Date().toISOString(),

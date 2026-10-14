@@ -156,26 +156,49 @@ endpoint gives the nearest panorama's own coordinates, `pano_id` and capture `da
 3. **Panorama distance gate** — if the nearest panorama is >60 m away, we don't trust it to show
    this venue and skip to fallback.
 
-### 3.2 When the imagery is wrong — fallback chain
+### 3.2 Shopfront-aware source selection (the key fix)
 
-Each candidate image is scored by the same judge (§2.3). We stop at the first image it accepts;
-otherwise:
+The naive version — "use the first Street View frame that shows a door" — fails on a real and
+common case: a venue's geocoded point can sit on the building centroid, so the derived heading
+points at a **side or secondary doorway** rather than the recognisable shopfront. The judge would
+pass it (it *is* a door), and we'd composite onto the wrong frontage.
 
-1. **Retry framing** — re-shoot at a wider **FOV 90°** in case the entrance was cropped.
-2. **Google Place Photos** — the venue's own / Google Business photos (first 3), judged in turn.
+So the judge is told the **venue name** and returns `isVenueShopfront` — *does this clearly show
+THIS venue's own storefront (its signage/window), as opposed to a generic doorway or a neighbour?*
+Selection then works like this:
+
+1. **Street View first.** If the frame clearly shows the venue's own shopfront
+   (`isVenueShopfront && framingUsable && !reject`), use it — Street View is the primary
+   "real street view" source and we stop here (cheapest path, no extra calls).
+2. **If Street View is ambiguous** (a plain/side doorway, no signage, or rejected), we re-shoot
+   once at a wider **FOV 90°**, and — crucially — **also evaluate the venue's Google Place
+   (Business) photos** and pick the **highest-scoring frontage across all sources**. A recognisable
+   Business photo of the real shopfront beats a Street View frame pointed at a blank side door.
+   This is exactly the brief's "fall back to Google Business photos when Street View doesn't
+   clearly show the entrance," with a sharper trigger than a hard reject.
 3. **Mapillary** — nearest free crowdsourced street-level image within an ~80 m bbox (optional
-   token).
+   token), only if nothing above is acceptable.
 
-If nothing is accepted, we keep the **best-scoring** attempt and mark it `ok:false`; the
-orchestrator then records `no-frontage`/`rejected-frontage` and moves on rather than shipping a
-bad capture.
+The frontage-clarity **score** is `framingUsable (0.4) + entranceConfidence×0.3 +
+isVenueShopfront (0.3)`, so a clear venue shopfront is worth most; ties break toward Street View to
+keep the authentic street view when a Business photo is only marginally better. If nothing is
+accepted we keep the **best-effort** attempt marked `ok:false` and the orchestrator records
+`rejected-frontage` rather than shipping a bad capture.
+
+**Worked example (Regency Cafe, Westminster, SW1P 4BY).** Street View heading 70° landed on a plain
+stone side doorway — the judge returned `isVenueShopfront:false` ("no signage identifying this as
+Regency Cafe; looks like a residential/office entrance") and rejected it. The pipeline then scored
+the Google Business photos, picked the one showing the famous black-tiled "REGENCY CAFE" corner
+shopfront (`isVenueShopfront:true`, score ~1.0), and correctly skipped the breakfast-plate photos.
 
 ### 3.3 Accept / reject bar for a framing
 
-A capture is usable iff the judge reports `showsEntrance = true` **and** `framingUsable = true`
-**and** `reject = false`. "Nearest panorama >60 m," "interior shot," "entrance occluded by
-vehicle/scaffolding," and "mostly road/sky" are explicit rejects. This is intentionally strict:
-a bad frontage guarantees a bad composite.
+A capture is usable iff the judge reports `showsEntrance = true`, `framingUsable = true`,
+`reject = false`, and the chosen image is the one with the **highest frontage-clarity score**
+(which rewards `isVenueShopfront`). "Nearest panorama >60 m," "interior/food shot," "entrance
+occluded by vehicle/scaffolding," "mostly road/sky," and "a door that isn't clearly this venue's
+shopfront" are explicit rejects/downweights. Intentionally strict: a bad or wrong frontage
+guarantees a bad composite.
 
 ---
 

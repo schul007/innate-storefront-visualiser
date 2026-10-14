@@ -45,6 +45,7 @@ export interface FrontageJudgement {
   showsEntrance: boolean;        // does the image clearly contain the street-facing entrance?
   entranceConfidence: number;    // 0..1
   framingUsable: boolean;        // entrance reasonably centred, not occluded/cropped/blurred
+  isVenueShopfront: boolean;     // does it clearly show THIS venue's own shopfront (signage/storefront), not a generic/secondary door?
   frontageBareness: number;      // 0..1  (1 = totally bare, high opportunity)
   obstructions: string[];        // e.g. ["scaffolding", "parked van", "A-board"]
   surfaceAtEntrance: string;     // "pavement" | "step" | "recessed" | "unknown"
