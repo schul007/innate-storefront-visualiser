@@ -1,0 +1,119 @@
+{
+  "venue": {
+    "placeId": "ChIJnwc1dZ8ddkgRzZ8re9FDtqs",
+    "name": "Artist Cafe",
+    "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
+    "postcode": "EC1V 9LA",
+    "lat": 51.5268551,
+    "lng": -0.0813578,
+    "types": [
+      "cafe",
+      "breakfast_restaurant",
+      "coffee_shop",
+      "food_store",
+      "store",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.8,
+    "userRatingCount": 516,
+    "businessStatus": "OPERATIONAL",
+    "photoNames": [
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMaf_S-1YOAy8SIMLHSOPvGGzOhl_2LjVm4dobrS9FntErxTrhCP6RTk8Am1GfFNJsYTlF_-Gv1Iuza8ZYnn-kTVeAQam2b1n_hIqc5GdokD2QCA18fGCNyMEHgS33xO1ODfZpFXM4qdOq4ClB56mPUU5xj3Z2puhxwLO1WTMABxFsnOasAohPtT3zkaSwd-KtMtuKPnL86KvCqxfTLCQF7ToJmOhvbBsYaG9hCOv91WO0aTl-XnJhVFjpQ7lEKweHVRafatCF8O0Nv7osvkTFsfJVO1H07nDP3g1Y88R__5k6Sw-RvCFUSgZmTvZD5Ex7Y5tLQr9UosFN9syPy2x77L-3X-i6Lg10s8fXFobjkdOQlDbUowwfolneRPQYVThh-6ACBbefaCCPmvuOuMEV16aGP2yw4",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMZDUDnKsESXC5oppxqbMyBwvjmDtDPnXqQS-H_0xiqOfGVvJnr3gtUa3Hm6dLjLEMGPiQ9pWpoNT2W40pxj4zSOvr5BRVs6Aqg2aAqcVYVZE6GBC4Jveh-8GsGcnG0b4FH3f8qe40_7FAioNjsqLNpv2avlQrnHZvYbOILJF8hewXoJ0wf-qgtggM0bvJE09-BTPIOeeAxsyLP0arNqm0QjNOFIStl9hZl00Bm-9sTIGt0c8VH5kvxyclWIBjPX3rMS9REJaruFmPf-nGAr8P8TYfLOZvtgsmhVWLtiWeqvHpvlLmfY9abMgKPmVMf0BJxerNn79lZ4AUkI7_9U3IlLzSXwck1Qck4_2cYcuE3FAr7yZQCH4mde2NQU2JG-IokWcBYqxuWYdtdenfw4cef6DUQ",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMbr8zia1dP9-NRzW4Tm4aYWK0e7izk4rsfbYZyQaGa2aZJ_u0jX6OwSlJO28iOpvI0y_E559-NPeI8zDwe81C6kQNU0Nyvjgu-lFTlkrh0dF7S25i8KmRdbv3RS0GARPF3Hud-ImB8zQ0IsNWVjWkithkBrx0l7YSkAMvo5cW9ZwbUWj-KcBcHZKh1vDRzXqUX5YHK2uGfwnUzLv-HPlLLbpqcLcZptf0L5LwXiO4DXaySrXC18RRfV58YBzWrqaTZW3iFKRjPpt0a_mkubgYaQ7RoqdnH_HTx2DjW_h_TUnZP-DcT4UgdbhOHSda_15p7CSOUZnM_QUSbuFhIO8o6Hd4eV0apz811b0dOALBeFNJR5kLmI_iaIPVSirUWhptGhR5RIjCGnABFp0N16U85Nf4bqGdd7skVNE6etID29KA",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMZz1oSXEn2l7chDiGfcZQ2Vah_DDH48iWtPNYBVxirO6zz7C4vb558H4NJYVcHyGVjajcnmjOopaxkq2h-jr_aSgVbKRiup9G7ui98hOJZN5GGuh-xoXqHpJ3cikeyuD8ZbSFlTbbB-lEkHpuFjFvbOBkEt9M6TEK-C0hv0S_jY9CW81ZPvfgPQUaQLxuAZGC-mn2STrQ9wNCU4l1CTWySEPqlmqZ9udjB5DwojK03mEUBuYfI2Cx2JtD5P8-anhJ2FIxYIVYTvlyCLHDM0iu_N1svmvtiWnUeg6bUN2laAC815Q94rQeELmSXypizWtXRxzZEJsW5v15GPTAmQbG729BeJmnQmI-q9OYvC-dK4zXtU12XGQP2drdvTZEar8nWox5Cpeq-cgUfKtgotvIun0w",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMZUejuKTMLasuO0gNXZsnAaCIzB7ZOgrvbzL1jcU2MMuejiYh-Car5DseDg1y4tg5_MvcuaGx8-CaBTB9OydpaS7LlRdJZCVlLs7-i8jjifE57VCOMrNVND-O7Ztd8YUMsyzz_Fbx8Luzns44kf3J8hMJkDNVFMJYVjafaoH6cWheqZAXa1Y7vSPJS-FXzvX_kQIWUj-lwzLXIYoalHMuoeHOh_Zu77dhTQIRW_0JLtLFSOtmDdcjJdoRed5_IPxsllzuu4ZJIluoWEu0h0r7wV2wztMqgJtn_uZ6VaP6Q3tt9ZBzjzaf6WI2zbtV2ooPiUk9OAmeqGDqxJRkvG-5We3x7JAg4S14JiNS-vxZK-RD5XRdPO35V_kTd20WBLl3yXbw3epklArwMVHHsLcwG21Z4d-XcoZ80H_pdwAazBow",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMZEH-wX5MDDHJy1CmnCy5pm9aZ7qIoZjVnc_0gl7SBTZSK0fccDSYw4cWKHb97tHsD2uV_EuZ51VzNHxPxdGAjOPIJIK0rLzLRrGiyx1nqZn_IsDRhzi5S0-Y2Lv1tbifZwHEByMzwTrcmUbjRfZ3Bwdl4oA0_DSUqza8omghICNds1m32QyzEOwO-XzQbr2oQp01YwAGJtJXVTf63iXKi9hpFY-M-M_hl2sx2ZBzx_puPlviG7KZqZuqURtKhl7MKLnrkm7ubunYKA1AFMBeVtJjsZoVRlOQdZccI2DcYiLyrBggUsyNkUye50ZifLA_1KiBsrhFvqkLizD0duYLExdetF2uKnA8WYnKgLpaW3TVggqi-CIZaelO9H1jBxUBNAhCCy97HC67f2tZOxQd7i2hrsfNCL9KvCjTxdNm_d",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMbVP55aOe7PjmbdKrJDB4l_3mqL7taY7lYJGeDUn833rH-PbmeMyEvp7NkN7oCodP839MgMSXxpGNQ7xMQfWlbOu2tOotnZWd26Q6UST83ruX4_E1KArgObZkMiR2xChrW_mhFq_nloxCVU-udxZru20qo6pf-IsjIeIaHynNNSHJty02Yn3UrfZWj6ORB9Gmb-_L0ZDrHCaEmj1W5WSTc1CytOZ2W2siVwG9ybgvJtIkFubh6tEXgW6dxeb9yeadkOOb6cdeuZexCtVjXcHi89cpwg3e81IjEftYCkOedI4S0jqtzjPRh_3qDDIsLy9fSPP02trCwcY3MtptSECUO966aPuBhsl8cXzOAZq_TYryC1PenBZzuaI818YVMWaCYtHnWcRlUL1X_SrOGHaGEoc9gQGgI",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMaBPS33wj_X0LcGny7y7VvtRt18k5NwpY6M68_q_epUKdnBZVIfxf8I4kwAGBHOYJUEbcO2iun9-X6UI8tUCpYu1_j0M3g2mg7Abn02kbh2LqRfm72POkJU-oTzhZrNfyAuIuiaT6JYDxaAXYTRsOomNUy1XJiS2vZmjS5Zlnoa2Jn5uUwtx9hvPsFpI_hNaDbcnPY0X6P85r7SV0rTCzPhf-c5FQN1SOLIQGZE3c0bF504CrVZCdKkc0y8EegaZ--agmqZOO5CuHfMjeRjaMcJgcdzwKkuwLn28-2Tp0iB5xWPLuc-VgNvWIVQtbBZUrEFN1sf8-38qq1Qvzmoy4oWLSQBFTsFZPjEJD7Op_or3vYv0rPMwbyVdVzF3ToB-G3qbgjHBdTYl2cRlilYMnAFxgnp",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMaE7A6ww6OxSMxX45zWGln26RNeDu0lDLZlWOAPf9mZkHbdbg8WTPXZqrYDQAUa07JxumBQAO4UUNh0cDgqfGGWtSEcsI_9dAnfcLBAAynPKs3Nqsj4dI_qP5ZMVUt_OGwxHQsq_boZG45OhWY1_yEQ1kiPe41XuXj9Zx92m57PPDHHYA1FmhoSR5I-qUd2H6Y8M8SCHPR23VD70jjKQgh8rBXnFs8AhHtltgMSIoJLrCBm1T7rHhJpxT-EMWQu7LJBnBHfNhucKWIhGfPoWr7chANwmUbyKfsqLvlD2AH1e99OAEq-1NYye4-9jItmkhJL5euNd8_EtQMQIe6UGdqlZapg7RmkWTtazLiomHWcndw0Sb6wlVs6mdJkBUjLukcrBA5avlVzSE2P8VzgDLCcChZFiJgizN6HjjU4jkKDfQ",
+      "places/ChIJnwc1dZ8ddkgRzZ8re9FDtqs/photos/Aa-ngMYOQKu8ucu_c1r5EIVugtEipiS2zB4QyXj1Z3RWq3RoJl4sT1IM0VhCI0_mJa7OFbTbr2b0LCIePdY3OkdGGlcAXJzSSIXwho2LkoVsovwYWJPcsJiae0de0fawGjBp7uBQ8c2l_7Igbv5FMdZeN7taSwhkzdNzG3wPsIO8jivDUDgFvzBGKBuSO6dmN2lF3Zd5EoQ9E4hJ7XA__uKftgq5BvnUD6QPT2SKWOv82N0p2PjZBeWhg7PpYj1f4RtWsWrVaurhXx_RbuI3R-NAQSCFxpuo6ZaNt5kPGa3p4wA-ldvtRjwW-0kDbR2WM1zGLKB83lZYyDzWZY9IiGOZ4Tdg4eP7xCCFezrGBU9LsjsAgaN0AvZggEmD8wBY6K83bjz8w-IHawGUgD6LM8L2OS5HDBATJzbWouPQvzcOen6RPQ"
+    ],
+    "website": "https://artistcafelondon.co.uk/"
+  },
+  "capture": {
+    "ok": true,
+    "source": "streetview",
+    "imagePath": "/Users/anshulgupta/Innate_task/results/venue-2/frontage_streetview_fov70.jpg",
+    "provenance": {
+      "panoId": "lYs4UgO8XAdEaqnvh_lJKw",
+      "captureDate": "2025-09",
+      "copyright": "© Google",
+      "panoDistanceMeters": 7
+    },
+    "attempts": [
+      {
+        "source": "streetview",
+        "params": {
+          "heading": 256,
+          "fov": 70,
+          "pitch": 6
+        },
+        "judge": {
+          "showsEntrance": true,
+          "entranceConfidence": 0.85,
+          "framingUsable": true,
+          "frontageBareness": 0.9,
+          "obstructions": [],
+          "surfaceAtEntrance": "pavement",
+          "recommendedProduct": "product-b-corten-tiered",
+          "placementHint": "On the wide pavement area in front of the corner section and flanking the main entrance windows",
+          "reject": false,
+          "reasons": [
+            "The venue entrance is clearly visible on a corner frontage with ample pavement space.",
+            "The ground level is completely bare and would benefit significantly from green planters.",
+            "The warm brick building and corner location make it ideal for the Corten Tiered Set."
+          ]
+        },
+        "outcome": "used",
+        "reason": "The venue entrance is clearly visible on a corner frontage with ample pavement space.; The ground level is completely bare and would benefit significantly from green planters.; The warm brick building and corner location make it ideal for the Corten Tiered Set."
+      }
+    ],
+    "heading": 256.17127273737026,
+    "fov": 70,
+    "pitch": 6
+  },
+  "frontageJudgement": {
+    "showsEntrance": true,
+    "entranceConfidence": 0.85,
+    "framingUsable": true,
+    "frontageBareness": 0.9,
+    "obstructions": [],
+    "surfaceAtEntrance": "pavement",
+    "recommendedProduct": "product-b-corten-tiered",
+    "placementHint": "On the wide pavement area in front of the corner section and flanking the main entrance windows",
+    "reject": false,
+    "reasons": [
+      "The venue entrance is clearly visible on a corner frontage with ample pavement space.",
+      "The ground level is completely bare and would benefit significantly from green planters.",
+      "The warm brick building and corner location make it ideal for the Corten Tiered Set."
+    ]
+  },
+  "chosenProduct": "product-b-corten-tiered",
+  "composite": {
+    "imagePath": "results/venue-2/after.png",
+    "qa": {
+      "productFaithful": true,
+      "scalePlausible": true,
+      "perspectiveConsistent": true,
+      "shadowGrounded": true,
+      "buildingUnaltered": true,
+      "artifacts": [
+        "Slight edge blending artifacts around the base of the taller planter where it meets the pavement."
+      ],
+      "score": 0.95,
+      "reject": false,
+      "reasons": [
+        "The product matches IMAGE 3 precisely in shape, material, and planting.",
+        "Scale and perspective are well aligned with the surrounding street environment.",
+        "The building facade remains unaltered from IMAGE 1."
+      ]
+    },
+    "regenerated": false
+  },
+  "status": "delivered",
+  "generatedAt": "2026-10-14T13:23:19.308Z"
+}

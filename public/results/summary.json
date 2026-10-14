@@ -1,0 +1,144 @@
+{
+  "generatedAt": "2026-10-14T13:24:10.073Z",
+  "targetCount": 3,
+  "deliveredCount": 3,
+  "venues": [
+    {
+      "slot": 1,
+      "name": "Small square cafe",
+      "address": "6 Ravey St, London EC2A 4QW, UK",
+      "postcode": "EC2A 4QW",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Small%20square%20cafe%206%20Ravey%20St%2C%20London%20EC2A%204QW%2C%20UK",
+      "product": "product-b-corten-tiered",
+      "productName": "Corten Tiered Set",
+      "source": "place-photo",
+      "bareness": 0.35,
+      "placement": "Place modular corten set to the side of the corner entrance to complement the warm wood signage and green facade.",
+      "qaScore": 0.85,
+      "regenerated": false,
+      "frontage": "results/venue-1/frontage.jpg",
+      "after": "results/venue-1/after.png",
+      "attempts": [
+        {
+          "source": "streetview",
+          "outcome": "rejected",
+          "reason": "Image does not show a venue entrance, only construction hoarding.; No usable shopfront or doorway visible."
+        },
+        {
+          "source": "streetview",
+          "outcome": "rejected",
+          "reason": "The image shows a construction hoarding and demolition site rather than a shop entrance.; No venue entrance or doorway is visible.; Unsuitable environment for placing retail planters."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "used",
+          "reason": "Clear view of corner entrance and shopfront; Pavement space available around the corner framing; Warm brick building and timber accents suit corten tiered set"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Artist Cafe",
+      "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
+      "postcode": "EC1V 9LA",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artist%20Cafe%20311%20Old%20St%2C%20Shoreditch%2C%20London%20EC1V%209LA%2C%20UK",
+      "product": "product-b-corten-tiered",
+      "productName": "Corten Tiered Set",
+      "source": "streetview",
+      "heading": 256.17127273737026,
+      "fov": 70,
+      "panoDate": "2025-09",
+      "bareness": 0.9,
+      "placement": "On the wide pavement area in front of the corner section and flanking the main entrance windows",
+      "qaScore": 0.95,
+      "regenerated": false,
+      "frontage": "results/venue-2/frontage.jpg",
+      "after": "results/venue-2/after.png",
+      "attempts": [
+        {
+          "source": "streetview",
+          "outcome": "used",
+          "reason": "The venue entrance is clearly visible on a corner frontage with ample pavement space.; The ground level is completely bare and would benefit significantly from green planters.; The warm brick building and corner location make it ideal for the Corten Tiered Set."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Kiss the Hippo Coffee Shoreditch",
+      "address": "145 City Rd, London EC1V 1AW, UK",
+      "postcode": "EC1V 1AW",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kiss%20the%20Hippo%20Coffee%20Shoreditch%20145%20City%20Rd%2C%20London%20EC1V%201AW%2C%20UK",
+      "product": "product-a-black-cylinder",
+      "productName": "Charcoal Cylinder",
+      "source": "place-photo",
+      "bareness": 0.9,
+      "placement": "Flanking the glass sliding doors on the available pavement space.",
+      "qaScore": 0.92,
+      "regenerated": true,
+      "frontage": "results/venue-3/frontage.jpg",
+      "after": "results/venue-3/after.png",
+      "attempts": [
+        {
+          "source": "streetview",
+          "outcome": "rejected",
+          "reason": "A large bus stop and advertising structure directly obscure the clear view of the venue entrance.; The camera angle is too far back and obstructed, making precise placement difficult."
+        },
+        {
+          "source": "streetview",
+          "outcome": "rejected",
+          "reason": "The image captures a wide street scene with a bus shelter and multiple buildings in the background, making it impossible to clearly identify or frame a specific venue entrance.; Significant street obstructions such as a bus shelter and a public bin block the ground-level view."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "used",
+          "reason": "Clear view of the entrance and surrounding pavement; Frontage at ground level is bare, providing good opportunity for planters; Modern dark shopfront suits the charcoal cylinder product"
+        }
+      ]
+    }
+  ],
+  "selectionLog": [
+    {
+      "name": "Vintage Café Shoreditch",
+      "address": "17 Cheshire St, London E2 6EH, UK",
+      "postcode": "E2 6EH",
+      "outcome": "rejected-frontage",
+      "detail": "frontage not bare enough (bareness 0.30): The venue entrance and windows are clearly visible.; Although there are tables and diners in front of the windows, there is usable pavement space at ground level for statement planters.",
+      "bareness": 0.3
+    },
+    {
+      "name": "Rise & Bloom - Shoreditch",
+      "address": "28 Hackney Rd, London E2 7DZ, UK",
+      "postcode": "E2 7DZ",
+      "outcome": "rejected-frontage",
+      "detail": "frontage not bare enough (bareness 0.30): The venue entrance and windows are clearly visible.; Although outdoor seating is present, there is usable pavement space at ground level.; The warm brick building and wide frontage suit the Corten tiered set well.",
+      "bareness": 0.3
+    },
+    {
+      "name": "Small square cafe",
+      "address": "6 Ravey St, London EC2A 4QW, UK",
+      "postcode": "EC2A 4QW",
+      "outcome": "delivered",
+      "detail": "delivered (QA score 0.85)",
+      "bareness": 0.35,
+      "product": "product-b-corten-tiered"
+    },
+    {
+      "name": "Artist Cafe",
+      "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
+      "postcode": "EC1V 9LA",
+      "outcome": "delivered",
+      "detail": "delivered (QA score 0.95)",
+      "bareness": 0.9,
+      "product": "product-b-corten-tiered"
+    },
+    {
+      "name": "Kiss the Hippo Coffee Shoreditch",
+      "address": "145 City Rd, London EC1V 1AW, UK",
+      "postcode": "EC1V 1AW",
+      "outcome": "delivered",
+      "detail": "delivered (QA score 0.92)",
+      "bareness": 0.9,
+      "product": "product-a-black-cylinder"
+    }
+  ]
+}

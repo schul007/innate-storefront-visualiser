@@ -110,12 +110,35 @@ rejects before a fallback or a skip is an expected, healthy outcome — we grade
 was automated, not that it was flawless. Every accept/reject is recorded in the **selection log**
 (shown on the site and in [`src/data/results.json`](src/data/results.json)).
 
-### 2.5 Selected venues
+### 2.5 Selected venues (from the committed run)
 
-> Populated automatically by `npm run pipeline`. After a run, the three delivered venues
-> (name · address · postcode · chosen product · why) appear in the **Selected venues** and
-> **What the pipeline decided** sections of the deployed site and in
-> [`src/data/results.json`](src/data/results.json). The run requires the Gemini key; see README.
+The three the pipeline **delivered** (full trail in [`src/data/results.json`](src/data/results.json)
+and on the deployed site):
+
+| Venue | Address | Postcode | Product chosen | Capture | QA |
+|---|---|---|---|---|---|
+| **Small square cafe** | 6 Ravey St, London | EC2A 4QW | Corten Tiered Set | Street View rejected ×2 (construction hoarding) → **Place Photo** fallback | 0.85 |
+| **Artist Cafe** | 311 Old St, Shoreditch | EC1V 9LA | Corten Tiered Set | **Street View** (heading 256°, Sep-2025 imagery), bareness 0.90 | 0.95 |
+| **Kiss the Hippo Coffee** | 145 City Rd, London | EC1V 1AW | Charcoal Cylinder | Street View rejected ×2 (bus shelter) → **Place Photo**, **regenerated ×1** | 0.92 |
+
+**Why these were picked:** each is an independent café with a genuinely bare/under-dressed
+ground-level frontage (bareness ≥ 0.35) and a clearly-framed entrance, and each composite cleared
+the QA gate. The product choice is the judge's per-frontage recommendation — the warm-brick corner
+frontages suited the rust-toned **Corten Tiered Set**; the dark modern **Charcoal Cylinder** suited
+Kiss the Hippo's glazed shopfront.
+
+**What it rejected, and why** (the selection is automated — these were never hand-filtered):
+
+| Venue | Reason |
+|---|---|
+| Vintage Café Shoreditch (17 Cheshire St, E2 6EH) | Frontage **not bare enough** — bareness 0.30; existing outdoor tables/diners already dress the entrance. |
+| Rise & Bloom, Shoreditch (28 Hackney Rd, E2 7DZ) | Frontage **not bare enough** — bareness 0.30; existing outdoor seating. |
+
+Two of the three delivered venues also show the **capture fallback working for real**: when Street
+View showed a construction hoarding or a bus shelter instead of the doorway, the judge rejected it
+and the pipeline fell back to the venue's Google Business photo — exactly the "one or two rejects
+before falling back" behaviour the brief describes. One output also triggered a **single
+regenerate** after the first QA pass flagged a weak contact shadow.
 
 ---
 

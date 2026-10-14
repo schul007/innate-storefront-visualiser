@@ -1,0 +1,174 @@
+{
+  "venue": {
+    "placeId": "ChIJqedLGGYddkgRaCsKMTNWKqk",
+    "name": "Kiss the Hippo Coffee Shoreditch",
+    "address": "145 City Rd, London EC1V 1AW, UK",
+    "postcode": "EC1V 1AW",
+    "lat": 51.527137700000004,
+    "lng": -0.08821169999999999,
+    "types": [
+      "coffee_shop",
+      "cafe",
+      "food_store",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.7,
+    "userRatingCount": 516,
+    "businessStatus": "OPERATIONAL",
+    "photoNames": [
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMa53kjVtdjf7sjHaBdaHxIi2XGHJvDFE8h2hLSnIuUHZGH9NDQRN3i21kfEBlryM8UJfnii-Az0pKR6kt1t26YqvJKQqEW0I9-MRj-dP419BPsYRLSSVpywR_x407yR3_GKXlF5qRPUNDAskLGzvOIOw1hy8S5Py6kuXt8kD9OC_6moqCyTG9etLj194f32Ca6U5qXw7hNFJzUmRR5uN-aDz_1QRVvpgM83a2etYsYB42UGCY2zVNDGfQSyJt4Fyf3dKAPWeC6jtwC78Wd6Ir2_TD6VrTSFCaD2xTD0YgD355U2auOa8R1sg5Hkw2TtyN-wenGMioFDGCehdw35dAOi0dQfsJIXygsieI9NGk7yJjj9g83roBz0cT3sZheuBWifjj4uSJWm7gzeztPvpaw6sld7u59qEfjYwUAJYtuJrQ",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMYuLtiIh7_5kS-BWvU7QYrIbkLqf4AzXg8uN2lAoSs4D7aaMhFvbeRUAvxsDh-OsYlbGUsoP7thjzNuCAOExi9cCQdeA-gsSX7bb4H_Uyxn3ivnAHLz8RG7gg8Oz2Mf0dURSe3aKJTPo9Fx-h6ygzZMCx-fyDtgApOEkOJTgauFHbg-MFAB2DviYbaniBF5E2AiKDpGaKRVYvVWIsnnNxIWoE5rhpJ1YcdVsyHD0z4QS0mUqjxX3UWIqyvmQLIK5vri32JeF0VfOR7CiqulAKEWFRWnTB5NRdip91a-OkMmTvP_Kf047fIn4lIz024-GGOuorqSxq6MtQignNOC_0ghDmHirqIkh5LwvcOwIqqekJAnhMF433yYBTUbNwHBdpejuS7731oqyizwzhvG2rDnZcVq1EHTa6hgoRiiXZdF",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMbijJn6O8j0p5NjFuBIrgYZ8ht8MJ_9WZE8iIhIa6UirGHaxSppQwdL_HuA0CbeofH8pHm5I1GkcjibuTiu9x-djm_AMz0KwxFbaKQiKYogxcDrwSrCttPV75fITnbpCtcNzrkIymDht-wHvLXdkv7x4BLRqEzCsqiGKm7hgX7tuARVbpzrKKkt31X9t3l139PKQ0yCr-JHlcouItRMQcTcUKF3Aol_MINAtaPBGz65fBo2U6spj17cmSvMfg7Ji0gKKkxlqfNPEPxRPvDvB_HZR2kRIRnWNDYfnx9Acp4NBzTub58qw-ZLlINZPHCcws9xx1N746ohoTAeF8Tcm5v69QK_lYdeBDxUIbktmHwQGToB3MWziMS-MW9dvMmPoUun2EqdsdkZ8NVHL_wUV59g2F--C5EA0dfptgoSsbPJQA",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMZ_FPFlG8JxdOwW4SjdkRkLBcP66BnxGXUqKBkRtYs5m61RHJMeFcwvpoagJFIPEXF941pqmIAAnwz-YW__CUC6Az71ji-X4KVPKnArGbCo0TkdD33FblH--rol64TwDjvHx1f_PKAt1Ll3yNlKZpsVkHVcdWLjBT5FpU2wfFCMFM2Hc8rYvPEgHaqL3cMcNthvjCPW_5lGRrJ2OA3wnxyhmeDh2uA1xHuMV5NSJUuCcqz-2KxJmWv0i_2v-swO4612S8o0jfPYNPp2j1u32MUBh0T6ECWjIw4cv3Ni8fSa4DkzUqOGqNklTJuOPNhjll7GstFHH7EWaDfs4XaFqoD0mSbGpeT0w229g4HUiXVZNOZsZaxtGQuiOJwd_Cupqo2buEKaJacT_0KCUVo-HyyrmNms1ciNb6b7CaFAg3P79w",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMYiBfVKCMIGeAxzZ7p2OrHywThmC6lrDR5V0zHCQkLNNaOZULqGtUQDls1JPo6IJzMqelliv0n7nXWQI_jyrt-wIYjfmI86L_0c5ndprRhGL_YDErSTUL8zSwaTgzfAwFHDI_5rTRZmm6t6kJv_zRiDvB6cWaCGF-Rd6bxjoSTv8VepVo7MR8eia1XIY0OvHSod__bfcsIUO5apCKFf5_BlYOY0f60sVBsmdRGmrvexvYJn57KItemAEDhYTZihhpV2uT_nT4ZgpHisALEdQ6af8CNuiOHJEjjDasj3IXZ-xd_dYtdBat7oc9mVX2cSEw9mol8r4mSeCTchE1PsbdZjmy7OPyUq88kkpHVVHlPapuAASmPPJx8kY-sCL6DyfHO0AtUipn6RlGAQwYIscL7hK3zGDIJSBA8ivHSFCH4_XA",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMaOczsktBL_MrU4TSBi3OIvIBqWcTHzd3P5FhP5IpviEYCXjZ1zvWrhdv9MEZq5Qt5YjCwLTWaihX-neITCwFg_Epu1czIbXdqlh8sG3YgFzu1UPPamcVT2nknS1lA4a7l0ssdAQ2enHqNBp526jPeL7JKyRCbi5daSIB7sUjh6qWRSN9Z9w9OtTRzlLO37B97lfAbQi2mA26ZMqyG6lC-x_U1Hh1F5k6XLddeAjK74_FaLwxLzJ7EpRMX30cjeK_Dz4iZIQfLzJdUJBP5PtpGii-vxNCdkeIjiFEO7gb8KkdDm7x94L5lsJj1KCGbqznxpNKY6wjEGvXBYyip9e-P69cJ86eZfKdcC5oIyREcTwe4f0iYN0yiItZtesoy7gblQhFcMDtDNh3CjsQy1apJjuFt4CbbnpmcGJiWMuuUC",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMZG-4QrvoJ85fWG11NJF5TXEQIsUAQcSQmmMm8cMQlSnXNnglSKeof17VXKuasv2TFY4adt3Ajm2ZqvpiV7u8ezr_7RUTOzxpeCseoiwyJugUgqMeh1fZpilWbYcRarvJ3S0bOiL2DH-OjIEWVwhdqmbEcI4xu74eSLYgbKClVM4Wa7VtN6_uwZO3fRosfyGocPs8-_5zsWFLL4NyM58x4_ND100qwiMioihmiJFaE5pNeE6s_B-dyxj2SD-PswU7NKjYwJtuOvw3NVLP36QAD41gcU4bLZw1lrluVJUIruUh6JLqFe6r5crh1EsDthZFv-3kua0Fsuwfvo2q_CueBXDjuVUTgYyPfbxUXd-5p4Zg4I4-7wo6ANgmtGdZgH1nv2loC_Bru5ybtNtQm3epqDfJ6hdtc43kwd9sgci-ovLg",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMb-8i-yoQ29k6I1tYl_2mNqa46AEuHpJb_GekKZKCDxNbNS2tBxmr7G-EfPI6TQO3RsGeoqcSHvxRctcvDaYQFfKQThQ-T_VB6F6IaXgnR1aFsZTeyDyYm-ZrsRVVKSenNqQ7hjR6cSkgzRVmxWeitomon-_iEp7vqKpA0MaEQegdY3Oj7aWY7D1vcEAcyzU8qfmwgGYbfsNh-ZM0xcpQhJE1hcHJTVDU0mGSzVuNFqirkZoNp6v71CKpnS79w1eoshU27Rs8ObDc2dcXK1sKwHmz2HGChCU9-7OIrsl7I6IFDrmJvB8uBxLCJfwcLmbmtUqjtShV4UCItbj1tB86kZ19ZsUH-YJij9TlbvKyA-eIMLzZGOODW6lpuAJ0ILK30dPvgyCnztQZJPH4GFzru8ONBJSsiyDKTwVShFqyz6",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMZmxQjVw58qr569meJv7lqf9wOtxZHZNPbThwx53mBnGzUKpzc8LJmpTJVHwUoCxCSYfKdsfIKyB5TSFcyXzdAEsPQaOOQpMGUnhb6mhWr1p3jy4ap4n56d9ZDoB2ZkpdIsJPi4eej8hr8fRud4zk_20F1PaHVXFCjhE4vifYrfpkCHQU2OND53M4tSvNSblMpNY5oRvx2gK7Jq8vi1n_SwtEr_ERH6r9gE16bpvETCLM036YDwolPcvxF1-Cbcfdg_rYYzKb2_M4gpaM-BJhTfSEgLc7AqGA4oA_EekyiyMjI1ljyiJUI2Kvot-jvbMJF_th9_y1Aj8zRUq2r5eBJ3QWtPYGAivMfkWnaKyfnDOswV5wVUPbdwgHwsoC7ljidMq0bOqwAz0vmTgbLILM5BcV4gKSO1RxIdaL5YPY6qFg",
+      "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMZj8mGZY0NgPduOgVoI5r6YbLO7WvdnHgiW6x0En6fzS52_5uxLwaBXqSwKsgdAwEnfsj3KaTfaM9aIfUKJiwrxOjMg6moIKKn1bE-uLMWUr7PaHbUYBf6466MNAjsJlpxxZ0zJn_4uqBMuPYKNjHmGuDxYYScZDVIVhYweZzEKYMJ399Y1hmxsL0iM_C4N8ko1DTqq0l2joYw5hnc3V1sDNY2561_rKoUoEIuUQwUBrH8xa4qdmQzuskhO41bxRgPXvsJZEVHGbeIxSgIZu8CBJUjjtfbbEBVd9L6_OKa5s1-raTEcF52Qx6Xt7tPoWTWd9iLN7OG1LKWUY7EaPl27e0E6kRFF4PKBOIRkawHmPCsy046VXQldVFsdK0aGOHGC_rHWOLBtl3rmGTH2nKpn0U3YIWtuKBO-G52545bEkA"
+    ],
+    "website": "http://www.kissthehippo.com/"
+  },
+  "capture": {
+    "ok": true,
+    "source": "place-photo",
+    "imagePath": "/Users/anshulgupta/Innate_task/results/venue-3/frontage_placephoto_0.jpg",
+    "provenance": {
+      "photoName": "places/ChIJqedLGGYddkgRaCsKMTNWKqk/photos/Aa-ngMa53kjVtdjf7sjHaBdaHxIi2XGHJvDFE8h2hLSnIuUHZGH9NDQRN3i21kfEBlryM8UJfnii-Az0pKR6kt1t26YqvJKQqEW0I9-MRj-dP419BPsYRLSSVpywR_x407yR3_GKXlF5qRPUNDAskLGzvOIOw1hy8S5Py6kuXt8kD9OC_6moqCyTG9etLj194f32Ca6U5qXw7hNFJzUmRR5uN-aDz_1QRVvpgM83a2etYsYB42UGCY2zVNDGfQSyJt4Fyf3dKAPWeC6jtwC78Wd6Ir2_TD6VrTSFCaD2xTD0YgD355U2auOa8R1sg5Hkw2TtyN-wenGMioFDGCehdw35dAOi0dQfsJIXygsieI9NGk7yJjj9g83roBz0cT3sZheuBWifjj4uSJWm7gzeztPvpaw6sld7u59qEfjYwUAJYtuJrQ"
+    },
+    "attempts": [
+      {
+        "source": "streetview",
+        "params": {
+          "heading": 27,
+          "fov": 70,
+          "pitch": 6
+        },
+        "judge": {
+          "showsEntrance": true,
+          "entranceConfidence": 0.45,
+          "framingUsable": false,
+          "frontageBareness": 0.8,
+          "obstructions": [
+            "bus-stop"
+          ],
+          "surfaceAtEntrance": "step",
+          "recommendedProduct": "product-a-black-cylinder",
+          "placementHint": "Base of the steps to the left or right of the entrance",
+          "reject": true,
+          "reasons": [
+            "A large bus stop and advertising structure directly obscure the clear view of the venue entrance.",
+            "The camera angle is too far back and obstructed, making precise placement difficult."
+          ]
+        },
+        "outcome": "rejected",
+        "reason": "A large bus stop and advertising structure directly obscure the clear view of the venue entrance.; The camera angle is too far back and obstructed, making precise placement difficult."
+      },
+      {
+        "source": "streetview",
+        "params": {
+          "heading": 27,
+          "fov": 90,
+          "pitch": 6
+        },
+        "judge": {
+          "showsEntrance": false,
+          "entranceConfidence": 0.2,
+          "framingUsable": false,
+          "frontageBareness": 0.8,
+          "obstructions": [
+            "bus shelter",
+            "bin",
+            "bags of rubbish",
+            "distance from buildings"
+          ],
+          "surfaceAtEntrance": "unknown",
+          "recommendedProduct": "product-a-black-cylinder",
+          "placementHint": "none",
+          "reject": true,
+          "reasons": [
+            "The image captures a wide street scene with a bus shelter and multiple buildings in the background, making it impossible to clearly identify or frame a specific venue entrance.",
+            "Significant street obstructions such as a bus shelter and a public bin block the ground-level view."
+          ]
+        },
+        "outcome": "rejected",
+        "reason": "The image captures a wide street scene with a bus shelter and multiple buildings in the background, making it impossible to clearly identify or frame a specific venue entrance.; Significant street obstructions such as a bus shelter and a public bin block the ground-level view."
+      },
+      {
+        "source": "place-photo",
+        "params": {
+          "photoIndex": 0
+        },
+        "judge": {
+          "showsEntrance": true,
+          "entranceConfidence": 0.85,
+          "framingUsable": true,
+          "frontageBareness": 0.9,
+          "obstructions": [
+            "glass reflection/smudge",
+            "A-board sign"
+          ],
+          "surfaceAtEntrance": "pavement",
+          "recommendedProduct": "product-a-black-cylinder",
+          "placementHint": "Flanking the glass sliding doors on the available pavement space.",
+          "reject": false,
+          "reasons": [
+            "Clear view of the entrance and surrounding pavement",
+            "Frontage at ground level is bare, providing good opportunity for planters",
+            "Modern dark shopfront suits the charcoal cylinder product"
+          ]
+        },
+        "outcome": "used",
+        "reason": "Clear view of the entrance and surrounding pavement; Frontage at ground level is bare, providing good opportunity for planters; Modern dark shopfront suits the charcoal cylinder product"
+      }
+    ]
+  },
+  "frontageJudgement": {
+    "showsEntrance": true,
+    "entranceConfidence": 0.85,
+    "framingUsable": true,
+    "frontageBareness": 0.9,
+    "obstructions": [
+      "glass reflection/smudge",
+      "A-board sign"
+    ],
+    "surfaceAtEntrance": "pavement",
+    "recommendedProduct": "product-a-black-cylinder",
+    "placementHint": "Flanking the glass sliding doors on the available pavement space.",
+    "reject": false,
+    "reasons": [
+      "Clear view of the entrance and surrounding pavement",
+      "Frontage at ground level is bare, providing good opportunity for planters",
+      "Modern dark shopfront suits the charcoal cylinder product"
+    ]
+  },
+  "chosenProduct": "product-a-black-cylinder",
+  "composite": {
+    "imagePath": "results/venue-3/after.png",
+    "qa": {
+      "productFaithful": true,
+      "scalePlausible": true,
+      "perspectiveConsistent": true,
+      "shadowGrounded": true,
+      "buildingUnaltered": true,
+      "artifacts": [
+        "Slightly soft contact shadow beneath the base of the planter",
+        "Foliage edges slightly blended compared to original product photo"
+      ],
+      "score": 0.92,
+      "reject": false,
+      "reasons": [
+        "The composite accurately places the charcoal cylindrical planter matching IMAGE 3 in shape, color, and foliage composition.",
+        "Scale is very believable relative to the storefront door and surroundings.",
+        "Perspective and ground placement look natural.",
+        "Building facade remains entirely unaltered."
+      ]
+    },
+    "regenerated": true
+  },
+  "status": "delivered",
+  "generatedAt": "2026-10-14T13:24:10.071Z"
+}

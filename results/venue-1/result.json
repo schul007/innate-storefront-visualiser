@@ -1,0 +1,169 @@
+{
+  "venue": {
+    "placeId": "ChIJFXsgIdoddkgRjytvD-5Z49E",
+    "name": "Small square cafe",
+    "address": "6 Ravey St, London EC2A 4QW, UK",
+    "postcode": "EC2A 4QW",
+    "lat": 51.524825799999995,
+    "lng": -0.08219159999999999,
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.9,
+    "userRatingCount": 489,
+    "businessStatus": "OPERATIONAL",
+    "photoNames": [
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMZg7-M2fb1QywNTleNHXENu0_VCc2nGRM4_M9297p8LcVi9IAfUsZI-ADb8Y37o5J2DgBJy6j-vFHazdL9kL096gZVRSUn1ryi8-ZCxqf0rOrQeOrYer4KvGdSLCfyb9_hhH-5amIP3eqxzUzrs9rBShJ1p9ecRG-43AjNnEluN1g42Xn-6YmX3LjOl2VXL7-0WJ61m_LRnJpCR0kurmtTdWrkkacYyEn0Vfy4EH6R-ulMpzm_-XVc7nWBSefLyj67v5cJ5R9MUZWd05nB3Kbi3CMebTrk3Kuw52BxqAW22r8oZJ5CMOsJckVc_bC7HkqCeXVzm_oUA7-IBskOyxGgdTokQingiVjUhHrjXwFExziEWjYXMrijj_LkRF4hvXqyUSrgNayA5hlTynTR8t0N3cHQ",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMZj-mvyr0RL3Dc9EJfDOAbmw7C2sfCw3i35si26KXsGE5eBSs7dvZO6pJVIEaSaL7PdM1ahEbcw6fx952-_Vc17lhcwXuoeav2_pUKQksjlJ8XMPdB36nx7BkcopiPjTIJy1h7oPMatklOv1K7ouR1JeygJvQGKa12B_ou8wEzauDP6F98CQQfJe8Om7WWTvLrQk10KM3kOay9-cLt4FopAiHE2tHWCUMMfYjwyccHn3AmK6ezFWMTLmkC3zOUau2ylgcjQI1Vbh5_pzFLCX4nZ_SzwYmRlo8DogSsyE07Pq3k3CEKHM_wSIb75MaF0TzsDuqf9n_9KFCCn3bkgIzpjpOYNqkFZUMcsk62wFZ1nPPL9arLK7WEkIyY3et_QdfbfrkynKp960J1M-YoPj5O88iABWxxbXlV55MP9m8Yh",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMbInJYVY1NAsqsuSvtuM9YxU307ngFEvyLj5buzcOaBGmUzJdpLzF0_3tcadJFiuwiMiAbjrZSKglIZ7SZbLzSqM8xQaWBTezaEfyPcikUctSIcYx294oFvZoFu0m6v8U48TvpoPgcpgWLm5BejvTt7fsFscs0TB7_heuGfqrsTRNY7NlLPHik77o_aXLroBgYdkeHqbUxQDCFsYI9QyVhsZhrF4JGysH2L-oMCaiOZOjt95qLjrLSyYbLNUzz9g2nEt2q-s9kkhTkCX1SlzlRXHTA8TnNCxa71BhNEdybr6PIKIljI1AxL4SqYrVTECuQgt_UKP3GIXIYFYNq7oXr6lj-2w1ztnZAKbHCDRBb2H8jLQSpcmkHfSIcpgFDDhBw2e_A6TN9g9HPY7wOYTkAl82ox8saswLOOH3erWKBVWA",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMYdZLlKVjE8vMS_3HPxPHxjUaIOr_yJkWz4f_28o_s_OWYFOPUkh361SjPcny4sDPeV1RQxD-QZ2-C10_vRt4s037ZCJ2fBGE5jfvH9Jytet8zkXGy5fBBZAj7N8xxII8Te0CqVtxsq7l5cCWvHdgJwGU-1HTuUXszLmPKHDOOUtixmWyEg_UmJSXkk3INo7Q4CO4iyLTFP14qqEyW4ktTjBdXhyZ0p772J44a1Ktxlrhp4qjCaQCTy_1TH1jo2nrMlj_qcXEHFvo7Z37uV1sVUNb9WlXUQEQOWx5UsIsU51mJnUuH41FVZoe7N7aTmEAaDkc6mFsM1W-8-RQHOlfq2rayjHQZbbipNWjmXOwO-aolaPydGmCoBL4tMJ4tR3pnll0CSSuPMW3U6b39j_Kr7eI6oeiHAC7Sh7T9pCoM9pQ",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMZN0YCwOxJJjca9XwAICdsSsGMWH7aoZfcsvoIRvJXydjDEpvdxZTom1QT72APCRyVAMiOd9EZChwSXwU3xH7jMm5TU8kRgtvhUXQMvhKdXqzoJeR6VF9JbVG2dyUrwFtW930MhqoIbvfEhJC0mcHLipTU17YB51btV7Am49kz3os_yso5SRmsoBwJkctsCdNSp_zAS1w-AqJUlRnD-RlAeCOhS9W9_YKHekVMr3CKrjeQLr4Mf-iDYAeNwsKBBBq_M_LOQkQHz3ZPnchUkJP3KuL8o796Ral7kRMwfAjCG5EZPKAL0O6qvxlAXo9eu41n-gNkQD1ykK3LJ7UZRZnjUsT_ker1jIsOqCrt3Io4H0FUh50_LUGt9xluXs3tC1vF-_ldzajHc-Ys9M2w6VvbTZtIqeR69lKAdn26v7Z3NOw",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMbb1CzO8yGM06NrV-Cf7OhXJ2rQkIV5hAcLLag9zk6oOyfmJLtPYPTk_09Bdod2z3zhtlW3_jP4lsUAe_H4WMnL49e0IE1AwxnUHpNh8iAVy9Y7MHd6zVEeAhM-urY1akXwdaOlTab3x-QXX3DRqenkqow5TL3N-jrea_12at8SylPzis4qOLOmzRjNllCt0fnPycppnlhFeqfH3c0Tz2HpnFlKKetYjanQfyKhI2OOf2QfpAksTW0-8TU2IYf8qjefQB48YopDwBKvI-85SQL4nHP1tD3CTS2hiF3BsWD7EQXn3GrSpvDUXwCLIbtCPEcbrXD6yoakUHSZIB9vBcxHzZNF6WK1M_yUVtSbX4C8YMyJ7-lUvqcfSg2maGY_PY2PtjlEZEvv4R4rIeqO--oP7zWYTZ04pAwtbKW-H-wt",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMbZmY5XZllZz3LNgyB4JXjdyXc8TL5Oncc5LcQelwgSMC5OtkfPtXwBn9xhUAqPAQq81EVL-Eki5Y8E9lel0KzdBuUgXoudFl4W06X-UACZLCT7jP1c3XW4hqYd8xmusUe3zspl7sHoSnaVcEhMGh3i7uWlabsvodXsyrB7-5U9oL3p-Lu37xWi1r08Uc0_AAxNeCWjxPzYFg3FHRlIYFl9QICkVAQJpHfyXD_Y5jW--4V9U8Y4sH9MAuiFYhPVgWDpDjf0QO3s1BKGV4RKTFe4NJLZpzKPNQuKsvCLuve5j6wofdohQBQrxPORcHjykOv_0pOYxKDM2yce3EEG4Tw2-RY3XFejmQW79fP7vAqcf0j6Vc-R-CTW7W6xF9g_kGP6mQ39W0G4Ct8ozVDF_LohePxm4EMP8QtaO4tlt4-jOQ",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMZvzUxEEElz4kGH_vBxRnxxFZTxRbIVpsmo2LosP3v10_I2tFuz4sgkl5GP44BjtnQJQ7EldaPULHm_9vXNNQo8HJrud0QWIvwgrVl9K2LVw2W3H7uVxIa46RYTCoCFW7dDJVrJNhXd79kuw4HH9Z4B2LgPlnhmzppSZm59DIZ8ziHCcyRlrKfmBuc1QsqlVQEL--3e_S0zGr9yIXO9LiZt1XnoL-IbvZPCSJsZh7XVlENdVzrlzliAnvdUEPNGuYLvVe0qgurN3xlOL1dLaPQeJdi5WqM_EBi4HZmNyohA9sJcxLES50U_ijTXUpGFLysuo_ln0fxfUzsKf4-dl8mat3I8wgVOXJOqA94dBG1aoACiPdRcFPLqZJd9uuAXH9UImH-aKakqYiPvpVu96zV8WEu65qc",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMbuTf_xMgvS8mk8blyixmdMY8Z9G9pWWFZcfNLJV59y4RkTNDbJnXS7-SqtkmWaxBCymJc01SFDoim4avnr585byiUR7EmL0AbMblFxhM2_yH4zyrfe6Dgy5MhoC73HII1h6sKLOjeX2oJzU29eE0H1qAYmYzuI14FR7CJNb2ysHC094vS34DZ5tUackOe4CEzUfnuVmjcyz59W5DN6bjv9AO1Vd-OEM3W-amBwZPDa4dRHlUNQHgRm5-yKZVv4RYkll1hcCp96i7euB95q6gZhpvjV60t1V7SQz6WpGgArgPoeltg2gmndQccbbpQKlCnZNEwuGd6ha-YEKIxNC6WJ_NdVXofiGJyk7rCCZsvvgOm7bZNvKYlH4p6Ahr7fRG2ldOzRk7BMaXVstEC6xXutjA",
+      "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMbSRB46_-0RGDexH42M4pb5qIKtvpAdxsIv67xG4Wk_k0BcVxOJNXoDBGxPQOA4tOlSHif_AGM-dxcuaIOAE1tCGMHfeDyMPmnd4qtuhPDoIMez8MvikjV_nUYD47pncFavcRYdd-izu3p0OkkDmuBz8N8wxvZbnwvrxuFipnfPlmzi9KvjlTQ6bOaAvdHZCH8YPxDQzilhiYSApBAw_6QY2MJKU3H-e95pd7RjRS1e76EOPz2_otzU-SLriY3yE4p_kxiBMfFPYPg6o_LjV1kWGswnoKCiNaUXbVqiMKQ59aXHuqb9QFj2k6UL-huvHeQhsqfKPU9knmBXAmpASx4obCdu62Csn8pPZb8vQs50GMW1w4cjb94ci07BETSCTox-0twMeXqtLOy3ajcCl0LUp5hD9_w49X4liugc8oa9eQ"
+    ]
+  },
+  "capture": {
+    "ok": true,
+    "source": "place-photo",
+    "imagePath": "/Users/anshulgupta/Innate_task/results/venue-1/frontage_placephoto_0.jpg",
+    "provenance": {
+      "photoName": "places/ChIJFXsgIdoddkgRjytvD-5Z49E/photos/Aa-ngMZg7-M2fb1QywNTleNHXENu0_VCc2nGRM4_M9297p8LcVi9IAfUsZI-ADb8Y37o5J2DgBJy6j-vFHazdL9kL096gZVRSUn1ryi8-ZCxqf0rOrQeOrYer4KvGdSLCfyb9_hhH-5amIP3eqxzUzrs9rBShJ1p9ecRG-43AjNnEluN1g42Xn-6YmX3LjOl2VXL7-0WJ61m_LRnJpCR0kurmtTdWrkkacYyEn0Vfy4EH6R-ulMpzm_-XVc7nWBSefLyj67v5cJ5R9MUZWd05nB3Kbi3CMebTrk3Kuw52BxqAW22r8oZJ5CMOsJckVc_bC7HkqCeXVzm_oUA7-IBskOyxGgdTokQingiVjUhHrjXwFExziEWjYXMrijj_LkRF4hvXqyUSrgNayA5hlTynTR8t0N3cHQ"
+    },
+    "attempts": [
+      {
+        "source": "streetview",
+        "params": {
+          "heading": 337,
+          "fov": 70,
+          "pitch": 6
+        },
+        "judge": {
+          "showsEntrance": false,
+          "entranceConfidence": 0,
+          "framingUsable": false,
+          "frontageBareness": 0,
+          "obstructions": [
+            "construction hoarding",
+            "building site"
+          ],
+          "surfaceAtEntrance": "unknown",
+          "recommendedProduct": "product-a-black-cylinder",
+          "placementHint": "none",
+          "reject": true,
+          "reasons": [
+            "Image does not show a venue entrance, only construction hoarding.",
+            "No usable shopfront or doorway visible."
+          ]
+        },
+        "outcome": "rejected",
+        "reason": "Image does not show a venue entrance, only construction hoarding.; No usable shopfront or doorway visible."
+      },
+      {
+        "source": "streetview",
+        "params": {
+          "heading": 337,
+          "fov": 90,
+          "pitch": 6
+        },
+        "judge": {
+          "showsEntrance": false,
+          "entranceConfidence": 0,
+          "framingUsable": false,
+          "frontageBareness": 1,
+          "obstructions": [
+            "construction hoarding",
+            "scaffolding",
+            "demolition site"
+          ],
+          "surfaceAtEntrance": "unknown",
+          "recommendedProduct": "product-a-black-cylinder",
+          "placementHint": "none",
+          "reject": true,
+          "reasons": [
+            "The image shows a construction hoarding and demolition site rather than a shop entrance.",
+            "No venue entrance or doorway is visible.",
+            "Unsuitable environment for placing retail planters."
+          ]
+        },
+        "outcome": "rejected",
+        "reason": "The image shows a construction hoarding and demolition site rather than a shop entrance.; No venue entrance or doorway is visible.; Unsuitable environment for placing retail planters."
+      },
+      {
+        "source": "place-photo",
+        "params": {
+          "photoIndex": 0
+        },
+        "judge": {
+          "showsEntrance": true,
+          "entranceConfidence": 0.98,
+          "framingUsable": true,
+          "frontageBareness": 0.35,
+          "obstructions": [
+            "bollard near entrance"
+          ],
+          "surfaceAtEntrance": "pavement",
+          "recommendedProduct": "product-b-corten-tiered",
+          "placementHint": "Place modular corten set to the side of the corner entrance to complement the warm wood signage and green facade.",
+          "reject": false,
+          "reasons": [
+            "Clear view of corner entrance and shopfront",
+            "Pavement space available around the corner framing",
+            "Warm brick building and timber accents suit corten tiered set"
+          ]
+        },
+        "outcome": "used",
+        "reason": "Clear view of corner entrance and shopfront; Pavement space available around the corner framing; Warm brick building and timber accents suit corten tiered set"
+      }
+    ]
+  },
+  "frontageJudgement": {
+    "showsEntrance": true,
+    "entranceConfidence": 0.98,
+    "framingUsable": true,
+    "frontageBareness": 0.35,
+    "obstructions": [
+      "bollard near entrance"
+    ],
+    "surfaceAtEntrance": "pavement",
+    "recommendedProduct": "product-b-corten-tiered",
+    "placementHint": "Place modular corten set to the side of the corner entrance to complement the warm wood signage and green facade.",
+    "reject": false,
+    "reasons": [
+      "Clear view of corner entrance and shopfront",
+      "Pavement space available around the corner framing",
+      "Warm brick building and timber accents suit corten tiered set"
+    ]
+  },
+  "chosenProduct": "product-b-corten-tiered",
+  "composite": {
+    "imagePath": "results/venue-1/after.png",
+    "qa": {
+      "productFaithful": true,
+      "scalePlausible": true,
+      "perspectiveConsistent": true,
+      "shadowGrounded": false,
+      "buildingUnaltered": true,
+      "artifacts": [
+        "Lack of proper contact shadows underneath the planters makes them look slightly floating or pasted on the pavement.",
+        "Slight lighting mismatch between the ambient light on the cafe facade and the direct sunlight on the inserted product."
+      ],
+      "score": 0.85,
+      "reject": false,
+      "reasons": [
+        "The product matches Image 3 accurately in style, material, and planting.",
+        "Scale and perspective match the street environment well.",
+        "The building facade remains unaltered.",
+        "However, the shadow grounding is weak, which slightly reduces realism."
+      ]
+    },
+    "regenerated": false
+  },
+  "status": "delivered",
+  "generatedAt": "2026-10-14T13:22:53.674Z"
+}
