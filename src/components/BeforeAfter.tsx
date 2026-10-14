@@ -1,6 +1,11 @@
 import { useRef, useState, useCallback } from 'react';
 
-/** Draggable before/after comparison slider (clip-path based — no image squish). */
+/**
+ * Draggable before/after comparison slider.
+ * The AFTER image is the flow "base" and sets the box at its natural aspect
+ * ratio, so the whole composite (and its planters) is always visible – never
+ * cropped. The BEFORE image is an overlay revealed by a clip-path.
+ */
 export function BeforeAfter({
   before, after, beforeLabel = 'Frontage', afterLabel = 'With planters',
 }: {
@@ -35,9 +40,9 @@ export function BeforeAfter({
         if (e.key === 'ArrowRight') setPos((p) => Math.min(100, p + 4));
       }}
     >
-      <img className="ba-img" src={after} alt={afterLabel} draggable={false} />
+      <img className="ba-base" src={after} alt={afterLabel} draggable={false} />
       <img
-        className="ba-img ba-before"
+        className="ba-over"
         src={before}
         alt={beforeLabel}
         draggable={false}
