@@ -45,7 +45,7 @@ can trigger the real pipeline on any London venue from the deployed page.
 | Venue discovery | Google Places API (New) | One call returns business type, rating, address, postcode and Place Photos — rich signals for the "good fit" filter. Free tier covers prototype volume. |
 | Frontage imagery | Google Street View Static API | Best coverage/quality in central London; exposes panorama geometry (location, heading, date) we need to frame the doorway. Same key as Places. |
 | Vision judge + QA | Gemini 2.5 Flash (`gemini-2.5-flash`) | Fast, cheap multimodal reasoning; returns structured JSON verdicts. |
-| Compositing | Gemini 2.5 Flash Image ("Nano Banana") | State-of-the-art at *reference-image-conditioned* editing — it can place **this** product rather than reinventing a generic planter, and edit in place without redrawing the building. |
+| Compositing | Gemini 3 Pro Image ("Nano Banana Pro"), aspect-ratio locked to the frontage | State-of-the-art at *reference-image-conditioned* editing — it reproduces **this** product's exact planter and planting rather than a generic approximation, grounds it with real contact shadows, and (with the aspect ratio pinned to the input) edits in place instead of re-cropping/redrawing the scene. The cheaper `gemini-3.1-flash-image` is a drop-in fallback via `GEMINI_IMAGE_MODEL`. |
 | Fallback imagery | Google Place Photos → Mapillary | Keyless/free Mapillary is the no-billing escape hatch; Place Photos are the venue's own imagery. |
 
 Alternatives considered and rejected: **OpenStreetMap Overpass** for discovery (no business
@@ -217,12 +217,23 @@ guarantees a bad composite.
 ### 4.1 Keeping the product faithful (not reinterpreted)
 
 The core decision: **the product is supplied to the model as a reference image, not as a text
-description.** Gemini 2.5 Flash Image receives the frontage *and* the actual product photo
+description.** Gemini 3 Pro Image receives the frontage *and* the actual product photo
 ([`products/`](products/)) together, with an instruction to **reproduce that exact planter and
-planting** and to **edit IMAGE 1 only by adding it** — not to redraw anything. Describing a
-planter in words ("a tall black cylinder with ferns") invites the model to invent a plausible
-but *different* object; conditioning on the photograph pins shape, material, colour and the
-specific plants. The QA gate (§5) then explicitly checks fidelity against that same reference.
+planting** (same silhouette, material, colour, plant species, leaf shapes, flower colours) and to
+**edit IMAGE 1 only by adding it** — not to redraw anything. Describing a planter in words ("a tall
+black cylinder with ferns") invites the model to invent a plausible but *different* object;
+conditioning on the photograph pins shape, material, colour and the specific plants. The QA gate
+(§5) then explicitly checks fidelity against that same reference.
+
+**Two things that moved fidelity from "plausible" to "the actual product":** (1) using the **Pro**
+image model rather than the flash tier — the flash model drifts the planting toward a generic green
+mass, the Pro model preserves the reference's specific foliage; (2) **pinning the output aspect ratio
+to the frontage** ([`imageutil.ts`](pipeline/src/imageutil.ts) `nearestAspectRatio`), which stops the
+model re-cropping/recomposing the scene — so the building, signage and people stay as photographed
+and only the planters are added. Each product's **arrangement grammar** (cluster of drums / tiered
+corner statement / side-by-side pair) is authored once from its reference photo in
+[`products.json`](products/products.json) `placement_style`, so the model styles it the way the
+client does rather than improvising.
 
 ### 4.2 Estimating real-world scale
 

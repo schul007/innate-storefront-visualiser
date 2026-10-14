@@ -12,6 +12,7 @@ import path from 'node:path';
 import { composite as geminiComposite, fileToInline } from './gemini.js';
 import { qaComposite } from './qa.js';
 import { productById, productImage } from './products.js';
+import { nearestAspectRatio } from './imageutil.js';
 import type { CompositeQA, FrontageJudgement } from './types.js';
 
 export function buildPrompt(productId: string, judgement: FrontageJudgement): string {
@@ -19,11 +20,12 @@ export function buildPrompt(productId: string, judgement: FrontageJudgement): st
   const dims = Object.entries(p.dimensions_cm).map(([k, v]) => `${k.replace(/_/g, ' ')} ${v}cm`).join(', ');
   const placement = judgement.placementHint || 'to the side of the entrance, against the building frontage';
 
-  return `Photorealistic product placement for a sales preview. Edit IMAGE 1 only by ADDING the planter(s) shown in IMAGE 2. Change nothing else.
+  return `You are compositing a REAL product into a REAL photograph for a sales preview. The only change is to ADD the planter(s) from IMAGE 2 onto the pavement in IMAGE 1. Everything else stays exactly as photographed.
 
-IMAGE 1 = the real venue frontage. Treat the building, windows, door, signage, people, vehicles, road and pavement as FIXED – do not repaint, relight, move, remove or warp any of it.
+IMAGE 1 = the fixed background photograph. Keep its FRAMING, crop, camera angle and resolution identical – do NOT zoom, re-crop, recompose or re-render the scene. Treat the building, windows, door, signage TEXT, people, vehicles, road and pavement as FIXED pixels – do not repaint, relight, move, remove or warp any of them.
 
-IMAGE 2 = the client's ACTUAL product that must appear: "${p.name}" – ${p.form}, ${p.material}. Planting: ${p.planting}. Reproduce THIS exact planter and planting faithfully (same shape, material, colour, proportions and plants). Do NOT substitute a generic planter.
+IMAGE 2 = the client's ACTUAL product that must appear: "${p.name}" – ${p.form}, ${p.material}. Planting: ${p.planting}.
+PRODUCT FIDELITY (critical): reproduce the EXACT planter AND the EXACT planting from IMAGE 2 – same silhouette, material finish and colour, and the SAME plant species, leaf shapes, flower colours, arrangement and proportions. A viewer must recognise it as the identical catalogue item. Do NOT redesign the plants, swap species, or produce a generic "nice planter". If multiple units are shown, every unit is identical to IMAGE 2.
 
 HOW THIS PRODUCT IS STYLED (follow this exactly – it is how the client arranges it):
 ${p.placement_style}
@@ -41,9 +43,9 @@ Scale: the planter's real size is ${dims}. A standard doorway is about 2m tall a
 
 Perspective: match IMAGE 1's camera height, viewing angle and vanishing lines so the planter sits flat on the ground plane.
 
-Light & shadow: match the existing sun direction and softness in IMAGE 1. Add a believable soft contact shadow where the planter meets the ground so it is grounded, not floating or pasted. Respect occlusion (e.g. a passing pedestrian in front stays in front).
+Light & shadow (grounding is critical): match the existing sun direction and softness in IMAGE 1. Each planter's base must sit FLAT ON the pavement with a clear, soft-edged CONTACT SHADOW pooling on the ground away from the light – no gap, no floating, no pasted-cut-out look. Respect occlusion (a passing pedestrian in front stays in front).
 
-Output: a single photorealistic image, same framing and resolution as IMAGE 1, indistinguishable from a real photograph of that doorway with the product present.`;
+Output: a single photorealistic image at the SAME framing and aspect ratio as IMAGE 1, indistinguishable from a real photograph of that doorway with the product actually present.`;
 }
 
 export interface CompositeOutput {
@@ -67,13 +69,14 @@ export async function compositeVenue(
   const frontage = fileToInline(frontageBuf, 'image/jpeg');
   const products = [productImage(productId)];
   const basePrompt = buildPrompt(productId, judgement);
+  const aspectRatio = nearestAspectRatio(frontageBuf);
 
   const attempts: { buf: Buffer; qa: CompositeQA; path: string }[] = [];
   for (let i = 0; i < 2; i++) {
     const prompt = i === 0
       ? basePrompt
-      : `${basePrompt}\n\nThe previous attempt was rejected for: ${attempts[0].qa.reasons.join('; ')}. Fix these specifically while keeping the building unchanged.`;
-    const out = await geminiComposite(prompt, frontage, products);
+      : `${basePrompt}\n\nThe previous attempt was rejected for: ${attempts[0].qa.reasons.join('; ')}. Fix these specifically while keeping the building and framing unchanged.`;
+    const out = await geminiComposite(prompt, frontage, products, aspectRatio);
     if (!out) continue;
     const p = path.join(outDir, `composite_attempt${i + 1}.png`);
     await fs.mkdir(outDir, { recursive: true });

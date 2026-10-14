@@ -20,11 +20,11 @@ export const env = {
 };
 
 export const MODELS = {
-  // "Nano Banana" image line – reference-faithful image editing.
-  // NOTE: image generation needs a BILLED Gemini project (free tier limit = 0).
-  // Flash-image is the cheap/fast default; set GEMINI_IMAGE_MODEL=gemini-3-pro-image
-  // ("Nano Banana Pro") for max realism on final deliverables.
-  image: process.env.GEMINI_IMAGE_MODEL ?? 'gemini-3.1-flash-image',
+  // "Nano Banana Pro" image model – best reference fidelity, grounding and
+  // in-place editing. NOTE: image generation needs a BILLED Gemini project
+  // (free tier limit = 0). Set GEMINI_IMAGE_MODEL=gemini-3.1-flash-image for a
+  // cheaper/faster (lower-fidelity) run.
+  image: process.env.GEMINI_IMAGE_MODEL ?? 'gemini-3-pro-image',
   // Vision judge / QA – fast multimodal model, free tier is fine.
   vision: process.env.GEMINI_VISION_MODEL ?? 'gemini-flash-lite-latest',
 };

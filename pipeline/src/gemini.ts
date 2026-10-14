@@ -91,6 +91,7 @@ export async function composite(
   prompt: string,
   frontage: InlineImage,
   products: InlineImage[],
+  aspectRatio?: string,
 ): Promise<Buffer | null> {
   const res = await withRetry(() => ai().models.generateContent({
     model: MODELS.image,
@@ -100,6 +101,9 @@ export async function composite(
         parts: [{ text: prompt }, imagePart(frontage), ...products.map(imagePart)],
       },
     ],
+    // Lock the output aspect ratio to the frontage so the model edits in place
+    // rather than re-cropping/recomposing the scene.
+    ...(aspectRatio ? { config: { imageConfig: { aspectRatio } } } : {}),
   }), 'composite');
   const parts = res.candidates?.[0]?.content?.parts ?? [];
   for (const p of parts) {
