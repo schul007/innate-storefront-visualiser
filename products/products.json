@@ -1,0 +1,44 @@
+{
+  "_note": "The client's three ACTUAL products, extracted from the brief's reference photos. Real-world dimensions are DOCUMENTED ASSUMPTIONS used purely as scale anchors for the compositor (see design.md 'Scale estimation'). They are deliberately conservative, typical commercial-planter sizes; swap for the client's real spec sheet when available.",
+  "products": [
+    {
+      "id": "product-a-black-cylinder",
+      "name": "Charcoal Cylinder",
+      "image": "product-a-black-cylinder.png",
+      "form": "single tall cylindrical planter",
+      "material": "matte charcoal / black powder-coated metal",
+      "planting": "lush mixed foliage – hosta, fatsia japonica, ornamental grasses, trailing greens",
+      "palette": "deep greens, no strong flower colour",
+      "dimensions_cm": { "height": 75, "diameter": 55 },
+      "footprint_cm": { "width": 55, "depth": 55 },
+      "best_for": "framing one side of a doorway; narrow pavements; modern dark shopfronts",
+      "scale_notes": "Rim sits at roughly knee-to-mid-thigh height on an adult (~75cm). Foliage adds ~50cm above the rim."
+    },
+    {
+      "id": "product-b-corten-tiered",
+      "name": "Corten Tiered Set",
+      "image": "product-b-corten-tiered.png",
+      "form": "modular weathered-steel set – one tall cube, one stepped lower cube, optional long trough",
+      "material": "Corten (weathering) steel, warm rust-orange patina",
+      "planting": "architectural palm underplanted with ferns and red/pink seasonal flowers",
+      "palette": "rust planter + green palm + hot red/pink flowers",
+      "dimensions_cm": { "tall_cube_height": 100, "tall_cube_width": 50, "low_cube_height": 50, "low_cube_width": 50, "trough_length": 120 },
+      "footprint_cm": { "width": 110, "depth": 55 },
+      "best_for": "wider frontages and corners; statement entrances; warm brick or stone buildings; where a tall vertical accent (palm ~2m overall) suits the facade",
+      "scale_notes": "Tall cube reaches ~waist/elbow height (~100cm); palm crown reaches ~2m total. Needs clear pavement width – do not place where it blocks the door swing or pedestrian flow."
+    },
+    {
+      "id": "product-c-white-tapered",
+      "name": "White Tapered Pair",
+      "image": "product-c-white-tapered.png",
+      "form": "pair of tapered square planters",
+      "material": "clean white / off-white composite",
+      "planting": "mixed greenery with purple and pink flowering stems",
+      "palette": "white planter + green + purple/pink flowers",
+      "dimensions_cm": { "height": 70, "top_width": 45, "base_width": 33 },
+      "footprint_cm": { "width": 95, "depth": 45 },
+      "best_for": "lighter / painted shopfronts and salons; where a bright planter lifts a dark or muted facade; flanking a doorway as a pair",
+      "scale_notes": "Rim at roughly mid-thigh (~70cm); planting adds ~40cm. Tapered form reads smaller at the base – keep both of the pair at matching scale."
+    }
+  ]
+}

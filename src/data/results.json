@@ -1,0 +1,9 @@
+{
+  "_status": "placeholder",
+  "_note": "This file is overwritten by `npm run pipeline` with real generated results. Until the pipeline runs with API keys, the showcase renders the products, methodology and live demo only.",
+  "generatedAt": null,
+  "targetCount": 3,
+  "deliveredCount": 0,
+  "venues": [],
+  "selectionLog": []
+}

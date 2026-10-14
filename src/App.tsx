@@ -1,0 +1,176 @@
+import './App.css';
+import productsData from '../products/products.json';
+import resultsData from './data/results.json';
+import type { Product, ResultsSummary, ResultVenue, SelectionLogEntry } from './types';
+import { BeforeAfter } from './components/BeforeAfter';
+import { LiveDemo } from './components/LiveDemo';
+
+const products = (productsData as unknown as { products: Product[] }).products;
+const results = resultsData as unknown as ResultsSummary;
+
+const STAGES = [
+  { n: '01', title: 'Discover', body: 'Google Places pulls independent cafés, restaurants & salons across central London. Chains are filtered out by name & type.' },
+  { n: '02', title: 'Capture', body: 'Street View heading is derived from the panorama→venue bearing, so the camera faces the real doorway — not the road.' },
+  { n: '03', title: 'Judge', body: 'A vision model vets every frame: does it clearly show the entrance, and is the frontage bare enough to be worth dressing?' },
+  { n: '04', title: 'Composite', body: 'Gemini 2.5 Flash Image places the client’s actual planter into the shot at correct scale, perspective & shadow.' },
+  { n: '05', title: 'QA gate', body: 'A second vision pass checks product fidelity, scale and that the building is unaltered — bad generations never reach an owner.' },
+];
+
+function Hero({ delivered }: { delivered: number }) {
+  return (
+    <header className="hero">
+      <div className="hero-inner">
+        <p className="eyebrow">Innate AI · storefront capture &amp; visualisation</p>
+        <h1>See the planters<br />on the <em>real</em> doorway.</h1>
+        <p className="lede">
+          An automated pipeline that finds under-dressed London frontages, captures each
+          venue’s actual entrance, and composites the client’s real planters onto it —
+          a convincing “what it could look like,” with no human in the loop.
+        </p>
+        <div className="hero-stats">
+          <div><strong>{delivered || 3}</strong><span>venues visualised</span></div>
+          <div><strong>3</strong><span>real products, pinned</span></div>
+          <div><strong>5</strong><span>automated stages</span></div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function Pipeline() {
+  return (
+    <section className="section" id="pipeline">
+      <h2 className="section-title">The pipeline</h2>
+      <div className="stages">
+        {STAGES.map((s) => (
+          <div className="stage" key={s.n}>
+            <span className="stage-n">{s.n}</span>
+            <h3>{s.title}</h3>
+            <p>{s.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Products() {
+  return (
+    <section className="section" id="products">
+      <h2 className="section-title">The client’s three products</h2>
+      <p className="section-sub">
+        The composite must use these <em>actual</em> planters — not a generic AI idea of “some planters.”
+        Each is passed to the model as a reference image, with documented real-world dimensions used as a scale anchor.
+      </p>
+      <div className="products">
+        {products.map((p) => (
+          <figure className="product" key={p.id}>
+            <img src={`/products/${p.image}`} alt={p.name} loading="lazy" />
+            <figcaption>
+              <h3>{p.name}</h3>
+              <p className="product-form">{p.form}</p>
+              <dl>
+                <div><dt>Material</dt><dd>{p.material}</dd></div>
+                <div><dt>Size</dt><dd>{Object.entries(p.dimensions_cm).map(([k, v]) => `${k.replace(/_/g, ' ')} ${v}cm`).join(', ')}</dd></div>
+                <div><dt>Best for</dt><dd>{p.best_for}</dd></div>
+              </dl>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function VenueCard({ v }: { v: ResultVenue }) {
+  return (
+    <article className="venue">
+      <div className="venue-media">
+        <BeforeAfter before={`/${v.frontage}`} after={`/${v.after}`} />
+      </div>
+      <div className="venue-body">
+        <div className="venue-head">
+          <h3>{v.name}</h3>
+          <a href={v.mapsUrl} target="_blank" rel="noreferrer">{v.address}</a>
+        </div>
+        <div className="venue-pills">
+          <span className={`pill ${v.qaScore >= 0.6 ? 'pill-ok' : 'pill-hold'}`}>QA {Math.round(v.qaScore * 100)}%</span>
+          <span className="pill">{v.productName}</span>
+          <span className="pill">Source: {v.source}{v.heading != null ? ` · ${v.heading}°` : ''}</span>
+          {v.panoDate && <span className="pill">Imagery {v.panoDate}</span>}
+          <span className="pill">Bareness {Math.round(v.bareness * 100)}%</span>
+          {v.regenerated && <span className="pill">Regenerated ×1</span>}
+        </div>
+        {v.placement && <p className="venue-note"><strong>Placement:</strong> {v.placement}</p>}
+      </div>
+    </article>
+  );
+}
+
+function Venues({ venues }: { venues: ResultVenue[] }) {
+  return (
+    <section className="section" id="venues">
+      <h2 className="section-title">Selected venues</h2>
+      {venues.length === 0 ? (
+        <div className="empty">
+          <p>No generated results committed yet.</p>
+          <p className="empty-sub">
+            Add API keys and run <code>npm run pipeline</code> to populate this section with three
+            real before/after visuals. Until then, try the live demo below or browse the products above.
+          </p>
+        </div>
+      ) : (
+        <div className="venues">{venues.map((v) => <VenueCard key={v.slot} v={v} />)}</div>
+      )}
+    </section>
+  );
+}
+
+function SelectionLog({ log }: { log: SelectionLogEntry[] }) {
+  if (!log.length) return null;
+  return (
+    <section className="section" id="log">
+      <h2 className="section-title">What the pipeline decided</h2>
+      <p className="section-sub">Every candidate the automated selection accepted or rejected, with the reason — no hand-curation.</p>
+      <table className="log">
+        <thead><tr><th>Venue</th><th>Postcode</th><th>Outcome</th><th>Reason</th></tr></thead>
+        <tbody>
+          {log.map((e, i) => (
+            <tr key={i}>
+              <td>{e.name}</td>
+              <td>{e.postcode || '—'}</td>
+              <td><span className={`tag tag-${e.outcome.startsWith('delivered') ? 'ok' : 'no'}`}>{e.outcome}</span></td>
+              <td className="log-detail">{e.detail}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  );
+}
+
+export default function App() {
+  return (
+    <div className="page">
+      <Hero delivered={results.deliveredCount} />
+      <main>
+        <Pipeline />
+        <Products />
+        <Venues venues={results.venues} />
+        <SelectionLog log={results.selectionLog} />
+        <section className="section" id="live">
+          <h2 className="section-title">Try it live</h2>
+          <p className="section-sub">
+            Search for any London venue and run the real pipeline on it — Street View capture,
+            vision judgement, compositing and QA, end to end. (Requires the deployment to have API keys.)
+          </p>
+          <LiveDemo />
+        </section>
+      </main>
+      <footer className="footer">
+        <p>Built for the Innate AI contract-developer brief. See <code>design.md</code> for the full technical rationale,
+          imagery-rights position and rejection criteria.</p>
+      </footer>
+    </div>
+  );
+}
