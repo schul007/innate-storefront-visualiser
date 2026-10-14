@@ -82,6 +82,12 @@ function Products() {
   );
 }
 
+const SOURCE_LABELS: Record<string, string> = {
+  streetview: 'Google Street View',
+  'place-photo': 'Google Business photo',
+  mapillary: 'Mapillary street photo',
+};
+
 function VenueCard({ v }: { v: ResultVenue }) {
   return (
     <article className="venue">
@@ -94,12 +100,12 @@ function VenueCard({ v }: { v: ResultVenue }) {
           <a href={v.mapsUrl} target="_blank" rel="noreferrer">{v.address}</a>
         </div>
         <div className="venue-pills">
-          <span className={`pill ${v.qaScore >= 0.6 ? 'pill-ok' : 'pill-hold'}`}>QA {Math.round(v.qaScore * 100)}%</span>
+          <span className={`pill ${v.qaScore >= 0.6 ? 'pill-ok' : 'pill-hold'}`} title="Automated quality score of the final image">Quality {Math.round(v.qaScore * 100)}%</span>
           <span className="pill">{v.productName}</span>
-          <span className="pill">Source: {v.source}{v.heading != null ? ` · ${v.heading}°` : ''}</span>
+          <span className="pill" title="Where the real frontage photo came from">Photo: {SOURCE_LABELS[v.source] ?? v.source}</span>
           {v.panoDate && <span className="pill">Imagery {v.panoDate}</span>}
-          <span className="pill">Bareness {Math.round(v.bareness * 100)}%</span>
-          {v.regenerated && <span className="pill">Regenerated ×1</span>}
+          <span className="pill" title="How bare the frontage was — higher means more room to improve">Bareness {Math.round(v.bareness * 100)}%</span>
+          {v.regenerated && <span className="pill" title="First attempt was auto-rejected and regenerated">Regenerated ×1</span>}
         </div>
         {v.placement && <p className="venue-note"><strong>Placement:</strong> {v.placement}</p>}
       </div>
@@ -126,25 +132,63 @@ function Venues({ venues }: { venues: ResultVenue[] }) {
   );
 }
 
+/** Turn a raw pipeline outcome + detail into plain English for a general visitor. */
+function humanizeDecision(e: SelectionLogEntry): { label: string; tone: 'ok' | 'skip' | 'hold'; reason: string } {
+  const d = (e.detail || '').toLowerCase();
+  if (e.outcome.startsWith('delivered')) {
+    return { label: 'Chosen', tone: 'ok', reason: 'Clear, bare entrance — a great fit, so we dressed it with the planters.' };
+  }
+  if (e.outcome === 'rejected-output') {
+    return { label: 'Held back', tone: 'hold', reason: 'The generated image didn’t meet our quality bar, so it was never used.' };
+  }
+  if (e.outcome === 'no-image' || e.outcome === 'error') {
+    return { label: 'Skipped', tone: 'skip', reason: 'Couldn’t get a clear, usable street photo of this venue’s entrance.' };
+  }
+  // rejected-frontage
+  if (d.includes('not bare') || d.includes('bareness')) {
+    return { label: 'Skipped', tone: 'skip', reason: 'The entrance already has greenery or seating — planters wouldn’t add much here.' };
+  }
+  if (d.includes('mannequin') || d.includes('window display')) {
+    return { label: 'Skipped', tone: 'skip', reason: 'The available photo showed a window display, not a clear doorway to dress.' };
+  }
+  return { label: 'Skipped', tone: 'skip', reason: 'Couldn’t get a clear, usable photo of this venue’s entrance.' };
+}
+
 function SelectionLog({ log }: { log: SelectionLogEntry[] }) {
   if (!log.length) return null;
+  const chosen = log.filter((e) => e.outcome.startsWith('delivered')).length;
+  const skipped = log.length - chosen;
   return (
     <section className="section" id="log">
       <h2 className="section-title">What the pipeline decided</h2>
-      <p className="section-sub">Every candidate the automated selection accepted or rejected, with the reason — no hand-curation.</p>
-      <table className="log">
-        <thead><tr><th>Venue</th><th>Postcode</th><th>Outcome</th><th>Reason</th></tr></thead>
-        <tbody>
-          {log.map((e, i) => (
-            <tr key={i}>
-              <td>{e.name}</td>
-              <td>{e.postcode || '—'}</td>
-              <td><span className={`tag tag-${e.outcome.startsWith('delivered') ? 'ok' : 'no'}`}>{e.outcome}</span></td>
-              <td className="log-detail">{e.detail}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <p className="section-sub">
+        Nobody hand-picked these venues. The system automatically screened real London cafés,
+        looked at each entrance, and kept the first few with a bare frontage worth dressing.
+        Here’s every call it made — <strong>{chosen} chosen, {skipped} skipped</strong> — and why.
+      </p>
+      <ul className="decided">
+        {log.map((e, i) => {
+          const h = humanizeDecision(e);
+          return (
+            <li className="decided-item" key={i}>
+              <span className={`decided-badge decided-${h.tone}`}>
+                {h.tone === 'ok' ? '✓' : h.tone === 'hold' ? '!' : '—'} {h.label}
+              </span>
+              <div className="decided-body">
+                <div className="decided-head">
+                  <strong>{e.name}</strong>
+                  {e.postcode && <span className="decided-pc">{e.postcode}</span>}
+                </div>
+                <p className="decided-reason">{h.reason}</p>
+                <details className="decided-tech">
+                  <summary>Technical detail</summary>
+                  <code>{e.outcome}</code> — {e.detail}
+                </details>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
