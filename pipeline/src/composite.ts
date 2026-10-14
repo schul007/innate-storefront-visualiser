@@ -25,15 +25,16 @@ IMAGE 1 = the real venue frontage. Treat the building, windows, door, signage, p
 
 IMAGE 2 = the client's ACTUAL product that must appear: "${p.name}" – ${p.form}, ${p.material}. Planting: ${p.planting}. Reproduce THIS exact planter and planting faithfully (same shape, material, colour, proportions and plants). Do NOT substitute a generic planter.
 
-QUANTITY & ARRANGEMENT:
-- Style it like a real venue would – not a single lonely planter on a wide frontage. If IMAGE 2 shows a SET or a PAIR of planters, place the whole set/pair as shown. If it shows a SINGLE planter, place a MATCHED PAIR flanking the entrance (one on each side) or an even short row lining the frontage, as the pavement width allows. Every unit must be IDENTICAL to IMAGE 2 and at matching scale. Only on a genuinely narrow pavement is a single unit acceptable.
+HOW THIS PRODUCT IS STYLED (follow this exactly – it is how the client arranges it):
+${p.placement_style}
+Typical quantity: ${p.typical_quantity}. Every unit must be IDENTICAL to IMAGE 2 and at matching scale.
 
-PLACEMENT (critical – this is how a real venue would style it):
-- Suggested spot: ${placement}.
-- Place the planter(s) to the SIDE(S) of the entrance, flanking the door or lining the frontage against the building wall / beneath the windows.
+PLACEMENT ON THIS FRONTAGE (critical):
+- Best spot here: ${placement}.
+- Follow the styling above, adapted to this frontage. Keep the arrangement deliberate and balanced – not a single lonely pot, not scattered, not a symmetric pair where the styling calls for a grouping.
 - NEVER place a planter directly in front of the door, in the doorway, or where it blocks the entrance. The doorway and the natural path walking INTO the venue must stay completely clear and unobstructed.
-- Keep the pavement walking route clear – do not block where pedestrians pass. If the pavement is narrow, use fewer or smaller units kept tight against the wall.
-- Do not place planters in the road or on top of existing seating/bins/signage.
+- Keep the pavement walking route clear – set planters tight against the building frontage, not out in the pedestrian line or the road. Do not place them on top of existing seating/bins/signage.
+- If the pavement is genuinely too narrow for the full arrangement, use fewer units kept tight to the wall rather than crowding the path.
 - ${p.scale_notes}
 
 Scale: the planter's real size is ${dims}. A standard doorway is about 2m tall and an adult about 1.7m – size the planter so it is correct relative to the door and any people in the shot. Do not make it oversized or toy-sized.

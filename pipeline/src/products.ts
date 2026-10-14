@@ -14,6 +14,8 @@ export interface Product {
   palette: string;
   dimensions_cm: Record<string, number>;
   footprint_cm: { width: number; depth: number };
+  typical_quantity: string;
+  placement_style: string;
   best_for: string;
   scale_notes: string;
 }
@@ -40,6 +42,6 @@ export function productImage(id: string): InlineImage {
 /** Compact catalog summary fed to the vision judge for product recommendation. */
 export function catalogSummary(): string {
   return catalog
-    .map((p) => `- ${p.id} ("${p.name}"): ${p.form}, ${p.material}; ${p.palette}; best for ${p.best_for}. Footprint ~${p.footprint_cm.width}x${p.footprint_cm.depth}cm.`)
+    .map((p) => `- ${p.id} ("${p.name}"): ${p.form}; ${p.palette}; typically ${p.typical_quantity}; footprint ~${p.footprint_cm.width}x${p.footprint_cm.depth}cm. Best for: ${p.best_for}. Needs: ${p.id === 'product-b-corten-tiered' ? 'a WIDE pavement or corner (tall ~2m palm)' : 'room for the grouping shown'}.`)
     .join('\n');
 }

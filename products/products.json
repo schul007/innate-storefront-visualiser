@@ -1,44 +1,50 @@
 {
-  "_note": "The client's three ACTUAL products, extracted from the brief's reference photos. Real-world dimensions are DOCUMENTED ASSUMPTIONS used purely as scale anchors for the compositor (see design.md 'Scale estimation'). They are deliberately conservative, typical commercial-planter sizes; swap for the client's real spec sheet when available.",
+  "_note": "The client's three ACTUAL products, extracted from the brief's reference photos. Real-world dimensions are DOCUMENTED ASSUMPTIONS used as scale anchors for the compositor (see design.md 'Scale estimation'). 'placement_style' encodes how each product is actually styled in its own reference photo, so the compositor arranges it the way the client does – not a generic 'flank the door'.",
   "products": [
     {
       "id": "product-a-black-cylinder",
       "name": "Charcoal Cylinder",
       "image": "product-a-black-cylinder.png",
-      "form": "single tall cylindrical planter",
+      "form": "broad, low matte-black cylindrical drum with densely mounded mixed foliage",
       "material": "matte charcoal / black powder-coated metal",
-      "planting": "lush mixed foliage – hosta, fatsia japonica, ornamental grasses, trailing greens",
+      "planting": "lush mixed foliage mounding well above the rim – hosta, fatsia japonica, ornamental grasses, trailing greens, a touch of Japanese maple",
       "palette": "deep greens, no strong flower colour",
-      "dimensions_cm": { "height": 75, "diameter": 55 },
-      "footprint_cm": { "width": 55, "depth": 55 },
-      "best_for": "framing one side of a doorway; narrow pavements; modern dark shopfronts",
-      "scale_notes": "Rim sits at roughly knee-to-mid-thigh height on an adult (~75cm). Foliage adds ~50cm above the rim."
+      "dimensions_cm": { "height": 60, "diameter": 60 },
+      "footprint_cm": { "width": 60, "depth": 60 },
+      "typical_quantity": "2–3 identical drums grouped together",
+      "placement_style": "Arrange as a CLUSTER or short ROW of 2–3 identical drums forming a lush, continuous LOW GREEN BORDER along the base of the shopfront window, or grouped to one side framing the entrance. It reads as a planted border, never a single lonely pot. The drums are broad and low with foliage mounding ~50cm above the rim; set them close together so the planting reads as one mass.",
+      "best_for": "lining modern / dark shopfronts and glazed frontages with a low green border; grouping where there is room for 2–3 drums side by side",
+      "scale_notes": "Each drum rim sits at about knee-to-mid-thigh height (~60cm); foliage mounds ~50cm above that. Broad footprint – keep clear of the door swing and the walking line."
     },
     {
       "id": "product-b-corten-tiered",
       "name": "Corten Tiered Set",
       "image": "product-b-corten-tiered.png",
-      "form": "modular weathered-steel set – one tall cube, one stepped lower cube, optional long trough",
+      "form": "tiered weathered-steel set – a tall square column (palm) stepped down to a lower flowering cube, plus a long low trough",
       "material": "Corten (weathering) steel, warm rust-orange patina",
-      "planting": "architectural palm underplanted with ferns and red/pink seasonal flowers",
+      "planting": "architectural fan palm in the tall column; ferns and red/pink seasonal flowers in the lower cube and trough",
       "palette": "rust planter + green palm + hot red/pink flowers",
-      "dimensions_cm": { "tall_cube_height": 100, "tall_cube_width": 50, "low_cube_height": 50, "low_cube_width": 50, "trough_length": 120 },
-      "footprint_cm": { "width": 110, "depth": 55 },
-      "best_for": "wider frontages and corners; statement entrances; warm brick or stone buildings; where a tall vertical accent (palm ~2m overall) suits the facade",
-      "scale_notes": "Tall cube reaches ~waist/elbow height (~100cm); palm crown reaches ~2m total. Needs clear pavement width – do not place where it blocks the door swing or pedestrian flow."
+      "dimensions_cm": { "tall_column_height": 105, "tall_column_width": 45, "low_cube_height": 55, "low_cube_width": 50, "trough_length": 120, "trough_height": 45, "palm_total_height": 210 },
+      "footprint_cm": { "width": 100, "depth": 50 },
+      "typical_quantity": "one tiered tall+low grouping, optionally with the separate trough",
+      "placement_style": "Place the tiered tall-column-plus-lower-cube as a single BOLD VERTICAL STATEMENT to ONE side of the entrance, or anchoring a corner – the ~2m palm is the accent. Do NOT place a matching pair of tall palms either side (it looks top-heavy and odd); one strong tiered grouping is the look, with the stepped cube giving height variation. Optionally add the long low trough as a linear planted border along the kerb or terrace/seating edge. Needs a WIDE pavement or a corner for the palm's height and ~1m footprint.",
+      "best_for": "wider frontages and corners; statement entrances; warm brick / stone / painted period facades where a tall vertical accent suits; terrace edges (the trough)",
+      "scale_notes": "Tall column reaches ~waist/elbow height (~105cm); palm crown reaches ~2.1m total. Lower cube ~55cm. Give it clear pavement width; never block the door swing or pedestrian flow."
     },
     {
       "id": "product-c-white-tapered",
       "name": "White Tapered Pair",
       "image": "product-c-white-tapered.png",
-      "form": "pair of tapered square planters",
-      "material": "clean white / off-white composite",
-      "planting": "mixed greenery with purple and pink flowering stems",
+      "form": "pair of white planters tapering inward toward the base (wider at the top), mounded mixed planting",
+      "material": "clean matte white / off-white composite",
+      "planting": "mixed greenery with purple and pink flowering stems mounding above the rim",
       "palette": "white planter + green + purple/pink flowers",
-      "dimensions_cm": { "height": 70, "top_width": 45, "base_width": 33 },
+      "dimensions_cm": { "height": 68, "top_width": 45, "base_width": 33 },
       "footprint_cm": { "width": 95, "depth": 45 },
-      "best_for": "lighter / painted shopfronts and salons; where a bright planter lifts a dark or muted facade; flanking a doorway as a pair",
-      "scale_notes": "Rim at roughly mid-thigh (~70cm); planting adds ~40cm. Tapered form reads smaller at the base – keep both of the pair at matching scale."
+      "typical_quantity": "2 (the pair, side by side)",
+      "placement_style": "Place the TWO tapered planters SIDE BY SIDE as a continuous low planted band, set tight against the shopfront – beneath a window or just to one side of the doorway – with the pavement walking line kept clear in front. Keep them together as a pair, not split to opposite sides.",
+      "best_for": "lighter or painted shopfronts and salons, where the bright white lifts a dark or muted facade; flanking one side of a doorway or sitting under a window as a pair",
+      "scale_notes": "Rim at roughly mid-thigh (~68cm); planting adds ~40cm. Tapered form reads narrower at the base – keep both of the pair at matching scale and close together."
     }
   ]
 }
