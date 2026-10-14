@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-14T13:24:10.073Z",
+  "generatedAt": "2026-10-14T14:39:25.753Z",
   "targetCount": 3,
   "deliveredCount": 3,
   "venues": [
     {
       "slot": 1,
-      "name": "Small square cafe",
-      "address": "6 Ravey St, London EC2A 4QW, UK",
-      "postcode": "EC2A 4QW",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Small%20square%20cafe%206%20Ravey%20St%2C%20London%20EC2A%204QW%2C%20UK",
+      "name": "Rise & Bloom - Shoreditch",
+      "address": "28 Hackney Rd, London E2 7DZ, UK",
+      "postcode": "E2 7DZ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rise%20%26%20Bloom%20-%20Shoreditch%2028%20Hackney%20Rd%2C%20London%20E2%207DZ%2C%20UK",
       "product": "product-b-corten-tiered",
       "productName": "Corten Tiered Set",
       "source": "place-photo",
-      "bareness": 0.35,
-      "placement": "Place modular corten set to the side of the corner entrance to complement the warm wood signage and green facade.",
+      "bareness": 0.5,
+      "placement": "Flank the central entrance and corners to frame the shopfront without blocking pedestrian flow.",
       "qaScore": 0.85,
       "regenerated": false,
       "frontage": "results/venue-1/frontage.jpg",
@@ -22,43 +22,58 @@
         {
           "source": "streetview",
           "outcome": "rejected",
-          "reason": "Image does not show a venue entrance, only construction hoarding.; No usable shopfront or doorway visible."
+          "reason": "Large purple wheelie bins and barriers completely block the ground level space where planters would go.; No visible signage or branding confirming this is 'Rise & Bloom - Shoreditch'.; Poor framing and heavy obstructions make this unsuitable for a sales mock-up."
         },
         {
           "source": "streetview",
           "outcome": "rejected",
-          "reason": "The image shows a construction hoarding and demolition site rather than a shop entrance.; No venue entrance or doorway is visible.; Unsuitable environment for placing retail planters."
+          "reason": "The image shows a brick wall and a side/service door, not a recognisable shopfront for 'Rise & Bloom - Shoreditch'.; Large purple waste bins completely obstruct the ground level where planters would need to sit.; Poor capture quality with foreground obscured by a car bonnet blur."
         },
         {
           "source": "place-photo",
           "outcome": "used",
-          "reason": "Clear view of corner entrance and shopfront; Pavement space available around the corner framing; Warm brick building and timber accents suit corten tiered set"
+          "reason": "Clear view of Rise & Bloom signage and storefront; Good pavement space to add planters alongside existing outdoor seating; Warm brick building facade suits the Corten weathered-steel products"
+        },
+        {
+          "source": "place-photo",
+          "outcome": "rejected",
+          "reason": "The image does not show a street-facing entrance or shopfront.; The image shows a loaf of bread on paper instead of a venue.; Unable to vet or place planters on a non-street photo."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "rejected",
+          "reason": "The provided image is an interior food and coffee shot, not a street-facing shopfront or entrance.; Does not show the venue's exterior, signage, or doorway."
         }
       ]
     },
     {
       "slot": 2,
-      "name": "Artist Cafe",
-      "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
-      "postcode": "EC1V 9LA",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artist%20Cafe%20311%20Old%20St%2C%20Shoreditch%2C%20London%20EC1V%209LA%2C%20UK",
-      "product": "product-b-corten-tiered",
-      "productName": "Corten Tiered Set",
+      "name": "BOBO & WILD - Shoreditch Coffee, Brunch & Bakery",
+      "address": "1 Poole St, London N1 5EB, UK",
+      "postcode": "N1 5EB",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BOBO%20%26%20WILD%20-%20Shoreditch%20Coffee%2C%20Brunch%20%26%20Bakery%201%20Poole%20St%2C%20London%20N1%205EB%2C%20UK",
+      "product": "product-a-black-cylinder",
+      "productName": "Charcoal Cylinder",
       "source": "streetview",
-      "heading": 256.17127273737026,
-      "fov": 70,
+      "heading": 311.0663320690499,
+      "fov": 90,
       "panoDate": "2025-09",
       "bareness": 0.9,
-      "placement": "On the wide pavement area in front of the corner section and flanking the main entrance windows",
+      "placement": "Flank either side of the glass entrance door against the dark shopfront facade",
       "qaScore": 0.95,
-      "regenerated": false,
+      "regenerated": true,
       "frontage": "results/venue-2/frontage.jpg",
       "after": "results/venue-2/after.png",
       "attempts": [
         {
           "source": "streetview",
+          "outcome": "rejected",
+          "reason": "The entrance is heavily obscured by a large parked car and street furniture.; Framing is poor with limited clear visibility of the immediate doorway due to obstructions."
+        },
+        {
+          "source": "streetview",
           "outcome": "used",
-          "reason": "The venue entrance is clearly visible on a corner frontage with ample pavement space.; The ground level is completely bare and would benefit significantly from green planters.; The warm brick building and corner location make it ideal for the Corten Tiered Set."
+          "reason": "Venue signage clearly visible identifying BOBO & WILD; Entrance and glass storefront are clearly captured; Pavement area outside the door is bare and suitable for framing with charcoal cylinders"
         }
       ]
     },
@@ -72,26 +87,36 @@
       "productName": "Charcoal Cylinder",
       "source": "place-photo",
       "bareness": 0.9,
-      "placement": "Flanking the glass sliding doors on the available pavement space.",
-      "qaScore": 0.92,
-      "regenerated": true,
+      "placement": "Flank the glass entrance doors to frame the entryway",
+      "qaScore": 0.85,
+      "regenerated": false,
       "frontage": "results/venue-3/frontage.jpg",
       "after": "results/venue-3/after.png",
       "attempts": [
         {
           "source": "streetview",
           "outcome": "rejected",
-          "reason": "A large bus stop and advertising structure directly obscure the clear view of the venue entrance.; The camera angle is too far back and obstructed, making precise placement difficult."
+          "reason": "The venue 'Kiss the Hippo Coffee Shoreditch' is not visible in this image.; The view is blocked by a bus stop shelter and large advertising boards.; No specific shopfront signage or entrance for the venue can be identified."
         },
         {
           "source": "streetview",
           "outcome": "rejected",
-          "reason": "The image captures a wide street scene with a bus shelter and multiple buildings in the background, making it impossible to clearly identify or frame a specific venue entrance.; Significant street obstructions such as a bus shelter and a public bin block the ground-level view."
+          "reason": "The venue's actual entrance door is completely obscured by a bus stop shelter and advertising boards.; The shot is too far away and fails to frame the specific entrance clearly.; Significant street furniture and clutter block the ground-level opportunity directly in front of the venue."
         },
         {
           "source": "place-photo",
           "outcome": "used",
-          "reason": "Clear view of the entrance and surrounding pavement; Frontage at ground level is bare, providing good opportunity for planters; Modern dark shopfront suits the charcoal cylinder product"
+          "reason": "Clearly shows Kiss the Hippo Coffee Shoreditch with prominent signage and ivy facade.; Entrance is fully visible and accessible.; Pavement area outside the glass doors is bare and suitable for dark modern planters."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "rejected",
+          "reason": "The image is an interior shot showing a table with coffee and pastries, not a street-facing entrance or shopfront."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "rejected",
+          "reason": "The image is an interior shot showing a coffee cup and plates, not a street-facing shopfront or entrance.; No exterior doorway, facade, or pavement is visible."
         }
       ]
     }
@@ -102,41 +127,40 @@
       "address": "17 Cheshire St, London E2 6EH, UK",
       "postcode": "E2 6EH",
       "outcome": "rejected-frontage",
-      "detail": "frontage not bare enough (bareness 0.30): The venue entrance and windows are clearly visible.; Although there are tables and diners in front of the windows, there is usable pavement space at ground level for statement planters.",
+      "detail": "frontage not bare enough (bareness 0.30): Clear view of the venue's shopfront and entrance area; Pavement space available at the sides despite outdoor dining; Corten steel planters would contrast nicely with the warm brick and bright awning",
       "bareness": 0.3
     },
     {
       "name": "Rise & Bloom - Shoreditch",
       "address": "28 Hackney Rd, London E2 7DZ, UK",
       "postcode": "E2 7DZ",
-      "outcome": "rejected-frontage",
-      "detail": "frontage not bare enough (bareness 0.30): The venue entrance and windows are clearly visible.; Although outdoor seating is present, there is usable pavement space at ground level.; The warm brick building and wide frontage suit the Corten tiered set well.",
-      "bareness": 0.3
-    },
-    {
-      "name": "Small square cafe",
-      "address": "6 Ravey St, London EC2A 4QW, UK",
-      "postcode": "EC2A 4QW",
       "outcome": "delivered",
       "detail": "delivered (QA score 0.85)",
-      "bareness": 0.35,
+      "bareness": 0.5,
       "product": "product-b-corten-tiered"
     },
     {
-      "name": "Artist Cafe",
-      "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
-      "postcode": "EC1V 9LA",
+      "name": "BOBO & WILD - Shoreditch Coffee, Brunch & Bakery",
+      "address": "1 Poole St, London N1 5EB, UK",
+      "postcode": "N1 5EB",
       "outcome": "delivered",
       "detail": "delivered (QA score 0.95)",
       "bareness": 0.9,
-      "product": "product-b-corten-tiered"
+      "product": "product-a-black-cylinder"
+    },
+    {
+      "name": "Project 44",
+      "address": "44 Rivington St, London EC2A 3QP, UK",
+      "postcode": "EC2A 3QP",
+      "outcome": "rejected-frontage",
+      "detail": "streetview:rejected(The image shows a window display with mannequins but does not capture the street-facing entrance or doorway of the venue.) | streetview:rejected(The image shows a large display window and mannequin setup, but does not clearly show the venue's entrance/doorway.; Without a visible entrance or doorway, it is not possible to correctly place flanking planters.) | place-photo:rejected(The provided image is an interior shot showing the counter area of the cafe rather than the street-facing entrance or shopfront.) | place-photo:rejected(The image shows an interior display of pastries instead of the venue's street-facing entrance or shopfront.) | place-photo:rejected(The image shows an interior product shot of a coffee cup on a table, not a street-facing venue entrance or shopfront.; No street frontage, pavement, or doorway is visible.) | mapillary:rejected(The image shows a street scene with vehicles and a roadway, not the venue's entrance or shopfront.; No venue signage or recognizable doorway for 'Project 44' is visible.; Image is completely unsuitable for frontage vetting.)"
     },
     {
       "name": "Kiss the Hippo Coffee Shoreditch",
       "address": "145 City Rd, London EC1V 1AW, UK",
       "postcode": "EC1V 1AW",
       "outcome": "delivered",
-      "detail": "delivered (QA score 0.92)",
+      "detail": "delivered (QA score 0.85)",
       "bareness": 0.9,
       "product": "product-a-black-cylinder"
     }

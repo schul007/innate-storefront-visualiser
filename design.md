@@ -117,28 +117,30 @@ and on the deployed site):
 
 | Venue | Address | Postcode | Product chosen | Capture | QA |
 |---|---|---|---|---|---|
-| **Small square cafe** | 6 Ravey St, London | EC2A 4QW | Corten Tiered Set | Street View rejected ×2 (construction hoarding) → **Place Photo** fallback | 0.85 |
-| **Artist Cafe** | 311 Old St, Shoreditch | EC1V 9LA | Corten Tiered Set | **Street View** (heading 256°, Sep-2025 imagery), bareness 0.90 | 0.95 |
-| **Kiss the Hippo Coffee** | 145 City Rd, London | EC1V 1AW | Charcoal Cylinder | Street View rejected ×2 (bus shelter) → **Place Photo**, **regenerated ×1** | 0.92 |
+| **Rise & Bloom – Shoreditch** | 28 Hackney Rd, London | E2 7DZ | Corten Tiered Set | Street View rejected ×2 (not the venue's shopfront) → **Place Photo** (shopfront-aware) | 0.85 |
+| **BOBO & WILD – Shoreditch** | 1 Poole St, London | N1 5EB | Charcoal Cylinder | **Street View** (heading 311°), **regenerated ×1** | 0.95 |
+| **Kiss the Hippo Coffee** | 145 City Rd, London | EC1V 1AW | Charcoal Cylinder | Street View rejected ×2 → **Place Photo** (shopfront-aware) | 0.85 |
 
 **Why these were picked:** each is an independent café with a genuinely bare/under-dressed
 ground-level frontage (bareness ≥ 0.35) and a clearly-framed entrance, and each composite cleared
-the QA gate. The product choice is the judge's per-frontage recommendation — the warm-brick corner
-frontages suited the rust-toned **Corten Tiered Set**; the dark modern **Charcoal Cylinder** suited
-Kiss the Hippo's glazed shopfront.
+the QA gate. Selection is **first-fit past the bar** (not a global ranking): the pipeline walks the
+candidate pool in order and keeps the first three that pass every gate. The product choice is the
+judge's per-frontage recommendation — the warm-brick frontage suited the rust-toned **Corten Tiered
+Set**; the modern glazed shopfronts suited the dark **Charcoal Cylinder**.
 
 **What it rejected, and why** (the selection is automated — these were never hand-filtered):
 
 | Venue | Reason |
 |---|---|
 | Vintage Café Shoreditch (17 Cheshire St, E2 6EH) | Frontage **not bare enough** — bareness 0.30; existing outdoor tables/diners already dress the entrance. |
-| Rise & Bloom, Shoreditch (28 Hackney Rd, E2 7DZ) | Frontage **not bare enough** — bareness 0.30; existing outdoor seating. |
+| Project 44 (44 Rivington St, EC2A 3QP) | Street View showed a **window display with mannequins, no clear entrance** — the shopfront-aware judge rejected it. |
 
-Two of the three delivered venues also show the **capture fallback working for real**: when Street
-View showed a construction hoarding or a bus shelter instead of the doorway, the judge rejected it
-and the pipeline fell back to the venue's Google Business photo — exactly the "one or two rejects
-before falling back" behaviour the brief describes. One output also triggered a **single
-regenerate** after the first QA pass flagged a weak contact shadow.
+Two of the three delivered venues show the **shopfront-aware capture working for real**: when the
+Street View heading landed on a frame that didn't clearly show the venue's own storefront, the judge
+rejected it and the pipeline fell back to the venue's Google Business photo — exactly the
+"one or two rejects before falling back" behaviour the brief describes (see the Regency Cafe worked
+example in §3.2). One output also triggered a **single regenerate** after the first QA pass flagged a
+weak contact shadow.
 
 ---
 
