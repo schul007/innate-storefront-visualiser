@@ -22,6 +22,10 @@ real product from IMAGE 3 actually standing there. Check:
 - perspectiveConsistent: does it sit on the ground plane at the right angle?
 - shadowGrounded: is there a believable contact shadow (not floating, not a
   pasted cut-out)?
+- entranceClear: set FALSE only if a planter sits DIRECTLY IN the doorway or
+  clearly blocks the way into the venue. Planters beside / flanking / lining the
+  frontage next to the door are FINE – that is the desired look. Only a genuine
+  blockage counts.
 - buildingUnaltered: compare IMAGE 1 and IMAGE 2 – are the building, windows,
   signage, door, people and pavement otherwise UNCHANGED? Reject if the model
   repainted/warped the facade or added extra objects.
@@ -29,7 +33,8 @@ real product from IMAGE 3 actually standing there. Check:
   melted plants, hard paste edges, wrong occlusion).
 
 Set reject=true if ANY of productFaithful/scalePlausible/buildingUnaltered is
-false, or score < 0.6.
+false, if a planter clearly blocks the doorway (entranceClear=false), or if
+score < 0.6.
 
 Return ONLY JSON:
 {
@@ -37,6 +42,7 @@ Return ONLY JSON:
   "scalePlausible": boolean,
   "perspectiveConsistent": boolean,
   "shadowGrounded": boolean,
+  "entranceClear": boolean,
   "buildingUnaltered": boolean,
   "artifacts": string[],
   "score": number,          // 0..1 overall deliverability
@@ -55,6 +61,7 @@ Return ONLY JSON:
     scalePlausible: !!q.scalePlausible,
     perspectiveConsistent: !!q.perspectiveConsistent,
     shadowGrounded: !!q.shadowGrounded,
+    entranceClear: !!q.entranceClear,
     buildingUnaltered: !!q.buildingUnaltered,
     artifacts: q.artifacts ?? [],
     score: typeof q.score === 'number' ? q.score : 0,

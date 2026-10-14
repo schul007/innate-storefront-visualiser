@@ -50,6 +50,7 @@ export interface FrontageJudgement {
   obstructions: string[];        // e.g. ["scaffolding", "parked van", "A-board"]
   surfaceAtEntrance: string;     // "pavement" | "step" | "recessed" | "unknown"
   recommendedProduct?: string;   // product id the judge thinks fits best
+  recommendedProducts?: string[]; // all products that suit this frontage, best first
   placementHint?: string;        // where planters should go, in words
   reject: boolean;               // hard reject this image for capture
   reasons: string[];
@@ -61,6 +62,7 @@ export interface CompositeQA {
   scalePlausible: boolean;       // believable real-world size vs door/bricks?
   perspectiveConsistent: boolean;
   shadowGrounded: boolean;       // contact shadow / grounded, not floating
+  entranceClear: boolean;        // doorway + walking path NOT blocked by the planters
   buildingUnaltered: boolean;    // facade/signage/people unchanged
   artifacts: string[];           // visible defects
   score: number;                 // 0..1 overall deliverability

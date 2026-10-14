@@ -18,24 +18,33 @@ verdict alone decides whether we proceed.
 ${venueLine}
 
 Answer THREE things:
-1. CAPTURE QUALITY – does this image clearly show the venue's street-facing
-   ENTRANCE/doorway, reasonably framed (not cropped off, not mostly road/sky,
-   not blurred, not obscured by a passing vehicle/scaffolding)?
+1. CAPTURE QUALITY (framingUsable) – does this image clearly show the venue's
+   street-facing ENTRANCE/doorway, CLOSE and PROMINENT in the frame and well
+   framed? Set framingUsable=FALSE if the entrance is distant/small, seen across
+   a road, mostly road/sky, blurred, or OBSTRUCTED by a large foreground object
+   (e.g. a parked car/van directly in front, scaffolding, a bus shelter). A
+   mock-up needs the frontage up close, not a wide street scene.
 2. VENUE SHOPFRONT – does it clearly show THIS venue's own shopfront (its
-   signage, window display or recognisable storefront), as opposed to a generic
-   stone/brick doorway, a side entrance, or a neighbouring building? Set
-   isVenueShopfront=false if you cannot tell this is the named venue's frontage.
+   signage, window display or recognisable storefront) as the DOMINANT, central
+   storefront in the frame? Set isVenueShopfront=false if it's a generic
+   stone/brick doorway, a side entrance, a neighbouring/adjacent shop, or if the
+   named venue is only off to the edge while a DIFFERENT shop dominates the frame.
 3. OPPORTUNITY – is the frontage BARE or UNDER-DRESSED at ground level either
    side of the door (no existing planters/greenery/benches), i.e. a place where
    adding planters would visibly improve the entrance? A frontage already full
    of plants, or with no usable pavement either side of the door, is a poor fit.
 
-Also pick which product best suits this frontage from this catalogue:
+From this catalogue, list which products suit this frontage, BEST FIRST, in
+recommendedProducts (include every product that would work, not just one – most
+frontages can take more than one). recommendedProduct = the single best.
 ${catalogSummary()}
 
 Reject (reject=true) if: the entrance is not clearly visible; the image is
-blurred/obstructed/too far; it's an interior shot; or there is simply nowhere
-at ground level to place a planter.
+blurred, an interior/food shot, or the frontage is far across a wide street /
+tiny in frame / mostly hidden behind a parked vehicle; or there is simply nowhere
+at ground level to place a planter. (A frame that merely isn't the single best
+angle is NOT a reject if it still clearly shows this venue's entrance up close –
+use isVenueShopfront / framingUsable to grade those, not reject.)
 
 Return ONLY JSON with exactly these keys:
 {
@@ -46,7 +55,8 @@ Return ONLY JSON with exactly these keys:
   "frontageBareness": number,     // 0..1, 1 = completely bare
   "obstructions": string[],
   "surfaceAtEntrance": "pavement" | "step" | "recessed" | "unknown",
-  "recommendedProduct": string,   // one product id from the catalogue
+  "recommendedProduct": string,   // single best-fit product id
+  "recommendedProducts": string[],// all suitable product ids, best first
   "placementHint": string,        // short: where planters should sit
   "reject": boolean,
   "reasons": string[]             // brief justifications
@@ -66,6 +76,9 @@ export async function judgeFrontage(imageBuf: Buffer, venueName?: string): Promi
     obstructions: j.obstructions ?? [],
     surfaceAtEntrance: j.surfaceAtEntrance ?? 'unknown',
     recommendedProduct: j.recommendedProduct,
+    recommendedProducts: (j.recommendedProducts && j.recommendedProducts.length)
+      ? j.recommendedProducts
+      : (j.recommendedProduct ? [j.recommendedProduct] : []),
     placementHint: j.placementHint ?? '',
     reject: !!j.reject,
     reasons: j.reasons ?? [],

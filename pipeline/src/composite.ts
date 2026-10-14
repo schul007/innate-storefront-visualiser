@@ -17,7 +17,7 @@ import type { CompositeQA, FrontageJudgement } from './types.js';
 export function buildPrompt(productId: string, judgement: FrontageJudgement): string {
   const p = productById(productId)!;
   const dims = Object.entries(p.dimensions_cm).map(([k, v]) => `${k.replace(/_/g, ' ')} ${v}cm`).join(', ');
-  const placement = judgement.placementHint || 'on the pavement directly beside the entrance, clear of the door swing';
+  const placement = judgement.placementHint || 'to the side of the entrance, against the building frontage';
 
   return `Photorealistic product placement for a sales preview. Edit IMAGE 1 only by ADDING the planter(s) shown in IMAGE 2. Change nothing else.
 
@@ -25,7 +25,13 @@ IMAGE 1 = the real venue frontage. Treat the building, windows, door, signage, p
 
 IMAGE 2 = the client's ACTUAL product that must appear: "${p.name}" – ${p.form}, ${p.material}. Planting: ${p.planting}. Reproduce THIS exact planter and planting faithfully (same shape, material, colour, proportions and plants). Do NOT substitute a generic planter.
 
-Placement: position the planter(s) ${placement}. ${p.scale_notes}
+PLACEMENT (critical – this is how a real venue would style it):
+- Suggested spot: ${placement}.
+- Place the planter(s) to the SIDE(S) of the entrance, flanking the door or lining the frontage against the building wall / beneath the windows.
+- NEVER place a planter directly in front of the door, in the doorway, or where it blocks the entrance. The doorway and the natural path walking INTO the venue must stay completely clear and unobstructed.
+- Keep the pavement walking route clear – do not block where pedestrians pass. If the pavement is narrow, use fewer or smaller units kept tight against the wall.
+- Do not place planters in the road or on top of existing seating/bins/signage.
+- ${p.scale_notes}
 
 Scale: the planter's real size is ${dims}. A standard doorway is about 2m tall and an adult about 1.7m – size the planter so it is correct relative to the door and any people in the shot. Do not make it oversized or toy-sized.
 

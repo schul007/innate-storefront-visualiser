@@ -94,7 +94,9 @@ returns structured JSON:
 - `framingUsable` — centred, not cropped/occluded/blurred?
 - **`frontageBareness` (0–1)** — the opportunity signal: 1 = completely bare either side of the
   door; low if it's already planted or there's no usable pavement.
-- `obstructions`, `surfaceAtEntrance`, `recommendedProduct`, `placementHint`, `reject`, `reasons`.
+- `isVenueShopfront` — is this clearly the named venue's own storefront (vs a side door / neighbour)? (see §3.2)
+- `recommendedProducts` — all catalogue products that suit this frontage, ranked best-first (drives product choice + variety).
+- `obstructions`, `surfaceAtEntrance`, `placementHint`, `reject`, `reasons`.
 
 ### 2.4 Accept / reject bar
 
@@ -117,30 +119,36 @@ and on the deployed site):
 
 | Venue | Address | Postcode | Product chosen | Capture | QA |
 |---|---|---|---|---|---|
-| **Rise & Bloom – Shoreditch** | 28 Hackney Rd, London | E2 7DZ | Corten Tiered Set | Street View rejected ×2 (not the venue's shopfront) → **Place Photo** (shopfront-aware) | 0.85 |
-| **BOBO & WILD – Shoreditch** | 1 Poole St, London | N1 5EB | Charcoal Cylinder | **Street View** (heading 311°), **regenerated ×1** | 0.95 |
-| **Kiss the Hippo Coffee** | 145 City Rd, London | EC1V 1AW | Charcoal Cylinder | Street View rejected ×2 → **Place Photo** (shopfront-aware) | 0.85 |
+| **Vintage Café Shoreditch** | 17 Cheshire St, London | E2 6EH | Corten Tiered Set | Street View not the clear shopfront → **Google Business photo** | 0.92 |
+| **Rise & Bloom – Shoreditch** | 28 Hackney Rd, London | E2 7DZ | Charcoal Cylinder | Street View not the clear shopfront → **Google Business photo** | 0.95 |
+| **BOBO & WILD – Shoreditch** | 1 Poole St, London | N1 5EB | Charcoal Cylinder | Street View distant/car-obstructed → **Google Business photo** | 0.85 |
 
 **Why these were picked:** each is an independent café with a genuinely bare/under-dressed
 ground-level frontage (bareness ≥ 0.35) and a clearly-framed entrance, and each composite cleared
 the QA gate. Selection is **first-fit past the bar** (not a global ranking): the pipeline walks the
-candidate pool in order and keeps the first three that pass every gate. The product choice is the
-judge's per-frontage recommendation — the warm-brick frontage suited the rust-toned **Corten Tiered
-Set**; the modern glazed shopfronts suited the dark **Charcoal Cylinder**.
+candidate pool in order and keeps the first three that pass every gate.
+
+**Product choice & variety.** The planter is the judge's per-frontage recommendation — the
+warm-brick Vintage frontage suited the rust-toned **Corten Tiered Set**; the modern glazed shopfronts
+suited the dark **Charcoal Cylinder**. The judge returns *all* products that suit a frontage (ranked),
+and the orchestrator **rotates across the catalogue** — picking a not-yet-used product where the
+frontage supports it — so the showcase spans the range rather than repeating one planter. (The **White
+Tapered Pair** suits lighter/painted shopfronts and salons; it isn't forced onto these dark café
+frontages, where it would look wrong — honest fit beats box-ticking.)
 
 **What it rejected, and why** (the selection is automated — these were never hand-filtered):
 
 | Venue | Reason |
 |---|---|
-| Vintage Café Shoreditch (17 Cheshire St, E2 6EH) | Frontage **not bare enough** — bareness 0.30; existing outdoor tables/diners already dress the entrance. |
-| Project 44 (44 Rivington St, EC2A 3QP) | Street View showed a **window display with mannequins, no clear entrance** — the shopfront-aware judge rejected it. |
+| Small square cafe (6 Ravey St, EC2A 4QW) | Frontage **not bare enough** — existing greenery/seating already dresses the entrance. |
+| Project 44 (44 Rivington St, EC2A 3QP) | Available imagery showed a **window display, no clear doorway** to dress. |
+| WatchHouse Marylebone (32–34 New Cavendish St, W1G 8UE) | Frontage **not bare enough** for planters to add much. |
 
-Two of the three delivered venues show the **shopfront-aware capture working for real**: when the
-Street View heading landed on a frame that didn't clearly show the venue's own storefront, the judge
-rejected it and the pipeline fell back to the venue's Google Business photo — exactly the
-"one or two rejects before falling back" behaviour the brief describes (see the Regency Cafe worked
-example in §3.2). One output also triggered a **single regenerate** after the first QA pass flagged a
-weak contact shadow.
+All three delivered venues show the **shopfront-aware capture working for real**: when the Street
+View heading landed on a frame that didn't clearly show the venue's own storefront (or was distant /
+car-obstructed), the judge rejected it and the pipeline fell back to the venue's Google Business
+photo — exactly the "one or two rejects before falling back" behaviour the brief describes (see the
+Regency Cafe worked example in §3.2).
 
 ---
 
@@ -233,13 +241,20 @@ Believable size comes from anchoring the planter to things of known size in the 
 So scale is set twice over: the absolute cm the product *should* be, and the in-scene references
 it must agree with.
 
-### 4.3 Grounding, perspective, shadow
+### 4.3 Placement, grounding, perspective, shadow
 
-The prompt fixes the building/people/pavement as immutable and requires: the planter sits flat on
-the ground plane matching the camera's vanishing lines; a **soft contact shadow** in the existing
-sun direction so it reads as grounded, not pasted; and correct occlusion (a pedestrian in front
-stays in front). Placement comes from the judge's `placementHint` (e.g. "left of the door, clear
-of the swing").
+**Placement rules (critical).** The prompt instructs the model to place planters **to the side(s)
+of / flanking the entrance, lining the frontage against the wall or beneath the windows — never in
+the doorway or blocking the way in**, and to keep the pedestrian path clear. This is how a real venue
+styles its frontage, and it fixes the common failure where a generator drops a planter right across
+the door. The output QA then checks `entranceClear` and rejects a composite whose planter genuinely
+blocks the entrance (§5). Placement also takes the judge's `placementHint` (e.g. "flank the corner
+entrance on the wide pavement").
+
+**Grounding.** The prompt fixes the building/people/pavement as immutable and requires: the planter
+sits flat on the ground plane matching the camera's vanishing lines; a **soft contact shadow** in the
+existing sun direction so it reads as grounded, not pasted; and correct occlusion (a pedestrian in
+front stays in front).
 
 ---
 
@@ -253,6 +268,8 @@ vs composite vs product reference**. A generation is **rejected** (`reject=true`
 - **Implausible scale** — oversized or toy-sized versus the door/people. *(hard reject)*
 - **Building altered** — facade repainted/warped, signage changed, people/objects added or
   removed, pavement redrawn. The brief requires everything but the planter left unaltered. *(hard reject)*
+- **Entrance blocked** — a planter sits in the doorway or clearly obstructs the way into the venue
+  (`entranceClear = false`). Flanking/lining the frontage is the goal; blocking the door is a reject. *(hard reject)*
 - **Floating / not grounded** — no believable contact shadow, hard paste edges, wrong occlusion.
 - **Visible artefacts** — warping, duplicated/extra planters, melted or smeared plants.
 - **Overall score < 0.6.**
