@@ -1,11 +1,13 @@
 // Central config + env loading. Keys live in .env (never committed).
 import 'dotenv/config';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-export const ROOT = path.resolve(__dirname, '..', '..');
+// Resolve from the process working directory, not __dirname. This is the
+// project root when running the pipeline locally (`npm run ...` sets cwd), and
+// the deployment root (/var/task) on Vercel – where vercel.json's
+// `includeFiles: "products/**"` places the product files. Using __dirname would
+// break after the serverless bundler flattens the module layout.
+export const ROOT = process.cwd();
 export const PRODUCTS_DIR = path.join(ROOT, 'products');
 export const RESULTS_DIR = path.join(ROOT, 'results');
 export const PUBLIC_RESULTS_DIR = path.join(ROOT, 'public', 'results');
