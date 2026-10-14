@@ -1,96 +1,10 @@
 {
-  "generatedAt": "2026-10-14T15:13:23.753Z",
+  "generatedAt": "2026-10-14T15:45:52.993Z",
   "targetCount": 3,
   "deliveredCount": 3,
   "venues": [
     {
       "slot": 1,
-      "name": "Vintage Café Shoreditch",
-      "address": "17 Cheshire St, London E2 6EH, UK",
-      "postcode": "E2 6EH",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vintage%20Caf%C3%A9%20Shoreditch%2017%20Cheshire%20St%2C%20London%20E2%206EH%2C%20UK",
-      "product": "product-b-corten-tiered",
-      "productName": "Corten Tiered Set",
-      "source": "place-photo",
-      "bareness": 0.8,
-      "placement": "Flanking the edges of the shopfront on the pavement, leaving the central seating area clear.",
-      "qaScore": 0.88,
-      "regenerated": false,
-      "frontage": "results/venue-1/frontage.jpg",
-      "after": "results/venue-1/after.png",
-      "attempts": [
-        {
-          "source": "streetview",
-          "outcome": "rejected",
-          "reason": "This is an interior shot showing food displays, a counter, and a menu board, not a street frontage or entrance.; No street-facing doorway or exterior shopfront is visible in the frame."
-        },
-        {
-          "source": "streetview",
-          "outcome": "rejected",
-          "reason": "Image is an interior shot showing the cafe counter and food display rather than the street-facing entrance/shopfront.; Does not show the venue's street-level exterior or pavement where planters could be placed."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "used",
-          "reason": "Clear, well-framed view of the cafe storefront and entrance; Pavement area at ground level is mostly bare with ample space for outdoor planters"
-        },
-        {
-          "source": "place-photo",
-          "outcome": "rejected",
-          "reason": "The image shows food (poached eggs, salmon, avocado toast) instead of a shopfront or entrance.; No street frontage, doorway, or venue exterior is visible."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "rejected",
-          "reason": "The image shows food (a sandwich on a plate) rather than a shopfront or entrance.; This is an interior food shot and cannot be used for a frontage mock-up."
-        }
-      ]
-    },
-    {
-      "slot": 2,
-      "name": "Rise & Bloom - Shoreditch",
-      "address": "28 Hackney Rd, London E2 7DZ, UK",
-      "postcode": "E2 7DZ",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rise%20%26%20Bloom%20-%20Shoreditch%2028%20Hackney%20Rd%2C%20London%20E2%207DZ%2C%20UK",
-      "product": "product-a-black-cylinder",
-      "productName": "Charcoal Cylinder",
-      "source": "place-photo",
-      "bareness": 0.4,
-      "placement": "Along the window facade flanking the seating areas to enhance the green aesthetic without blocking pedestrian flow.",
-      "qaScore": 0.88,
-      "regenerated": false,
-      "frontage": "results/venue-2/frontage.jpg",
-      "after": "results/venue-2/after.png",
-      "attempts": [
-        {
-          "source": "streetview",
-          "outcome": "rejected",
-          "reason": "Large wheelie bins and foreground obstructions block the entrance area.; Framing is not usable for a clean mock-up due to severe visual clutter.; Lacks clear signage or recognizable shopfront identity for the venue."
-        },
-        {
-          "source": "streetview",
-          "outcome": "rejected",
-          "reason": "Image is severely obstructed by large purple wheelie bins and foreground blur.; Does not clearly show Rise & Bloom signage or a recognisable shopfront (looks like a secondary brick doorway).; No clear, bare ground space available for planter placement."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "used",
-          "reason": "Clearly shows the 'Rise & Bloom - Shoreditch' venue storefront and entrance.; Warm brick building facade pairs well with corten or dark metal planters.; Ample frontage space to incorporate structured greenery alongside the existing cafe seating."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "rejected",
-          "reason": "The image shows a loaf of bread on parchment paper, not a street-facing shopfront or entrance."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "rejected",
-          "reason": "The image shows an interior food and coffee shot instead of the venue's street-facing entrance or shopfront."
-        }
-      ]
-    },
-    {
-      "slot": 3,
       "name": "BOBO & WILD - Shoreditch Coffee, Brunch & Bakery",
       "address": "1 Poole St, London N1 5EB, UK",
       "postcode": "N1 5EB",
@@ -99,8 +13,77 @@
       "productName": "Charcoal Cylinder",
       "source": "place-photo",
       "bareness": 0.9,
-      "placement": "Flanking the main entrance door or along the base of the glass frontage",
+      "placement": "Along the modern glazed frontage outside the ground floor seating area.",
+      "qaScore": 0.85,
+      "regenerated": true,
+      "frontage": "results/venue-1/frontage.jpg",
+      "after": "results/venue-1/after.png",
+      "attempts": [
+        {
+          "source": "streetview",
+          "outcome": "rejected",
+          "reason": "The image shows a wide street scene rather than a close-up of the venue's entrance.; A large car is parked directly in the foreground, obstructing the view of the ground level.; The actual entrance and doorway of BOBO & WILD are distant and partially obscured."
+        },
+        {
+          "source": "streetview",
+          "outcome": "rejected",
+          "reason": "The venue shopfront is partially obscured by a large parked car directly in front.; The framing is too wide and distant, showing a street scene rather than a close-up frontage capture.; Entrance details are not sufficiently prominent for a sales mock-up."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "used",
+          "reason": "Clearly shows Bobo & Wild shopfront and signage.; Modern glazed exterior with plenty of clear pavement space for planters."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "rejected",
+          "reason": "The image shows food (a dish on a plate) rather than a shopfront or street entrance.; No venue frontage, doorway, or exterior is visible."
+        },
+        {
+          "source": "place-photo",
+          "outcome": "rejected",
+          "reason": "The image shows an interior food and drink shot (a pastry and iced coffee on a table) rather than the venue's street-facing entrance or shopfront."
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Artist Cafe",
+      "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
+      "postcode": "EC1V 9LA",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Artist%20Cafe%20311%20Old%20St%2C%20Shoreditch%2C%20London%20EC1V%209LA%2C%20UK",
+      "product": "product-c-white-tapered",
+      "productName": "White Tapered Pair",
+      "source": "streetview",
+      "heading": 256.17127273737026,
+      "fov": 70,
+      "panoDate": "2025-09",
+      "bareness": 0.9,
+      "placement": "Flanking the angled corner entrance and along the blue exterior walls.",
       "qaScore": 0.75,
+      "regenerated": false,
+      "frontage": "results/venue-2/frontage.jpg",
+      "after": "results/venue-2/after.png",
+      "attempts": [
+        {
+          "source": "streetview",
+          "outcome": "used",
+          "reason": "Clearly shows the 'Artist Cafe & Bistro' corner shopfront and entrance.; Pavement area at the base of the blue facade is bare and suitable for planters.; Good framing with clear signage and prominent storefront view."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Franze & Evans - Shoreditch",
+      "address": "101 Redchurch St, Shoreditch, London E2 7DL, UK",
+      "postcode": "E2 7DL",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Franze%20%26%20Evans%20-%20Shoreditch%20101%20Redchurch%20St%2C%20Shoreditch%2C%20London%20E2%207DL%2C%20UK",
+      "product": "product-b-corten-tiered",
+      "productName": "Corten Tiered Set",
+      "source": "place-photo",
+      "bareness": 0.9,
+      "placement": "Along the base of the dark framed windows flanking the seating area",
+      "qaScore": 0.95,
       "regenerated": false,
       "frontage": "results/venue-3/frontage.jpg",
       "after": "results/venue-3/after.png",
@@ -108,27 +91,27 @@
         {
           "source": "streetview",
           "outcome": "rejected",
-          "reason": "The venue entrance is obscured and dominated by a large parked car in the foreground.; The camera angle is too wide and distant, making the shopfront small in the frame.; Framing is not usable for a clean sales mock-up due to visual clutter."
+          "reason": "The venue is captured from across the street, making the storefront too distant and small in the frame for a mock-up."
         },
         {
           "source": "streetview",
           "outcome": "rejected",
-          "reason": "The entrance is obstructed by a large parked car directly in front of the shopfront.; The framing is too wide and distant, showing a street scene rather than a close-up of the frontage."
+          "reason": "Image is a wide street scene taken from across the road, not a close-up frontage capture.; The venue entrance and shopfront are too distant and small in the frame for a sales mock-up."
         },
         {
           "source": "place-photo",
           "outcome": "used",
-          "reason": "Clearly shows BOBO & WILD storefront and entrance; Modern exterior with dark/steel elements suits charcoal cylinder or corten planters; Ground level frontage is bare and ready for planters"
+          "reason": "Clear view of the 'Franze & Evans' venue shopfront and signage; Ground level pavement is bare of existing permanent planters; Dark charcoal facade pairs well with charcoal cylinder or corten tiered products"
         },
         {
           "source": "place-photo",
           "outcome": "rejected",
-          "reason": "The image shows an interior food shot of a plate of French toast rather than a street frontage or entrance."
+          "reason": "The image shows an interior food shot of dishes on a table rather than a street-facing shopfront or entrance."
         },
         {
           "source": "place-photo",
           "outcome": "rejected",
-          "reason": "The image is an interior food and drink shot showing a pastry and iced coffee on a table, not a street-facing shopfront or entrance."
+          "reason": "Image shows an interior food/breakfast shot instead of a venue street frontage or entrance."
         }
       ]
     }
@@ -138,26 +121,25 @@
       "name": "Vintage Café Shoreditch",
       "address": "17 Cheshire St, London E2 6EH, UK",
       "postcode": "E2 6EH",
-      "outcome": "delivered",
-      "detail": "delivered (QA score 0.92)",
+      "outcome": "rejected-output",
+      "detail": "QA reject (score 0.55): The single product from Image 3 has been incorrectly duplicated into multiple planters clumped together, altering the intended look.; Lack of proper contact shadows under the planters makes them look ungrounded and artificially pasted onto the pavement.; Overall score falls below the required threshold due to compositing artifacts.",
       "bareness": 0.8,
-      "product": "product-b-corten-tiered"
+      "product": "product-a-black-cylinder"
     },
     {
       "name": "Rise & Bloom - Shoreditch",
       "address": "28 Hackney Rd, London E2 7DZ, UK",
       "postcode": "E2 7DZ",
-      "outcome": "delivered",
-      "detail": "delivered (QA score 0.95)",
-      "bareness": 0.4,
-      "product": "product-a-black-cylinder"
+      "outcome": "rejected-frontage",
+      "detail": "frontage not bare enough (bareness 0.30): Clear, well-framed view of the venue Rise & Bloom storefront and entrance; Modern glass and brick facade suitable for contemporary planters; Some existing seating and plants, but room for ground-level planter enhancement",
+      "bareness": 0.3
     },
     {
       "name": "Small square cafe",
       "address": "6 Ravey St, London EC2A 4QW, UK",
       "postcode": "EC2A 4QW",
       "outcome": "rejected-frontage",
-      "detail": "frontage not bare enough (bareness 0.30): The image clearly shows the entrance and shopfront of 'Small square cafe'.; It is a prominent corner location with good pavement space.; Warm brick and timber elements make the Corten steel set a strong aesthetic fit.",
+      "detail": "frontage not bare enough (bareness 0.30): Clear, well-framed capture of the venue's corner shopfront and entrance; Good pavement space outside the main doorway for additional ground-level planters",
       "bareness": 0.3
     },
     {
@@ -174,14 +156,32 @@
       "address": "44 Rivington St, London EC2A 3QP, UK",
       "postcode": "EC2A 3QP",
       "outcome": "rejected-frontage",
-      "detail": "streetview:rejected(The image shows a shop window display with mannequins and Rivington Street signage, but the actual entrance doorway for Project 44 is not visible in the frame.) | streetview:rejected(The image shows a large shop window and corner display with mannequins, but the actual entrance/doorway of the venue is not clearly visible in the frame.) | place-photo:rejected(The image is an interior shot of the venue showing the counter and seating area, not the street-facing entrance or shopfront.) | place-photo:rejected(The image shows an interior food display of pastries rather than a street-facing shopfront or entrance.; No venue frontage or doorway is visible.) | place-photo:rejected(Image is an interior food and drink product shot, not a street-facing shopfront or entrance.) | mapillary:rejected(The image is a wide street scene dominated by a large red van in the foreground.; The specific venue 'Project 44' is not clearly identifiable, up close, or well-framed.; Fails framing and venue identification criteria.)"
+      "detail": "streetview:rejected(The entrance door is not visible in the frame.; The image captures the window display rather than the street-facing entrance doorway.) | streetview:rejected(The image shows a large display window with mannequins for Project 44, but the actual customer entrance/doorway is not clearly visible in the frame.) | place-photo:rejected(The image shows an interior view of the venue rather than the street-facing entrance or shopfront.; No exterior frontage or pavement is visible for placing outdoor planters.) | place-photo:rejected(The image is an interior shot showing pastries, not a street-facing entrance or shopfront.; No venue frontage, doorway, or pavement is visible.) | place-photo:rejected(The image shows an interior food/drink product shot (iced coffee on a wooden table) rather than a street-facing venue entrance or shopfront.) | mapillary:rejected(The image shows a wide street scene instead of a close-up of the venue's entrance.; A large red van heavily obstructs the left side of the frame.; The specific storefront for Project 44 is not clearly visible or prominent.)"
     },
     {
-      "name": "WatchHouse Marylebone",
-      "address": "32-34 New Cavendish St, London W1G 8UE, UK",
-      "postcode": "W1G 8UE",
+      "name": "Artist Cafe",
+      "address": "311 Old St, Shoreditch, London EC1V 9LA, UK",
+      "postcode": "EC1V 9LA",
+      "outcome": "delivered",
+      "detail": "delivered (QA score 0.75)",
+      "bareness": 0.9,
+      "product": "product-c-white-tapered"
+    },
+    {
+      "name": "Kiss the Hippo Coffee Shoreditch",
+      "address": "145 City Rd, London EC1V 1AW, UK",
+      "postcode": "EC1V 1AW",
       "outcome": "rejected-frontage",
-      "detail": "streetview:rejected(The image shows an interior room, not a street-facing shopfront or entrance.; Fails pipeline requirement for exterior venue capture.) | streetview:rejected(Image shows an interior room with audio equipment instead of a venue street frontage.) | place-photo:rejected(The image shows an outdoor table and chairs in the foreground rather than the venue's entrance.; The actual shopfront and doorway of WatchHouse Marylebone are not visible in the frame.) | place-photo:rejected(The image shows an interior food shot (avocado toast on a plate) instead of the venue's street-facing entrance or shopfront.) | place-photo:rejected(The image shows an interior shot of two cups of coffee on a table, not a street-facing venue entrance or shopfront.) | mapillary:rejected(The image is a 360-degree equirectangular panorama showing a wide street intersection rather than a close-up of the WatchHouse Marylebone shopfront.; The venue entrance is not clearly visible, framed too distantly, and lacks the necessary detail for a frontage dressing mock-up.)"
+      "detail": "streetview:rejected(The venue entrance is distant and heavily obstructed by a large bus shelter, street furniture, and rubbish bags.; The image is a wide street scene rather than a close-up capture of the venue's specific storefront.; Kiss the Hippo Coffee Shoreditch signage or specific storefront is not visible as the dominant feature.) | streetview:rejected(The image is a wide street scene showing a bus shelter and surrounding modern buildings, not a close-up or usable capture of the venue's entrance.; The venue's actual doorway is not visible or framed properly for a sales mock-up.) | place-photo:rejected(The photo is taken from across a wide street with road markings dominating the foreground.; Significant window reflections and rain streaks obscure the image clarity.) | place-photo:rejected(Image is an interior food and coffee shot, not a street-facing shopfront.; Does not show the venue's entrance or doorway.) | place-photo:rejected(Image shows an interior coffee counter with a takeaway cup and saucers instead of the venue's street frontage.; No entrance or exterior shopfront is visible.) | mapillary:rejected(The image shows a wide street and bus stop view from an elevated position (likely a bus), not the specific venue entrance.; Kiss the Hippo Coffee Shoreditch's storefront is not visible in this frame.; Framing is unusable for placing planters due to the distant, oblique angle and street furniture obstructing the foreground.)"
+    },
+    {
+      "name": "Franze & Evans - Shoreditch",
+      "address": "101 Redchurch St, Shoreditch, London E2 7DL, UK",
+      "postcode": "E2 7DL",
+      "outcome": "delivered",
+      "detail": "delivered (QA score 0.95)",
+      "bareness": 0.9,
+      "product": "product-b-corten-tiered"
     }
   ]
 }

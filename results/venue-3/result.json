@@ -1,60 +1,87 @@
 {
   "venue": {
-    "placeId": "ChIJq1Ji6JsddkgRyRIC2XEMZxc",
-    "name": "BOBO & WILD - Shoreditch Coffee, Brunch & Bakery",
-    "address": "1 Poole St, London N1 5EB, UK",
-    "postcode": "N1 5EB",
-    "lat": 51.5355849,
-    "lng": -0.08868519999999999,
+    "placeId": "ChIJV2sbjrccdkgRKOT9Cj2SydE",
+    "name": "Franze & Evans - Shoreditch",
+    "address": "101 Redchurch St, Shoreditch, London E2 7DL, UK",
+    "postcode": "E2 7DL",
+    "lat": 51.5248675,
+    "lng": -0.0726335,
     "types": [
       "brunch_restaurant",
-      "sandwich_shop",
+      "cocktail_bar",
       "breakfast_restaurant",
       "coffee_shop",
       "cafe",
-      "pastry_shop",
-      "cocktail_bar",
-      "bakery",
-      "dessert_shop",
-      "confectionery",
       "bar",
+      "restaurant",
       "food_store",
       "store",
-      "restaurant",
       "food",
       "point_of_interest",
       "establishment"
     ],
-    "rating": 4.7,
-    "userRatingCount": 831,
+    "rating": 4.2,
+    "userRatingCount": 637,
     "businessStatus": "OPERATIONAL",
     "photoNames": [
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZEsEX3D_K-OsdQQVzN5IWLzqae1HW2nar96inSIuF9HtBJIlkAXoa1yt7Nou7yZI6mB-seHBtbw5_6Y-VCXGEyL_EA-4y3aorZlxAFe60qsfoLTbRZR_VZpSjiJNs5WFp9Eu4RGRDiYFxc_gtirbXevwsZiCIHBe4oUzXMB0lULJceAjpriWdsOJRykZq64UNKDQJNiQfgRCdW0wjz9BvgHDDzM_9-K0JhaKncxLwvl-c0TStg9YBhZ0JRvzqWRZF7qFv2a2aAp8Fnq3Wezssv4twDIs-nJ9MuhgzYxb-Q0YsIYiCqxQxu1nFPTn9DPCSWyuBZNLv18jaj6cDYIANST5YcfFv-wnTLUshey4qtJkfTcUPg4-vtpzQE2tkRk-WdCnfmtWNUzxjpmdxAJRLd83d3gdo",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMbb27zeTkBBp96znG9Th0eqO2V5hA8kYPm_YU5hV8e3j43GkZkH2ljAAi3NFy7_1tVwK-hJYUJw9_fvo7FXoEa8OCkdfIQ6M8ThK4EeiM_OX0oPu0KhIOhv1Mk4rVtllirjlNk8V5nW7wNINPb5sLkXq6Atfd6iKGeM3ioVZe7ldcyqv_e14g97BKbRa02fxIL937AjNsNuXjJykNujVmyHtja5Zc5LWQiE_RDMZ12-svL1It98fjOvG3Dzz976Voppsf8tteu5WNHOfZTLqLvzuR76MRvuLJzV7t0x00_lh-dOGtZT4T5HyAPbZ8bNMRT5eiFBsaftHc0GuzlPUCaZz6_Un2fhZI8YLqj7y1xFUQLmsN6w3r1_fEaOsOnBqi9Q9hnCz18EKHcXkhxfWbbkjYIlq5-EtxNmUH4OKJBP",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZ3XhtxLf-anccnbzycdiGtaKC0INaiE82Pu1IyTK2fybOKJgGMTPiWxAZ31RugkCwz2DJaqqmfZRkvINY3p9pZAz3-4Tq8qNl9AdDYD-lCDqjcOXYXn05kzztqVySsCAjVM7M-8N23WAp7MpJFvQVNhPjA6LJtTd7egb7lfOPUl_MGZH0bJ0zmLekduoRMEzsP0ZIHAfMMIBmXfpHmCL88DlgsjE_Nnh3rsT5XmVlK9wDlUB__Wnuq4CeW3FC0NZ1z438eH5NtDmPAXxCa7bmISZMhGIIQkBtZZgNci7oJdtnwEirKP8HagG7-8xCw7Ie232Qt5vDYGzqErX79axvXYK7aFSRoA0YHMfBQ_B_l3y0aRqXiAuzuAOrGYNOCTj912dWy1qtm4mArvYyVUGDeWWCZMWPEWCuozUOCLUmi",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZA_uDtNGfJ10k0gAK6mqnkrwDRVDtfdblYeqVEiHKZxB3LqPmXDOyH-0LZ_FxaMNYW5xEmpAuXxXgrOcd69Alzw6BF8BJ6mSmHPcopNT6UIH4R1nVb_jqwqzmytFV3_dZsbws_EscHJ_0lxroiNfrV0sm2z90DHZB95AtvP5DXTO5mB8SigLcPjX07rRI5UUjnjuHb3ZWyNN6HBh5tI4nimWSNPuEkHGWXHt3OizV5u3ZeSO5adYibPnzAFic2VvzoJNJEkolS_mcYmR6hZdtDoutnCO5cSCCuLevYJHUU6FeVGo4AMKBwQXAjTDXBAFLq6AQ1o4gKxljF5oPQy25DNy0npZY5aRyjW7SQdx2Y-bPBjF9k5fztp874zGDdevJo34LQJa4_Z4g2A7u4ZzbTqPqN22IArCCy_GQVqeSJkA",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMarZjnVbxaVfUU789B947ZBAu1_BYdAyZVvjbOl8TllLNVt0EQ6WuuLR0Ro2MLAjd_u3mh7UIC-TU537IGFOTFQXp92zB2XUNfEanMO0J839vbnu7aD0voTLq2zG6HYyuuaWrLLXaraxZYC4de4zghoCRKy_JQqm_odgX4tekO5oFbSRVXAa7bYnaflW-vfposYB-stv9C0x7w-gK7sB89Collp_pSei3frR-0iadY5QgMtqEYujTzOnN1wxxEHDNLHXiwphDKPFO03-D7TnZXWJ3RfNGYG8DY_hjckZMNiRIlWrMaJz_4z2PLzibLXhfxpP-tiTrn-F5S-Ur6Aqyut9E5zoHM2ErA6_sjbeg6IojU028feaxjpSinxwYowVAQ0gUlj_XFpfEubsCiWyEVLzw9-c0CHtZf7O4Z6mBjm",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMahTGRhk7B0AFhZhjehEVnZwWmirP-PeFVioqCIbRY2Bg_O5mBneYhLA_Sqju8n890jjGdIAeCF0yUN2ZNAHCtNCQW93A3x1dt4SO6UiSeUhjOsARuvilycWIJyzDo6EEKxym9c7PsXQ29kf1OEzGjDp_69nMaqHqnRSJtz_nvQp3tKcZAqpbBW5CrXIjcTXiND-zPjN0J8qySkmrYE2VLRqbSvY7kuW7dblcRNPVO9cAM4nJFc2KB7yBbz9_qfr363_FqhjDWcWPQ7WWhbBM4HQXCkh3D2gEBdJbYZ5lHzrnMnJ-s0tv7WELwY0Orre3tuGlxMMK-OIIbemShC2hhECD3D4Au5x7J_VcDc8I4T4och0MmpKORSAH9ls-vSCsRV73wB5lDgQ4CZ5D1h5xMabIn47n7TQbVm65llKRD1",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZG-qXbeyIHitnJjUqgNHjvOSmdzK85a5SM6KvlT3ufjByBUv6C6gtMMkeW9IF8D1KyTz4njrXTNrxwQies7vZ7igrwmB5u_gTgPQ_rPuVoJDA_96yECJwNyArGEEvDA27oOSNriS1i0EaiYXIp93JiXf7BTMomPR1pBoUypXBwNpukTl2BgCOMkeyzvwWXTxwph2tcSYzGkvN1MShhXTI40QNW2fafPVp80djVV2cxKT3OY63Eg5dzqBMZmres005VuOK2K4yq_gLvgCSN2Usuk03HvBwahEjnPnQemyvntmSm-3MnmkKQr-HzOXcV8zCCWKWDVnrrlA48Nyjxif1NGohAeiOo_wafOHeITnJPVSDrtZvXVC7dh2zCLASsn-N9xz7GBp1jo9QLJw89CK7WDzbcGxSKqM0HbPkxVHI0zA",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZ84SKgM7dCMFLH9mNe1BUuuceL9PyY4ufiAZk2mDpszd4Me8RjRpwDQLoSW1VCz-OSohZAHpqlQdO0Wqwc7fUkoOR9AJThJfpyz79AjUu07oHEQh_l7TytFqGd-fUb3d9r2vCxYRvf7n-KBrP3CAE2Lqh5dDV40xolR3kvhRTpPwiSphRfUTBqOEn68VZmHuV9b5YoWFM9dB8gaTVyH2SbJFpimjxWVwcDoUQQKPi_9jMja9M2XU07gTA2gKFiVUU9vps9rCkUWPbsodpgp4ILvAcgtxJlN8_XwxcZLWGLRl0C0sFdmJ6-Uu3HT_1RXwQHkRoW269hlZb9PB_MrA9QctZ8oEAryKcMpHxXbndvxtCwHs3vpEQNkfvqccxUocu0BaLkeYJDyZ5l_52ACBsQ2w4LhFKxI-NAVneW_K4q",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZYlLRW92rcpo55xniZ8g_DaLvagflJF0WHJb9UzsQiDiY7gzrKg3UQTvB59atTpazn1c9m9ysBtPZZnK6WTyccuV8wCYc1uAqkJBGAY0emgmpqWyWkfz3IikX661xCFejtXyAMaOg22zgwzHWSk9K7fWshZAoq4MT5mtks1aLtJbXU7KKffU8zpB_7NA-e_Ee6eAV2Rdf6mIm6Klh6-nTJzthw8WublQv3cDUHPBvuyddRAZI-08MAskoy_3KFDSGZqR37JDJDv7Fmlazja0ODAIo0qoAcK5-uRTw_1jdpOVLatFhLVr3EoC-wvqr5L6JKXzPV94X6dQbRhytAdJLA-843QYJdCXmoGegZanfk8kg-cIogE2YCfLeHvXFarv6Tu1jlKzqjfyD0w74SCZHcNTpG",
-      "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMaj89BpeJiV6scJJba-EX87SyfUfawn1PUS-VsrtB46WAkbgE5ZsO0mrs2GE03ZKv459o-rrFPedYAEkg3rfsNPyl-x8cNPKrAk43LDxZ0GEAYokiKz5vDYKC34vHHq9ncwXvDOygXTsKpIasiK7i2iwfVpmosrmQQ9pj5rmXnOz376EaqLk1RQq0r21myYg1r2jHUtsCC0ViZLVPmTIMUCGHdD1Zb7RktR9ht49q1jWSh2rsf3-LaQixCSA4xm9KGN_vLZnGOuRxob8cqucb_Zy4-mBXvu-BSgrKYXLMe9fluK7eiMsfLexOYwT4Z2dY25Y_zEk5RjNL9AcQqmud61iEYTkVY7obRQ3Wz6krrb2I-O8D69r3boZmcvEKu2_Hc9nhrzTyIHOM-slrx9DxYMeJm5lJU"
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMYt7jEXYgcXiZcJ-U-vtG6obtTEKptmCHTMU-xyrrOJNF9fuH762kwGlxvRR-7DclnHRxxxQ_9OjJSem91bGHk65uFIL0yr5ChSAl-6lPlPinpzeS66h0bwiYm-0_rFWYWYVz9_7V_qpXLAk-aNs7oyzGr3GP0twsPRdWM8Vsj53nhvJs2_yQCZ5_W8C2kQtUFChOz8tzJjHcAYSd-eBMnV60KctEk6Aeu_vnBX8-WD8BlZtgD4VaF5s__T-E-xEIYF1LQwcaymmKDX5a3qDleMscfMWZQdixo12QfAm6kU7aUKrBrhNOEMw2My_BPGLVhyiKRA3eauFgDsNWDUXA3krfu__sku2kxHVXOlZWli7yRm_3nHWotd9xayowztL5Zuw6X9lOJO7BUEQS8xLWEOqPjuKVY",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMbaEzhJcMZnjfwXy9UVYoRv5ASOfQxbxQxWAyg-QQaaOmLsj4rTCKyL12Tvmki-zUJODV-_mBBzWKVZSgFKtfDUuSnuzFRi2Vap6POTP2qQ4ROp5V1tD6ihQyt20CMXMPCclskm6908vvvSgHA02c1glK548PhhEaqhqFkrSn1GylzzEN3vd4POMqn9jIdwFrAecmzUZfAhHYryL4WFqYd5o-b4wwYt_g33_rYFB9BzuuevoV-x27E9vBsVtcQsoLwyBrHqpq9gDcAaehzjZH1PchnyTB4TzE-xwb0_7z6myUsMV5Q99zf2gpanZthygqBaafE7kdHFlMNgtIbrohHz414GBp02RmXnIlUcnmHu3Wuc_DSfRs-L7su8dLuVLtAREFN8Eh-gXZh1H0FeTFEInGRWkAGSoEzbktfimvby",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMYcgPXcBMYHcWhEfvjak4V-loiT_YAvHcF8DWvWhJNZvnMjvEdZabzAa18JDpxnXZujX7nwYif0xJCu-t2QeSQ3Nn5sSWiGB0y-T8vqpg2ECbJj9ess8I0EdjovHuvqKr_DFnF5btzwwhG2liYRgz8m0vk1fb4jFu5sNfe-wOpisC2Avawa9P60KlLSjJUzkPaOLssyrxygMc6lfYWMbhmAuLBFKN0KfMmTThyLy8In0XpLGl7RqL4to5VRXg0rVLuSD_n_XLC-4yCp-cjNayeJWZ0UxblI024wfbutUSKqpX5PADFe_GXWrCcnMqz3i2se7x921HXS4Tw-gtwuU4NX1NCogc0BKdzxlqTp-KruieirfS5I7IKo8aMEUNVQJxrznHqPxmVxT2P7plNwsTUVDsSFcrxVD-EivKGOipfk",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMZiF8RQmoia_-R6MX5LXZqiRqjPb0M3k8NIViK7ELjcy77LTNcP-JT9Y4zt-fzAVOOBmMANUWiig7PDMqLjpraHj0Gu2ge4Hd903EX9uLFbfoqjhBvkfdkzy8h8l1bcA5FGr8gQmU2rU1X8MxnnVQF3lBD-S3H-v8RLWs482jx1nfkAfakPAtycTQS9EFfRReiWNVSvWur6lsjhJ-W2jhQidQfgdOaBMSWdPE7P8vleY8FhvY83sUIiNc-JgpE-kfkYfL-bvT4QECj9DIf-6c6vPVUtcff5_3g8LAsAjd0DCNUhrH4g0wB6lKK5079_q5GQv8pXNjknPnjtIeAykIcEoH2yVrQ1pd7r9CWhe9czF1FsX_FkFtFcztatoAf6HD8RrsZPtZaiA_49-gsa156P56MjXRohvF39FLFVKQ9stw",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMa_q4IrNEIh6C0tbUhDHRQcNjnmUpfIhBj-sLO4DBPrM3ISBHs5fkUuN4ZdZOpSv5S6nrlwoRuxLqDeWk7BrOqKqksyC451dvTDE1mZ-JQCnPhXKO6GyLe8GDGNBe3zyn_ne_y6ejFiVHpyYrvpoYff7ah6DFE9qAAptF9qdUtR9EEhWS-28HkmJN0M7yRRWO5n3gLId-ndQ8y2AZRVw5pxKrhY6XwB-2OF-1JUjgMq31tMAV4NeI3UL8sv80mcS0-S7X7LVN4aLeoM6EwcLBuW1YmiuE-EJuuvFzTvnb5PpWbqpxWJgPYn8bM6L6_uX5Abe-nWO9N11gP7v3erlC0SZavUC9b__28-gw53za5YYh6K7kCTx8zD0sZ8bHIt7Z6011m5dz83JZjdjcBPCYywMTcDR3Y",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMa5c56GaPtA25tLsEHOvReWoFN0wLR3kb34GVkAXpkE8GGemr5QOXlu5G-oVTAEWOOIVQrjbmpcY9JxD67Hp0TOGBiPqDt4CwY0QVBPuOYfdMA5rK7-Qdx-JclAuz49f82GLk6rqptgTJj2toTrZDML2GgG0hk_EodcSN-N2v0IE1VwQir_07Md-cwInfHAbXlsYoPZBIFlCpR0voOhA_GE95F_5RuiBtUJZgdkNxlESxjMmxN7KBTvXLrklJPMZ0SwcCnpjBQtd9p7bp-R4tnbNNcud6b19SqtZcH6nlbCp9QqqPdYqYanRlwkjkAszax1Ii3cnkz-UTC7tSVy12hfwiMvLe8mMUqmqkcnhNXfuPPvfpzT9YXRlC8KksNAKfsXlSZYLgOuEwoHZqiIpIY5DzdwcACYCujBPAUDjeW0_w",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMa_5USJ-BptxXOqn_-dln1Bh9LXQH1V2dJYeiL_OlpyKfJ6394k7E2KlZTTNxcXFYhPJUwrAf6iI1xkrF0TPe2q2OTnen4RLqhqZT-KJF9bEbhXbkW8L4z2rfaJVwAG5cRuyAUM3vsjyd7MpHTGK9hj26G7MwwabkkFs6LbRgsClOhlWmbG9H9m6FLMWyMz0rsDi-8XIt-7cTYamXSYV1_mYNEIyf9ZzVDgPUjTX-wccvdvp1q9eLU75PjV2PdO16-ItOgYfUB81EW8kBCR7nIvK9AIr3I485SiA3b2es4xut4E0_aU9XDwWqO8Bf-98bO6VGsURu2tmCWrDFYUceis-nTEyNuQRGqQp712U7uVOh04nTrIK53ifVXmQ4GMPhGC2va3xaTamYo1uWBbJu90aRjO2xs",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMaLNDxShxtViqKcWvOfcdn-EPDzbSNpYCc7mkUkd_XMqXqyhvHGthBqk5lnZETPVuQzuJruSQrldZjTiCmeEHd303BsqTJp1JKJg_07FPeMQj3MMZuPYqqm_4pQ3yFun6qHYvJX11fUT82lnhWQ-9_HjhNc1P8KHyMHR9FXs4Y5kO18kbgxIpbIq5nhZO-1Z1Q_MuNqpPHdHOVCALxb_U_44UV9wDH_wGXSO6g9f-jAnFismK0oaPv2PLzttimPOIoiUsCeve-AFapq_QnajrGmqF3IpXt0ARUw3dYUvZay_cRx5_Yk6osKbnfnfAeIivDL6KT9TkMTBJraCdmMZsZ8Whcr8HMn3wequ4lN9DYEV33PBDnFRVhsii6sF_ue5_XV9ChgfdE_Zm18TernwUIr-3HkUBrsRLruVFsb03wToQ",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMb9JrxNRWbyA80gz4cAlOQqe2K7qUYsonLYxrM4BLBZFW6gElYaYQXpT4SUjPIDDJSvlxlGEMbgfrV1GPgWkEvtXj1_HXd18VOcjWAhG0QVmCOX8FUI3b9x3TdcpXhTS1Rk7-WZ2NRM05oqukO-WCzx1qmnldeXRy3Ol-4MOyP29I6-lznclJv1oG4u2aLN2r0eiDLVaCJ6okGTZdQTYzCKgcLLuZbssEXuE453sEe6h5-kyLo8BIHUyDwC-CktDRe082wtpCus4mCv6XA3GwxHM5K5-rZiZ316j2leNVmVFIFxH9s0JMid6bgmBi4YXye69E9MhZ79UDvETpxIdGOUgZhHw468yCWti_livucWZ3J59ihA4DPjwcWJh92ir2wwOarUEGW1LWSYwaPEZ_rVJTCntmANiWfICPhlDJvwwA",
+      "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMa-8FuIjcfHcSvDKuynJLvsz_39g2MgYupttEuUyXSma-lZ2eUVNzVHR_dyufhRV_oEXhA1PwlwCpk3h1qSE0iC74zrEeLw6Yhdp2L-laB87zbUVB1S_6Emu3uGDjNOMAlycHfIr7hGRVizA5yzy6DFIakYgcYx9BIISvXjIGDACej3nE-z5fp20PJQZcWon5XNm8Ims6GNXNHaFZ8PC3_Tqq8rzjKuP5ZCILYOasmOb-Q4bkrHOWa7TbIbMs1LUXjOPpcSU3Fy7F2jYQVjlZPozRXciIjaymaCk1k3j7qTO_tEBzgKkj1aipT8e2-1nxDycHsy-22vUyrBO2jeWYwc31C-ANc1LB3SWd5IOOBJShOLxOzFqr4PBWZzTHpByWBxVOYJDLCxMFygdxvqtnfdB0Om-ssFlqmDbzU7wy8DKg"
     ],
-    "website": "http://www.boboandwild.co.uk/"
+    "website": "http://www.franzeevans.com/"
   },
   "capture": {
     "ok": true,
     "source": "place-photo",
     "imagePath": "/Users/anshulgupta/Innate_task/results/venue-3/frontage_placephoto_0.jpg",
     "provenance": {
-      "photoName": "places/ChIJq1Ji6JsddkgRyRIC2XEMZxc/photos/Aa-ngMZEsEX3D_K-OsdQQVzN5IWLzqae1HW2nar96inSIuF9HtBJIlkAXoa1yt7Nou7yZI6mB-seHBtbw5_6Y-VCXGEyL_EA-4y3aorZlxAFe60qsfoLTbRZR_VZpSjiJNs5WFp9Eu4RGRDiYFxc_gtirbXevwsZiCIHBe4oUzXMB0lULJceAjpriWdsOJRykZq64UNKDQJNiQfgRCdW0wjz9BvgHDDzM_9-K0JhaKncxLwvl-c0TStg9YBhZ0JRvzqWRZF7qFv2a2aAp8Fnq3Wezssv4twDIs-nJ9MuhgzYxb-Q0YsIYiCqxQxu1nFPTn9DPCSWyuBZNLv18jaj6cDYIANST5YcfFv-wnTLUshey4qtJkfTcUPg4-vtpzQE2tkRk-WdCnfmtWNUzxjpmdxAJRLd83d3gdo"
+      "photoName": "places/ChIJV2sbjrccdkgRKOT9Cj2SydE/photos/Aa-ngMYt7jEXYgcXiZcJ-U-vtG6obtTEKptmCHTMU-xyrrOJNF9fuH762kwGlxvRR-7DclnHRxxxQ_9OjJSem91bGHk65uFIL0yr5ChSAl-6lPlPinpzeS66h0bwiYm-0_rFWYWYVz9_7V_qpXLAk-aNs7oyzGr3GP0twsPRdWM8Vsj53nhvJs2_yQCZ5_W8C2kQtUFChOz8tzJjHcAYSd-eBMnV60KctEk6Aeu_vnBX8-WD8BlZtgD4VaF5s__T-E-xEIYF1LQwcaymmKDX5a3qDleMscfMWZQdixo12QfAm6kU7aUKrBrhNOEMw2My_BPGLVhyiKRA3eauFgDsNWDUXA3krfu__sku2kxHVXOlZWli7yRm_3nHWotd9xayowztL5Zuw6X9lOJO7BUEQS8xLWEOqPjuKVY"
     },
     "attempts": [
       {
         "source": "streetview",
         "params": {
-          "heading": 311,
+          "heading": 351,
           "fov": 70,
+          "pitch": 6
+        },
+        "judge": {
+          "showsEntrance": true,
+          "entranceConfidence": 0.6,
+          "framingUsable": false,
+          "isVenueShopfront": true,
+          "frontageBareness": 0.8,
+          "obstructions": [
+            "wide street",
+            "distant framing"
+          ],
+          "surfaceAtEntrance": "pavement",
+          "recommendedProduct": "product-b-corten-tiered",
+          "recommendedProducts": [
+            "product-b-corten-tiered",
+            "product-a-black-cylinder"
+          ],
+          "placementHint": "Along the pavement outside the outdoor seating area",
+          "reject": true,
+          "reasons": [
+            "The venue is captured from across the street, making the storefront too distant and small in the frame for a mock-up."
+          ]
+        },
+        "outcome": "rejected",
+        "reason": "The venue is captured from across the street, making the storefront too distant and small in the frame for a mock-up."
+      },
+      {
+        "source": "streetview",
+        "params": {
+          "heading": 351,
+          "fov": 90,
           "pitch": 6
         },
         "judge": {
@@ -64,9 +91,8 @@
           "isVenueShopfront": true,
           "frontageBareness": 0.8,
           "obstructions": [
-            "parked car",
-            "lamp post",
-            "railing"
+            "wide street",
+            "shot taken from across the road"
           ],
           "surfaceAtEntrance": "pavement",
           "recommendedProduct": "product-a-black-cylinder",
@@ -74,50 +100,15 @@
             "product-a-black-cylinder",
             "product-c-white-tapered"
           ],
-          "placementHint": "Flanking the glass entrance door where pavement space allows",
+          "placementHint": "Along the pavement edge outside the black shopfront",
           "reject": true,
           "reasons": [
-            "The venue entrance is obscured and dominated by a large parked car in the foreground.",
-            "The camera angle is too wide and distant, making the shopfront small in the frame.",
-            "Framing is not usable for a clean sales mock-up due to visual clutter."
+            "Image is a wide street scene taken from across the road, not a close-up frontage capture.",
+            "The venue entrance and shopfront are too distant and small in the frame for a sales mock-up."
           ]
         },
         "outcome": "rejected",
-        "reason": "The venue entrance is obscured and dominated by a large parked car in the foreground.; The camera angle is too wide and distant, making the shopfront small in the frame.; Framing is not usable for a clean sales mock-up due to visual clutter."
-      },
-      {
-        "source": "streetview",
-        "params": {
-          "heading": 311,
-          "fov": 90,
-          "pitch": 6
-        },
-        "judge": {
-          "showsEntrance": true,
-          "entranceConfidence": 0.7,
-          "framingUsable": false,
-          "isVenueShopfront": true,
-          "frontageBareness": 0.9,
-          "obstructions": [
-            "parked car",
-            "wide street view",
-            "lamp post"
-          ],
-          "surfaceAtEntrance": "pavement",
-          "recommendedProduct": "product-a-black-cylinder",
-          "recommendedProducts": [
-            "product-a-black-cylinder",
-            "product-b-corten-tiered"
-          ],
-          "placementHint": "Flanking the glass entrance door if pavement access is clear of vehicles",
-          "reject": true,
-          "reasons": [
-            "The entrance is obstructed by a large parked car directly in front of the shopfront.",
-            "The framing is too wide and distant, showing a street scene rather than a close-up of the frontage."
-          ]
-        },
-        "outcome": "rejected",
-        "reason": "The entrance is obstructed by a large parked car directly in front of the shopfront.; The framing is too wide and distant, showing a street scene rather than a close-up of the frontage."
+        "reason": "Image is a wide street scene taken from across the road, not a close-up frontage capture.; The venue entrance and shopfront are too distant and small in the frame for a sales mock-up."
       },
       {
         "source": "place-photo",
@@ -126,12 +117,13 @@
         },
         "judge": {
           "showsEntrance": true,
-          "entranceConfidence": 0.8,
+          "entranceConfidence": 0.85,
           "framingUsable": true,
           "isVenueShopfront": true,
           "frontageBareness": 0.9,
           "obstructions": [
-            "glass railing/balustrade with text in foreground"
+            "outdoor seating tables and chairs",
+            "seated patrons and pedestrians"
           ],
           "surfaceAtEntrance": "pavement",
           "recommendedProduct": "product-a-black-cylinder",
@@ -139,16 +131,16 @@
             "product-a-black-cylinder",
             "product-b-corten-tiered"
           ],
-          "placementHint": "Flanking the main entrance door or along the base of the glass frontage",
+          "placementHint": "Along the base of the dark framed windows flanking the seating area",
           "reject": false,
           "reasons": [
-            "Clearly shows BOBO & WILD storefront and entrance",
-            "Modern exterior with dark/steel elements suits charcoal cylinder or corten planters",
-            "Ground level frontage is bare and ready for planters"
+            "Clear view of the 'Franze & Evans' venue shopfront and signage",
+            "Ground level pavement is bare of existing permanent planters",
+            "Dark charcoal facade pairs well with charcoal cylinder or corten tiered products"
           ]
         },
         "outcome": "used",
-        "reason": "Clearly shows BOBO & WILD storefront and entrance; Modern exterior with dark/steel elements suits charcoal cylinder or corten planters; Ground level frontage is bare and ready for planters"
+        "reason": "Clear view of the 'Franze & Evans' venue shopfront and signage; Ground level pavement is bare of existing permanent planters; Dark charcoal facade pairs well with charcoal cylinder or corten tiered products"
       },
       {
         "source": "place-photo",
@@ -162,8 +154,7 @@
           "isVenueShopfront": false,
           "frontageBareness": 0,
           "obstructions": [
-            "interior food shot",
-            "no street view"
+            "interior food shot"
           ],
           "surfaceAtEntrance": "unknown",
           "recommendedProduct": "",
@@ -171,11 +162,11 @@
           "placementHint": "",
           "reject": true,
           "reasons": [
-            "The image shows an interior food shot of a plate of French toast rather than a street frontage or entrance."
+            "The image shows an interior food shot of dishes on a table rather than a street-facing shopfront or entrance."
           ]
         },
         "outcome": "rejected",
-        "reason": "The image shows an interior food shot of a plate of French toast rather than a street frontage or entrance."
+        "reason": "The image shows an interior food shot of dishes on a table rather than a street-facing shopfront or entrance."
       },
       {
         "source": "place-photo",
@@ -189,8 +180,8 @@
           "isVenueShopfront": false,
           "frontageBareness": 0,
           "obstructions": [
-            "interior shot",
-            "food and drink close-up"
+            "interior food shot",
+            "table setting"
           ],
           "surfaceAtEntrance": "unknown",
           "recommendedProduct": "",
@@ -198,22 +189,23 @@
           "placementHint": "",
           "reject": true,
           "reasons": [
-            "The image is an interior food and drink shot showing a pastry and iced coffee on a table, not a street-facing shopfront or entrance."
+            "Image shows an interior food/breakfast shot instead of a venue street frontage or entrance."
           ]
         },
         "outcome": "rejected",
-        "reason": "The image is an interior food and drink shot showing a pastry and iced coffee on a table, not a street-facing shopfront or entrance."
+        "reason": "Image shows an interior food/breakfast shot instead of a venue street frontage or entrance."
       }
     ]
   },
   "frontageJudgement": {
     "showsEntrance": true,
-    "entranceConfidence": 0.8,
+    "entranceConfidence": 0.85,
     "framingUsable": true,
     "isVenueShopfront": true,
     "frontageBareness": 0.9,
     "obstructions": [
-      "glass railing/balustrade with text in foreground"
+      "outdoor seating tables and chairs",
+      "seated patrons and pedestrians"
     ],
     "surfaceAtEntrance": "pavement",
     "recommendedProduct": "product-a-black-cylinder",
@@ -221,38 +213,38 @@
       "product-a-black-cylinder",
       "product-b-corten-tiered"
     ],
-    "placementHint": "Flanking the main entrance door or along the base of the glass frontage",
+    "placementHint": "Along the base of the dark framed windows flanking the seating area",
     "reject": false,
     "reasons": [
-      "Clearly shows BOBO & WILD storefront and entrance",
-      "Modern exterior with dark/steel elements suits charcoal cylinder or corten planters",
-      "Ground level frontage is bare and ready for planters"
+      "Clear view of the 'Franze & Evans' venue shopfront and signage",
+      "Ground level pavement is bare of existing permanent planters",
+      "Dark charcoal facade pairs well with charcoal cylinder or corten tiered products"
     ]
   },
-  "chosenProduct": "product-a-black-cylinder",
+  "chosenProduct": "product-b-corten-tiered",
   "composite": {
     "imagePath": "results/venue-3/after.png",
     "qa": {
       "productFaithful": true,
       "scalePlausible": true,
       "perspectiveConsistent": true,
-      "shadowGrounded": false,
+      "shadowGrounded": true,
       "entranceClear": true,
       "buildingUnaltered": true,
       "artifacts": [
-        "Missing contact shadow underneath the base of the planter, making it look slightly floating",
-        "Slightly abrupt cropping of the text behind the planter where it occludes 'DEALER'"
+        "Slight softness in lighting on the leftmost trough compared to direct sunlight, but very acceptable."
       ],
-      "score": 0.85,
+      "score": 0.95,
       "reject": false,
       "reasons": [
-        "The product is extremely faithful to Image 3, and the building facade remains completely unaltered.",
-        "Scale and perspective are believable in context of the storefront.",
-        "However, the shadow needs improvement as the planter lacks a realistic contact shadow on the ground."
+        "The composite successfully integrates the exact Corten Tiered Set from Image 3.",
+        "Scale and perspective match the storefront environment well.",
+        "Shadows and ground contacts look believable.",
+        "The entrance remains completely clear and the building facade is unaltered except for the product placement."
       ]
     },
     "regenerated": false
   },
   "status": "delivered",
-  "generatedAt": "2026-10-14T15:12:20.769Z"
+  "generatedAt": "2026-10-14T15:45:52.992Z"
 }

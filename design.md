@@ -117,11 +117,15 @@ was automated, not that it was flawless. Every accept/reject is recorded in the 
 The three the pipeline **delivered** (full trail in [`src/data/results.json`](src/data/results.json)
 and on the deployed site):
 
+*(From one clean end-to-end run — these are the first three candidates to pass every gate, in discovery order; nothing is patched in afterwards.)*
+
 | Venue | Address | Postcode | Product chosen | Capture | QA |
 |---|---|---|---|---|---|
-| **Vintage Café Shoreditch** | 17 Cheshire St, London | E2 6EH | Corten Tiered Set | Street View not the clear shopfront → **Google Business photo** | 0.92 |
-| **Rise & Bloom – Shoreditch** | 28 Hackney Rd, London | E2 7DZ | Charcoal Cylinder | Street View not the clear shopfront → **Google Business photo** | 0.95 |
-| **BOBO & WILD – Shoreditch** | 1 Poole St, London | N1 5EB | Charcoal Cylinder | Street View distant/car-obstructed → **Google Business photo** | 0.85 |
+| **BOBO & WILD – Shoreditch** | 1 Poole St, London | N1 5EB | Charcoal Cylinder | Street View distant/obstructed → **Google Business photo**; regenerated ×1 | 0.85 |
+| **Artist Cafe** | 311 Old St, Shoreditch | EC1V 9LA | White Tapered Pair | **Street View** (shopfront clear) | 0.75 |
+| **Franze & Evans – Shoreditch** | 101 Redchurch St, Shoreditch | E2 7DL | Corten Tiered Set | Street View not the clear shopfront → **Google Business photo** | 0.95 |
+
+All three products appear — the rotation (§2.5 "Product choice & variety") spread the catalogue across the set: Charcoal Cylinder on the dark glazed BOBO frontage, White Tapered Pair lifting Artist Cafe's blue shopfront, Corten Tiered Set on warm-brick Franze & Evans with room for the palm.
 
 **Why these were picked:** each is an independent café with a genuinely bare/under-dressed
 ground-level frontage (bareness ≥ 0.35) and a clearly-framed entrance, and each composite cleared
@@ -140,15 +144,16 @@ frontages, where it would look wrong — honest fit beats box-ticking.)
 
 | Venue | Reason |
 |---|---|
-| Small square cafe (6 Ravey St, EC2A 4QW) | Frontage **not bare enough** — existing greenery/seating already dresses the entrance. |
-| Project 44 (44 Rivington St, EC2A 3QP) | Available imagery showed a **window display, no clear doorway** to dress. |
-| WatchHouse Marylebone (32–34 New Cavendish St, W1G 8UE) | Frontage **not bare enough** for planters to add much. |
+| Vintage Café Shoreditch (17 Cheshire St, E2 6EH) | Composite **failed output QA** (score 0.55) — the planter wasn't faithful enough to the reference; held rather than shipped. |
+| Rise & Bloom (28 Hackney Rd, E2 7DZ) | Frontage **not bare enough** — bareness 0.30; existing greenery/seating. |
+| Small square cafe (6 Ravey St, EC2A 4QW) | Frontage **not bare enough** — bareness 0.30. |
+| Project 44 (44 Rivington St, EC2A 3QP) | Imagery showed **no clear entrance** in frame. |
+| Kiss the Hippo Coffee (145 City Rd, EC1V 1AW) | Street View entrance **distant / heavily obstructed**. |
 
-All three delivered venues show the **shopfront-aware capture working for real**: when the Street
-View heading landed on a frame that didn't clearly show the venue's own storefront (or was distant /
-car-obstructed), the judge rejected it and the pipeline fell back to the venue's Google Business
-photo — exactly the "one or two rejects before falling back" behaviour the brief describes (see the
-Regency Cafe worked example in §3.2).
+This run shows every gate firing: a **frontage** reject (not bare), a **capture** reject (no clear /
+obstructed entrance → shopfront-aware fallback to the Google Business photo), and an **output QA**
+reject (a composite that wasn't faithful enough was held, not shipped) — exactly the automated
+decision-making the brief asks for (see the Regency Cafe worked example in §3.2).
 
 ---
 
