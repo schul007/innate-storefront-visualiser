@@ -1,5 +1,7 @@
 # design.md — Storefront Capture & Visualisation
 
+**Live demo (deployed on Vercel):** https://innate-storefront-visualiser.vercel.app/
+
 **Audience: a second engineer.** This note is written so you could rebuild or extend the system
 from it. It covers the two graded capabilities — **frontage capture** and **product compositing** —
 plus the **automated venue selection** that feeds them, with the accept/reject bars, fallback logic,

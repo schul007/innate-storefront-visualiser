@@ -4,6 +4,11 @@ Automated pipeline that finds under-dressed independent London frontages, captur
 venue's **real** doorway, and composites the client's **actual** planters onto it at correct
 scale — a convincing "what it could look like" visual, fully automated.
 
+### ▶ Live demo (deployed on Vercel): **https://innate-storefront-visualiser.vercel.app/**
+
+The deployed link opens straight to the three before/after results, and has a **"Try it live"**
+panel that runs the whole pipeline on any London venue you enter.
+
 Built for the Innate AI contract-developer brief. **Read [`design.md`](design.md)** for the
 technical rationale, selection logic, fallback logic, imagery-rights position and rejection
 criteria. This README is setup + operation.
