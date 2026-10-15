@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BeforeAfter } from './BeforeAfter';
 
 interface SearchResult {
   placeId: string; name: string; address: string;
@@ -81,16 +82,7 @@ export function LiveDemo() {
 
       {gen && (
         <div className="live-output">
-          <div className="live-images">
-            <figure>
-              <img src={gen.after} alt="Frontage with planters composited" />
-              <figcaption>With planters</figcaption>
-            </figure>
-            <figure>
-              <img src={gen.frontage} alt="Original captured frontage" />
-              <figcaption>Original frontage</figcaption>
-            </figure>
-          </div>
+          <BeforeAfter before={gen.frontage} after={gen.after} />
           <div className="live-meta">
             <span className={`pill ${gen.status === 'delivered' ? 'pill-ok' : 'pill-hold'}`}>
               {gen.status === 'delivered' ? 'Passed QA' : 'Held by QA'}

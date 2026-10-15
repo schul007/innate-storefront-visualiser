@@ -63,7 +63,9 @@ main { display: block; }
    aspect ratio, so the full composite is always shown – never cropped. */
 .ba { position: relative; width: 100%; overflow: hidden; cursor: ew-resize; user-select: none; touch-action: none; background: #0d130f; line-height: 0; }
 .ba-base { display: block; width: 100%; height: auto; }
-.ba-over { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-right: 2px solid #fff; }
+/* contain (not cover) so a before/after with a slightly different aspect ratio
+   is never cropped – both images show in full; mismatch letterboxes on the mat. */
+.ba-over { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .ba-handle { position: absolute; top: 0; bottom: 0; width: 2px; background: #fff; transform: translateX(-1px); pointer-events: none; }
 .ba-grip { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; color: var(--green); width: 38px; height: 38px; border-radius: 999px; display: grid; place-items: center; font-size: 0.9rem; letter-spacing: 1px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
 .ba-tag { position: absolute; bottom: 12px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 9px; border-radius: 6px; background: rgba(13,19,15,0.72); color: #fff; }
@@ -103,13 +105,7 @@ main { display: block; }
 .live-results li span { color: var(--ink-faint); font-size: 0.85rem; }
 .live-results button { background: transparent; border: 1px solid var(--green); color: var(--green); padding: 8px 14px; border-radius: 8px; font-weight: 600; }
 .live-output { margin-top: 20px; }
-/* Live results render at their ORIGINAL size (frontage + composite can differ in
-   aspect ratio), so nothing is cropped. */
-.live-images { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
-.live-images figure { margin: 0; }
-.live-images img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: #0d130f; }
-.live-images figcaption { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); margin-top: 8px; }
-@media (max-width: 680px) { .live-images { grid-template-columns: 1fr; } }
+.live-output .ba { border-radius: 10px; border: 1px solid var(--line); }
 .live-meta { margin-top: 14px; }
 .live-reasons { margin-top: 10px; font-size: 0.88rem; color: var(--ink-soft); }
 .live-reset { margin-top: 16px; background: transparent; border: 1px solid var(--line); color: var(--ink-soft); padding: 9px 16px; border-radius: 8px; }
