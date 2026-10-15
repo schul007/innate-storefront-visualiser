@@ -9,7 +9,26 @@ interface GenResult {
   name: string; source: string; heading?: number; product: string; productName?: string;
   status: string; frontage: string; after: string;
   judgement: { frontageBareness: number; placementHint: string; reasons: string[] };
-  qa: { score: number; reject: boolean; reasons: string[]; artifacts: string[] };
+  qa: {
+    score: number; reject: boolean; reasons: string[]; artifacts: string[];
+    productFaithful?: boolean; scalePlausible?: boolean; perspectiveConsistent?: boolean;
+    shadowGrounded?: boolean; entranceClear?: boolean; buildingUnaltered?: boolean;
+  };
+}
+
+/** Plain-English summary of the QA verdict (no "Image 1/3" jargon). */
+function plainQa(qa: GenResult['qa']): string {
+  if (!qa.reject) {
+    return 'Looks ready to send: the planters match the real product, sit at a believable size, and the rest of the photo is unchanged.';
+  }
+  const issues: string[] = [];
+  if (qa.productFaithful === false) issues.push("the planters didn't match the real product closely enough");
+  if (qa.scalePlausible === false) issues.push('the size looked off');
+  if (qa.entranceClear === false) issues.push('a planter blocked the entrance');
+  if (qa.buildingUnaltered === false) issues.push('part of the building changed');
+  if (qa.shadowGrounded === false) issues.push('the planters looked like they were floating');
+  if (!issues.length) issues.push("the result wasn't convincing enough");
+  return `Held back because ${issues.join(', and ')}.`;
 }
 
 /** Live "run the real pipeline" panel – calls /api/search then /api/generate. */
@@ -92,7 +111,7 @@ export function LiveDemo() {
             <span className="pill">QA {Math.round(gen.qa.score * 100)}%</span>
             <span className="pill">Bareness {Math.round(gen.judgement.frontageBareness * 100)}%</span>
           </div>
-          {gen.qa.reasons.length > 0 && <p className="live-reasons">QA: {gen.qa.reasons.join(' · ')}</p>}
+          <p className="live-reasons">{plainQa(gen.qa)}</p>
           <button className="live-reset" onClick={() => { setGen(null); }}>← Back to results</button>
         </div>
       )}
