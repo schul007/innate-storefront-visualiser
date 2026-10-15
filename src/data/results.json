@@ -5,46 +5,29 @@
   "venues": [
     {
       "slot": 1,
-      "name": "BOBO & WILD - Shoreditch Coffee, Brunch & Bakery",
-      "address": "1 Poole St, London N1 5EB, UK",
-      "postcode": "N1 5EB",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=BOBO%20%26%20WILD%20-%20Shoreditch%20Coffee%2C%20Brunch%20%26%20Bakery%201%20Poole%20St%2C%20London%20N1%205EB%2C%20UK",
+      "name": "Archetype Coffee",
+      "address": "31 Riding House St, London W1W 7DY, UK",
+      "postcode": "W1W 7DY",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Archetype%20Coffee%2031%20Riding%20House%20St%2C%20London%20W1W%207DY%2C%20UK",
       "product": "product-a-black-cylinder",
       "productName": "Charcoal Cylinder",
-      "source": "place-photo",
-      "bareness": 0.9,
-      "placement": "Along the modern glazed frontage outside the ground floor seating area.",
-      "qaScore": 0.85,
-      "regenerated": true,
+      "source": "streetview",
+      "bareness": 0.8,
+      "placement": "Flanking the entrance door on the pavement or slightly offset to the left of the doorway",
+      "qaScore": 0.95,
+      "regenerated": false,
       "frontage": "results/venue-1/frontage.jpg",
       "after": "results/venue-1/after.png",
       "attempts": [
         {
           "source": "streetview",
-          "outcome": "rejected",
-          "reason": "The image shows a wide street scene rather than a close-up of the venue's entrance.; A large car is parked directly in the foreground, obstructing the view of the ground level.; The actual entrance and doorway of BOBO & WILD are distant and partially obscured."
-        },
-        {
-          "source": "streetview",
-          "outcome": "rejected",
-          "reason": "The venue shopfront is partially obscured by a large parked car directly in front.; The framing is too wide and distant, showing a street scene rather than a close-up frontage capture.; Entrance details are not sufficiently prominent for a sales mock-up."
-        },
-        {
-          "source": "place-photo",
           "outcome": "used",
-          "reason": "Clearly shows Bobo & Wild shopfront and signage.; Modern glazed exterior with plenty of clear pavement space for planters."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "rejected",
-          "reason": "The image shows food (a dish on a plate) rather than a shopfront or street entrance.; No venue frontage, doorway, or exterior is visible."
-        },
-        {
-          "source": "place-photo",
-          "outcome": "rejected",
-          "reason": "The image shows an interior food and drink shot (a pastry and iced coffee on a table) rather than the venue's street-facing entrance or shopfront."
+          "reason": "Clear shot of 'Archetype Coffee' shopfront and entrance; Pavement area outside allows for planter placement; Dark storefront aesthetic pairs well with charcoal cylinder or contrasting white tapered planters"
         }
-      ]
+      ],
+      "heading": 348.8280501727972,
+      "fov": 70,
+      "panoDate": "2022-11"
     },
     {
       "slot": 2,
@@ -143,11 +126,11 @@
       "bareness": 0.3
     },
     {
-      "name": "BOBO & WILD - Shoreditch Coffee, Brunch & Bakery",
-      "address": "1 Poole St, London N1 5EB, UK",
-      "postcode": "N1 5EB",
+      "name": "Archetype Coffee",
+      "address": "31 Riding House St, London W1W 7DY, UK",
+      "postcode": "W1W 7DY",
       "outcome": "delivered",
-      "detail": "delivered (QA score 0.85)",
+      "detail": "delivered (QA score 0.95)",
       "bareness": 0.9,
       "product": "product-a-black-cylinder"
     },
