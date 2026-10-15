@@ -207,7 +207,15 @@ function SelectionLog({ log }: { log: SelectionLogEntry[] }) {
               </span>
               <div className="decided-body">
                 <div className="decided-head">
-                  <strong>{e.name}</strong>
+                  <a
+                    className="decided-name"
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${e.name} ${e.address ?? ''}`)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    title="See this place on Google Maps"
+                  >
+                    {e.name} <span className="decided-see" aria-hidden="true">↗ see the place</span>
+                  </a>
                   {e.postcode && <span className="decided-pc">{e.postcode}</span>}
                 </div>
                 <p className="decided-reason">{h.reason}</p>

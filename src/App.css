@@ -82,6 +82,9 @@ main { display: block; }
 .decided-body { flex: 1; min-width: 0; }
 .decided-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .decided-head strong { font-size: 1.08rem; }
+.decided-name { font-size: 1.08rem; font-weight: 600; color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+.decided-name:hover { color: var(--green-bright); border-color: currentColor; }
+.decided-see { font-size: 0.72rem; font-weight: 500; color: var(--green-bright); letter-spacing: 0.02em; white-space: nowrap; border-bottom: none; }
 .decided-pc { font-size: 0.8rem; color: var(--ink-faint); }
 .decided-reason { color: var(--ink-soft); margin-top: 3px; }
 .decided-tech { margin-top: 10px; }
