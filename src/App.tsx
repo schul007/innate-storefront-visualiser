@@ -154,6 +154,37 @@ function humanizeDecision(e: SelectionLogEntry): { label: string; tone: 'ok' | '
   return { label: 'Skipped', tone: 'skip', reason: 'Couldn’t get a clear, usable photo of this venue’s entrance.' };
 }
 
+const SRC_WORDS: Record<string, string> = {
+  streetview: 'Street View', 'place-photo': 'Google photo', mapillary: 'Mapillary',
+};
+
+// Strip model-ese ("Image 1/3") so the detail reads like plain English.
+const tidy = (s: string) => s
+  .replace(/\bImage 1\b/gi, 'the original photo')
+  .replace(/\bImage [23]\b/gi, 'the product photo');
+
+/** Turn the raw pipeline detail into readable, natural lines for the expander. */
+function technicalLines(e: SelectionLogEntry): string[] {
+  const d = e.detail || '';
+  // Per-source capture attempts: "streetview:rejected(a; b) | place-photo:rejected(c) | …"
+  if (/[\w-]+:(rejected|used|error)\(/.test(d)) {
+    return d.split(' | ').map((part) => {
+      const m = part.match(/^([\w-]+):(\w+)\(([\s\S]*)\)$/);
+      if (!m) return tidy(part);
+      const src = SRC_WORDS[m[1]] ?? m[1];
+      const verb = m[2] === 'used' ? 'used' : m[2] === 'error' ? 'errored' : 'rejected';
+      const reasons = m[3].split(';').map((s) => s.trim()).filter(Boolean).join(' ');
+      return tidy(`${src} — ${verb}: ${reasons}`);
+    });
+  }
+  // Bareness / QA / delivered single-line details.
+  const line = d
+    .replace(/^frontage not bare enough \(bareness ([\d.]+)\):?\s*/i, 'Frontage wasn’t bare enough (score $1 of 1). ')
+    .replace(/^QA reject \(score ([\d.]+)\):?\s*/i, 'Didn’t pass the quality check (score $1 of 1). ')
+    .replace(/^delivered \(QA score ([\d.]+)\)/i, 'Delivered — quality score $1 of 1.');
+  return line ? [tidy(line)] : [];
+}
+
 function SelectionLog({ log }: { log: SelectionLogEntry[] }) {
   if (!log.length) return null;
   const chosen = log.filter((e) => e.outcome.startsWith('delivered')).length;
@@ -180,6 +211,12 @@ function SelectionLog({ log }: { log: SelectionLogEntry[] }) {
                   {e.postcode && <span className="decided-pc">{e.postcode}</span>}
                 </div>
                 <p className="decided-reason">{h.reason}</p>
+                {technicalLines(e).length > 0 && (
+                  <details className="decided-tech">
+                    <summary>What the system saw</summary>
+                    <ul>{technicalLines(e).map((l, j) => <li key={j}>{l}</li>)}</ul>
+                  </details>
+                )}
               </div>
             </li>
           );

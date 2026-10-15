@@ -84,6 +84,11 @@ main { display: block; }
 .decided-head strong { font-size: 1.08rem; }
 .decided-pc { font-size: 0.8rem; color: var(--ink-faint); }
 .decided-reason { color: var(--ink-soft); margin-top: 3px; }
+.decided-tech { margin-top: 10px; }
+.decided-tech summary { font-size: 0.8rem; color: var(--ink-faint); cursor: pointer; user-select: none; }
+.decided-tech summary:hover { color: var(--green-bright); }
+.decided-tech ul { margin: 8px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+.decided-tech li { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.45; }
 
 /* ---------- Live demo ---------- */
 .live { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
