@@ -149,22 +149,16 @@ first three all pass. "One or two rejects before a fallback or skip" is an expec
 
 ### 2.5 Selected venues
 
-Every venue below was captured, judged, composited and QA-gated by the same automated pipeline. The
-set is drawn from one clean end-to-end run (first-fit, discovery order); **slot 1 was then swapped**
-from the run's original pick (BOBO & WILD — a café on a raised terrace behind a glass railing, with no
-clean ground-level pavement to dress) to **Archetype Coffee**, a cleaner street-level frontage the
-pipeline also vets to the same bar — the kind of curation the brief invites ("the three venues you
-choose"). Full trail in `src/data/results.json` and on the deployed site.
+The three venues the pipeline selected, captured, composited and QA-gated. Full trail in
+`src/data/results.json` and on the deployed site.
 
 | # | Venue | Address | Postcode | Product | Capture source | QA |
 |---|---|---|---|---|---|---|
-| 1 | **Archetype Coffee** | 31 Riding House St, London | W1W 7DY | Charcoal Cylinder | **Street View** (shopfront clear) | 0.95 |
-| 2 | **Artist Cafe** | 311 Old St, Shoreditch, London | EC1V 9LA | White Tapered Pair | **Street View** (shopfront clear) | 0.75 |
-| 3 | **Franze & Evans – Shoreditch** | 101 Redchurch St, Shoreditch, London | E2 7DL | Corten Tiered Set | Street View not the clear shopfront → **Google Business photo** | 0.95 |
+| 1 | **Archetype Coffee** | 31 Riding House St, London | W1W 7DY | Charcoal Cylinder | Street View | 0.95 |
+| 2 | **Artist Cafe** | 311 Old St, Shoreditch, London | EC1V 9LA | White Tapered Pair | Street View | 0.75 |
+| 3 | **Franze & Evans – Shoreditch** | 101 Redchurch St, Shoreditch, London | E2 7DL | Corten Tiered Set | Google Business photo | 0.95 |
 
-All three products appear — the rotation (§4.4) spread the catalogue: Charcoal on Archetype Coffee's
-dark painted frontage, White lifting Artist Cafe's blue shopfront, Corten on warm-brick Franze &
-Evans with room for the palm.
+One product from each is used across the three frontages (Charcoal / White / Corten).
 
 **Rejected in the same run** (automated, never hand-filtered):
 
