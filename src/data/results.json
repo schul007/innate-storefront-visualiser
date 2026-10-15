@@ -13,8 +13,8 @@
       "productName": "Charcoal Cylinder",
       "source": "streetview",
       "bareness": 0.8,
-      "placement": "Flanking the entrance door on the pavement or slightly offset to the left of the doorway",
-      "qaScore": 0.95,
+      "placement": "Flanking Archetype Coffee's own entrance - one beneath the window, one by the doorway.",
+      "qaScore": 0.85,
       "regenerated": false,
       "frontage": "results/venue-1/frontage.jpg",
       "after": "results/venue-1/after.png",
@@ -101,7 +101,7 @@
   ],
   "selectionLog": [
     {
-      "name": "Vintage Café Shoreditch",
+      "name": "Vintage Caf\u00e9 Shoreditch",
       "address": "17 Cheshire St, London E2 6EH, UK",
       "postcode": "E2 6EH",
       "outcome": "rejected-output",
