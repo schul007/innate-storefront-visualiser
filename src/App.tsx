@@ -180,10 +180,6 @@ function SelectionLog({ log }: { log: SelectionLogEntry[] }) {
                   {e.postcode && <span className="decided-pc">{e.postcode}</span>}
                 </div>
                 <p className="decided-reason">{h.reason}</p>
-                <details className="decided-tech">
-                  <summary>Technical detail</summary>
-                  <code>{e.outcome}</code> — {e.detail}
-                </details>
               </div>
             </li>
           );
