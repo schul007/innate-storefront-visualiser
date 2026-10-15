@@ -19,9 +19,10 @@ pipeline/src/     The automated pipeline (Node + TypeScript, run offline)
   capture.ts        Street View framing (heading from geometry) + fallbacks
   geo.ts            Bearing / distance helpers
   judge.ts          Vision judge: entrance visible? frontage bare? which product?
-  composite.ts      Reference-faithful compositing ("Nano Banana") + regenerate
+  composite.ts      Reference-faithful compositing ("Nano Banana Pro") + regenerate
   qa.ts             Output QA / rejection gate
   gemini.ts         Gemini client (structured vision JSON + image editing, with retry)
+  imageutil.ts      Image dims + aspect-ratio lock (keeps edits in place, no re-crop)
 products/         The client's three REAL products + documented dimensions
 results/          Committed pipeline outputs (before/after + decision JSON)
 api/              Vercel serverless: live /api/search + /api/generate
@@ -40,10 +41,11 @@ serverless functions so reviewers can run the real pipeline live. See design.md 
 - **Google Maps Platform API key** with **Places API (New)** and **Street View Static API**
   enabled. (Billing must be enabled on the Google Cloud project, but the free monthly tier
   covers prototype volume.)
-- **Gemini API key** (Google AI Studio). ⚠️ **Image generation ("Nano Banana") is not on the
-  free tier** — the key's project needs **billing / prepaid credits**. Vision judging is cheap;
-  the whole prototype (a dozen-ish vision calls + a handful of image generations) costs on the
-  order of **$1–2**. See *Costs & quotas* below.
+- **Gemini API key** (Google AI Studio). ⚠️ **Image generation is not on the free tier** — the
+  key's project needs **billing / prepaid credits**. Vision judging is cheap; the default image
+  model is **Gemini 3 Pro Image** (best fidelity) at roughly **$0.15–0.30 per composite**, so a
+  full run is on the order of a few dollars. Set `GEMINI_IMAGE_MODEL=gemini-3.1-flash-image` to run
+  ~5× cheaper at lower fidelity. See *Costs & quotas* below.
 - *(Optional)* **Mapillary token** — free fallback street imagery when Street View is poor.
 
 ## Setup
@@ -59,8 +61,8 @@ cp .env.example .env     # then fill in your keys
 GOOGLE_MAPS_API_KEY=...   # Places (New) + Street View Static
 GEMINI_API_KEY=...        # vision judge + compositing (needs billing for image gen)
 MAPILLARY_TOKEN=...        # optional fallback
-# GEMINI_IMAGE_MODEL=gemini-3-pro-image   # optional: max-realism image model
-# GEMINI_VISION_MODEL=gemini-flash-latest # optional override
+# GEMINI_IMAGE_MODEL=gemini-3.1-flash-image     # optional: ~5x cheaper than the default Pro model
+# GEMINI_VISION_MODEL=gemini-flash-lite-latest  # optional override (this is the default)
 ```
 
 ## Run
@@ -104,7 +106,7 @@ showcase works even without them.
 | Google Places (discovery) | Free tier covers it |
 | Street View Static | Free tier covers it |
 | Gemini vision (judge + QA) | Cheap; ~2 calls per venue |
-| **Gemini image (compositing)** | **Needs billing — ~a few cents/image.** Free tier limit = 0. |
+| **Gemini image (compositing)** | **Needs billing.** Default Pro model ~\$0.15–0.30/image (`gemini-3.1-flash-image` ~5× cheaper). Free tier limit = 0. |
 
 If a run stops with *"Gemini image/model quota is 0 …enable billing"* or a **402 prepayment
 depleted** error, top up the Gemini project's billing/credits — that's the only paid dependency.
