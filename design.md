@@ -109,10 +109,17 @@ everything the filter and the capture fallback need, in one call. Postcode comes
 
 A live run yields **57 independent candidates** from the query set.
 
+> **→ Then each candidate's frontage is captured.** The judgement below scores a real photo of the
+> doorway, so between sourcing and judging the pipeline runs the **frontage capture** step — Street
+> View framing from panorama geometry, with a shopfront-aware fallback to Google Business photos.
+> That is the second graded capability and is documented in full in **[§3](#3-getting-the-frontage-image)**;
+> it executes *before* §2.3, which judges the image §3 produces. (Runtime order:
+> discover → **capture (§3)** → judge → composite → QA.)
+
 ### 2.3 Vision fit judgement (per candidate frontage) — `judge.ts::judgeFrontage`
 
 Business type can't tell you whether a *specific doorway* is bare. The real signal is a vision-model
-judgement on the captured frontage image, given the venue name + a compact product catalogue. It
+judgement on the frontage image captured in §3, given the venue name + a compact product catalogue. It
 returns structured JSON:
 
 ```jsonc
